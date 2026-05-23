@@ -102,11 +102,12 @@ def fetch_google_places():
 
     for area in SEARCH_AREAS:
         # FUTURE_OPENING helyek - ezek hamarosan nyílnak, a legértékesebb leadek!
+        # A 'restaurant' includedType szándékosan szűkebb keresést kényszerít.
+        # Mivel a 'bakery', 'cafe', 'bar' stb. nem 'restaurant' típus, ezért
+        # nem alkalmazunk includedType-ot - hagyjuk hogy a textQuery vezessen.
         for query in ["étterem", "kávézó", "élelmiszerbolt", "pékség", "bisztró"]:
             body = {
                 "textQuery": f"{query} {area['name']}",
-                "includedType": "restaurant",  # tág értelmezésű
-                "includePureServiceAreaBusinesses": False,
                 "locationBias": {
                     "circle": {
                         "center": {
@@ -116,8 +117,8 @@ def fetch_google_places():
                         "radius": area["radius"],
                     }
                 },
-                "pageSize": 20,
-                "includedFutureOpening": True,  # KULCSFONTOSSÁGÚ!
+                "maxResultCount": 20,
+                "includeFutureOpeningBusinesses": True,  # 2026 márciustól ez a helyes név
             }
 
             try:
@@ -127,7 +128,9 @@ def fetch_google_places():
                     json=body,
                     timeout=30,
                 )
-                resp.raise_for_status()
+                if resp.status_code != 200:
+                    print(f"  ✗ Hiba {area['name']} / {query}: HTTP {resp.status_code} – {resp.text[:200]}")
+                    continue
                 data = resp.json()
                 places = data.get("places", [])
                 for p in places:
