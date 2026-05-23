@@ -1,0 +1,43 @@
+name: Foodora Lead Finder Daily
+
+on:
+  schedule:
+    # Minden nap reggel 8:00 magyar idő szerint (UTC 6:00 télen, UTC 7:00 nyári időszámításkor)
+    # Egyszerűbb fix UTC 06:00 és figyelmen kívül hagyni a nyári időt
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Lehetővé teszi a kézi indítást is
+
+permissions:
+  contents: write  # szükséges hogy a script tudjon menteni a known_places.json fájlba
+
+jobs:
+  run-lead-finder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository letöltése
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 telepítése
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Függőségek telepítése
+        run: |
+          pip install -r requirements.txt
+
+      - name: Lead Finder futtatása
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python lead_finder.py
+
+      - name: Adatfájlok commit-olása (hogy emlékezzen, mit látott már)
+        run: |
+          git config --global user.name "Foodora Lead Finder Bot"
+          git config --global user.email "bot@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Adatok frissítve: $(date +%Y-%m-%d)"
+          git push
