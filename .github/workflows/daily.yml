@@ -4,7 +4,7 @@ on:
   schedule:
     # Minden nap reggel 8:00 magyar idő szerint (UTC 6:00 télen, UTC 7:00 nyári időszámításkor)
     # Egyszerűbb fix UTC 06:00 és figyelmen kívül hagyni a nyári időt
-    - cron: '0 6 * * *'
+    - cron: '15 5 * * *'
   workflow_dispatch:  # Lehetővé teszi a kézi indítást is
 
 permissions:
