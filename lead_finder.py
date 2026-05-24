@@ -227,7 +227,8 @@ def fetch_news():
     ]
 
     all_news = []
-    cutoff = datetime.utcnow() - timedelta(days=2)
+    # 7 napos cutoff (volt 2 napos, de túl szigorú volt és minden hírt eldobott)
+    cutoff = datetime.utcnow() - timedelta(days=7)
 
     for q in queries:
         url = (
@@ -236,12 +237,22 @@ def fetch_news():
         )
         try:
             feed = feedparser.parse(url)
+            kept = 0
             for entry in feed.entries[:10]:
-                pub = entry.get("published_parsed")
-                if pub:
-                    pub_dt = datetime(*pub[:6])
-                    if pub_dt < cutoff:
-                        continue
+                # Próbáljuk megkapni a dátumot többféleképpen
+                pub_dt = None
+                pub_parsed = entry.get("published_parsed")
+                if pub_parsed:
+                    try:
+                        pub_dt = datetime(*pub_parsed[:6])
+                    except (TypeError, ValueError):
+                        pub_dt = None
+
+                # Ha nem tudjuk a dátumot, BEENGEDJÜK a hírt (jobb beengedni, mint elveszíteni)
+                # Ha tudjuk és túl régi, kihagyjuk
+                if pub_dt and pub_dt < cutoff:
+                    continue
+
                 all_news.append({
                     "title": entry.get("title", ""),
                     "link": entry.get("link", ""),
@@ -249,7 +260,8 @@ def fetch_news():
                     "source": entry.get("source", {}).get("title", "") if entry.get("source") else "",
                     "query": q,
                 })
-            print(f"  ✓ '{q}': {len(feed.entries[:10])} hír")
+                kept += 1
+            print(f"  ✓ '{q}': {len(feed.entries[:10])} talált, {kept} elfogadva")
         except Exception as e:
             print(f"  ✗ Hiba '{q}': {e}")
 
