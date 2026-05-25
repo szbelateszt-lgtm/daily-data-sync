@@ -41,3 +41,6 @@ jobs:
           git add data/
           git diff --staged --quiet || git commit -m "Adatok frissítve: $(date +%Y-%m-%d)"
           git push
+
+
+
