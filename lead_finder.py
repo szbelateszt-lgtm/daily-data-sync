@@ -6,12 +6,16 @@ Adatforrások:
 1. Google Places API (New) - hivatalos, megbízható
 2. crt.sh - új .hu domainek vendéglátós kulcsszavakkal
 3. Google News RSS - friss hírek új helyekről
+4. We Love Budapest gasztro - frissen nyílt helyek cikkei
+5. Funzine.hu gasztro - frissen nyílt helyek cikkei
+6. Time Out Budapest - frissen nyílt helyek cikkei
 
 A script naponta egyszer fut le GitHub Actions-ben.
 Az új találatokat e-mailben küldi el.
 """
 
 import os
+import re
 import json
 import smtplib
 import ssl
@@ -74,6 +78,9 @@ DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 KNOWN_PLACES_FILE = DATA_DIR / "known_places.json"
 KNOWN_DOMAINS_FILE = DATA_DIR / "known_domains.json"
+KNOWN_WLB_FILE = DATA_DIR / "known_wlb_articles.json"
+KNOWN_FUNZINE_FILE = DATA_DIR / "known_funzine_articles.json"
+KNOWN_TIMEOUT_FILE = DATA_DIR / "known_timeout_articles.json"
 
 # ============================================================
 # 1. GOOGLE PLACES API - ÚJ ÉS HAMAROSAN NYÍLÓ HELYEK
@@ -276,10 +283,201 @@ def fetch_news():
 
 
 # ============================================================
+# GASZTROPORTÁLOK – HTML SCRAPE
+# ============================================================
+
+def _strip_html(text):
+    """Eltávolítja a HTML tageket és tisztítja a whitespace-t."""
+    # HTML entitások visszafordítása
+    text = text.replace("&amp;", "&").replace("&nbsp;", " ")
+    text = text.replace("&quot;", '"').replace("&#8211;", "–").replace("&#8217;", "'")
+    # HTML tagek eltávolítása
+    text = re.sub(r"<[^>]+>", "", text)
+    # Több whitespace egybe
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def _fetch_html(url, timeout=30):
+    """HTML letöltése böngésző-szerű header-rel (anti-bot védelem ellen)."""
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "hu-HU,hu;q=0.9,en;q=0.8",
+    }
+    resp = requests.get(url, headers=headers, timeout=timeout)
+    resp.raise_for_status()
+    return resp.text
+
+
+def fetch_welovebudapest():
+    """We Love Budapest gasztro rovat - friss cikkek a kezdőoldalról."""
+    try:
+        html = _fetch_html("https://welovebudapest.com/gasztro/")
+    except Exception as e:
+        print(f"  ✗ Hiba a We Love Budapest letöltésénél: {e}")
+        return []
+
+    articles = []
+    # Két pattern-t használunk:
+    # 1. ## [Cím](URL) markdown-szerű
+    # 2. <h2><a href="URL">Cím</a></h2> HTML
+    patterns = [
+        re.compile(
+            r'\[([^\]]{15,250})\]\((https://welovebudapest\.com/(?:cikk|toplista)/[^\)]+)\)',
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r'<a[^>]+href="(https://welovebudapest\.com/(?:cikk|toplista)/[^"]+)"[^>]*>'
+            r'\s*<h[2-4][^>]*>([\s\S]{15,300}?)</h[2-4]>',
+            re.IGNORECASE,
+        ),
+    ]
+
+    seen_urls = set()
+    for pattern in patterns:
+        for match in pattern.finditer(html):
+            # Pattern 1: group(1)=title, group(2)=url
+            # Pattern 2: group(1)=url, group(2)=title
+            if pattern.pattern.startswith(r"\["):
+                title = _strip_html(match.group(1))
+                url = match.group(2)
+            else:
+                url = match.group(1)
+                title = _strip_html(match.group(2))
+
+            if url in seen_urls:
+                continue
+            if not title or len(title) < 10:
+                continue
+            seen_urls.add(url)
+            articles.append({"title": title.strip(), "url": url})
+
+    print(f"  ✓ We Love Budapest: {len(articles)} cikk találva")
+    return articles
+
+
+def fetch_funzine():
+    """Funzine.hu gasztro rovat - friss cikkek."""
+    try:
+        html = _fetch_html("https://funzine.hu/category/gasztro/")
+    except Exception as e:
+        print(f"  ✗ Hiba a Funzine letöltésénél: {e}")
+        return []
+
+    articles = []
+    # Funzine cikk URL minta: https://funzine.hu/YYYY/MM/DD/gasztro/SLUG/
+    # Két pattern, akárcsak WLB-nél
+    patterns = [
+        re.compile(
+            r'\[([^\]]{15,250})\]\((https://funzine\.hu/\d{4}/\d{2}/\d{2}/gasztro/[^\)]+)\)',
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r'<a[^>]+href="(https://funzine\.hu/\d{4}/\d{2}/\d{2}/gasztro/[^"]+)"[^>]*'
+            r'title="([^"]{15,300})"',
+            re.IGNORECASE,
+        ),
+    ]
+
+    seen_urls = set()
+    for pattern in patterns:
+        for match in pattern.finditer(html):
+            if pattern.pattern.startswith(r"\["):
+                title = _strip_html(match.group(1))
+                url = match.group(2)
+            else:
+                url = match.group(1)
+                title = _strip_html(match.group(2))
+
+            if url in seen_urls:
+                continue
+            if not title or len(title) < 10:
+                continue
+            seen_urls.add(url)
+            articles.append({"title": title.strip(), "url": url})
+
+    print(f"  ✓ Funzine: {len(articles)} cikk találva")
+    return articles
+
+
+def fetch_timeout_budapest():
+    """Time Out Budapest étterem cikkek."""
+    # Több potenciális URL-en is megpróbáljuk
+    html = None
+    for url in [
+        "https://www.timeout.com/hu/budapest/ettermek",
+        "https://www.timeout.com/hu/budapest/etterem",
+        "https://www.timeout.com/hu/budapest",
+    ]:
+        try:
+            html = _fetch_html(url)
+            break
+        except Exception:
+            continue
+
+    if not html:
+        print("  ✗ Hiba a Time Out Budapest letöltésénél: nem érhető el")
+        return []
+
+    articles = []
+    # Time Out: étterem-kapcsolt URL-eket keresünk
+    relevant_keywords = [
+        "etterem", "ettermek", "kavezo", "bistro", "bisztro",
+        "food", "gasztro", "reggeli", "brunch", "kavehaz",
+        "pekseg", "restaurant", "bar"
+    ]
+    patterns = [
+        re.compile(
+            r'\[([^\]]{15,250})\]\((https://www\.timeout\.com/hu/budapest/[^\)]+)\)',
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r'<a[^>]+href="(https://www\.timeout\.com/hu/budapest/[^"]+)"[^>]*'
+            r'(?:title|aria-label)="([^"]{15,300})"',
+            re.IGNORECASE,
+        ),
+    ]
+
+    seen_urls = set()
+    for pattern in patterns:
+        for match in pattern.finditer(html):
+            if pattern.pattern.startswith(r"\["):
+                title = _strip_html(match.group(1))
+                url = match.group(2)
+            else:
+                url = match.group(1)
+                title = _strip_html(match.group(2))
+
+            # Csak vendéglátós tematikájú cikkek
+            if not any(kw in url.lower() for kw in relevant_keywords):
+                continue
+            if url in seen_urls:
+                continue
+            if not title or len(title) < 10:
+                continue
+            seen_urls.add(url)
+            articles.append({"title": title.strip(), "url": url})
+
+    print(f"  ✓ Time Out Budapest: {len(articles)} cikk találva")
+    return articles
+
+
+def filter_new_articles(articles, known_urls):
+    """Csak az új cikkek, amik még nem voltak ismertek."""
+    return [a for a in articles if a.get("url") not in known_urls]
+
+
+# ============================================================
 # E-MAIL FORMÁZÁS ÉS KÜLDÉS
 # ============================================================
 
-def format_email(new_places, new_domains, news):
+def format_email(new_places, new_domains, news,
+                 new_wlb_articles, new_funzine_articles, new_timeout_articles):
     """HTML e-mail összeállítása az új találatokkal."""
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -308,7 +506,10 @@ def format_email(new_places, new_domains, news):
       <strong>Mai találatok:</strong>
       Google Maps: {len(new_places)} új hely &nbsp;|&nbsp;
       Új domainek: {len(new_domains)} &nbsp;|&nbsp;
-      Hírek: {len(news)}
+      Hírek: {len(news)} &nbsp;|&nbsp;
+      WLB: {len(new_wlb_articles)} &nbsp;|&nbsp;
+      Funzine: {len(new_funzine_articles)} &nbsp;|&nbsp;
+      Time Out: {len(new_timeout_articles)}
     </div>
     """
 
@@ -356,11 +557,50 @@ def format_email(new_places, new_domains, news):
             </div>
             """
 
+    # 4. WE LOVE BUDAPEST CIKKEK
+    html += "<h2>🌶️ We Love Budapest – új cikkek a gasztro rovatból</h2>"
+    if not new_wlb_articles:
+        html += '<p class="empty">Ma nem volt új cikk.</p>'
+    else:
+        for a in new_wlb_articles[:25]:
+            html += f"""
+            <div class="place">
+              <div class="name"><a href="{a['url']}">{a['title']}</a></div>
+              <div class="meta">welovebudapest.com</div>
+            </div>
+            """
+
+    # 5. FUNZINE CIKKEK
+    html += "<h2>🎉 Funzine.hu – új cikkek a gasztro rovatból</h2>"
+    if not new_funzine_articles:
+        html += '<p class="empty">Ma nem volt új cikk.</p>'
+    else:
+        for a in new_funzine_articles[:25]:
+            html += f"""
+            <div class="place">
+              <div class="name"><a href="{a['url']}">{a['title']}</a></div>
+              <div class="meta">funzine.hu</div>
+            </div>
+            """
+
+    # 6. TIME OUT BUDAPEST CIKKEK
+    html += "<h2>🌍 Time Out Budapest – új éttermes cikkek</h2>"
+    if not new_timeout_articles:
+        html += '<p class="empty">Ma nem volt új cikk.</p>'
+    else:
+        for a in new_timeout_articles[:25]:
+            html += f"""
+            <div class="place">
+              <div class="name"><a href="{a['url']}">{a['title']}</a></div>
+              <div class="meta">timeout.com</div>
+            </div>
+            """
+
     html += """
     <hr>
     <p style="color: #999; font-size: 11px;">
       Ezt az e-mailt a Foodora Lead Finder automata küldte.
-      Adatforrások: Google Places API, crt.sh, Google News.
+      Adatforrások: Google Places API, crt.sh, Google News, We Love Budapest, Funzine, Time Out Budapest.
     </p>
     </body>
     </html>
@@ -476,17 +716,52 @@ def main():
     news = fetch_news()
     print(f"  → {len(news)} friss hír")
 
-    # 4. E-mail
+    # 4. We Love Budapest gasztro cikkek
+    print("\n🌶️  We Love Budapest gasztro cikkek...")
+    known_wlb = load_known(KNOWN_WLB_FILE)
+    wlb_articles = fetch_welovebudapest()
+    new_wlb_articles = filter_new_articles(wlb_articles, known_wlb)
+    print(f"  → {len(new_wlb_articles)} ÚJ cikk (összesen ismert: {len(known_wlb)})")
+
+    # 5. Funzine gasztro cikkek
+    print("\n🎉 Funzine gasztro cikkek...")
+    known_funzine = load_known(KNOWN_FUNZINE_FILE)
+    funzine_articles = fetch_funzine()
+    new_funzine_articles = filter_new_articles(funzine_articles, known_funzine)
+    print(f"  → {len(new_funzine_articles)} ÚJ cikk (összesen ismert: {len(known_funzine)})")
+
+    # 6. Time Out Budapest cikkek
+    print("\n🌍 Time Out Budapest cikkek...")
+    known_timeout = load_known(KNOWN_TIMEOUT_FILE)
+    timeout_articles = fetch_timeout_budapest()
+    new_timeout_articles = filter_new_articles(timeout_articles, known_timeout)
+    print(f"  → {len(new_timeout_articles)} ÚJ cikk (összesen ismert: {len(known_timeout)})")
+
+    # 7. E-mail
     print("\n✉️  E-mail összeállítása és küldése...")
-    html = format_email(new_places, new_domains, news)
+    html = format_email(
+        new_places, new_domains, news,
+        new_wlb_articles, new_funzine_articles, new_timeout_articles,
+    )
     send_email(html)
 
-    # 5. Mentés
+    # 8. Mentés
     known_place_ids.update(p.get("id") for p in all_places if p.get("id"))
     known_domains.update(found_domains)
+    known_wlb.update(a["url"] for a in wlb_articles)
+    known_funzine.update(a["url"] for a in funzine_articles)
+    known_timeout.update(a["url"] for a in timeout_articles)
     save_known(KNOWN_PLACES_FILE, known_place_ids)
     save_known(KNOWN_DOMAINS_FILE, known_domains)
-    print(f"\n💾 Adatok elmentve: {len(known_place_ids)} hely, {len(known_domains)} domain")
+    save_known(KNOWN_WLB_FILE, known_wlb)
+    save_known(KNOWN_FUNZINE_FILE, known_funzine)
+    save_known(KNOWN_TIMEOUT_FILE, known_timeout)
+    print(
+        f"\n💾 Adatok elmentve: {len(known_place_ids)} hely, "
+        f"{len(known_domains)} domain, "
+        f"{len(known_wlb)} WLB, {len(known_funzine)} Funzine, "
+        f"{len(known_timeout)} Time Out cikk"
+    )
     print("✅ Kész!")
 
 
