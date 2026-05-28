@@ -81,6 +81,17 @@ KNOWN_DOMAINS_FILE = DATA_DIR / "known_domains.json"
 KNOWN_WLB_FILE = DATA_DIR / "known_wlb_articles.json"
 KNOWN_FUNZINE_FILE = DATA_DIR / "known_funzine_articles.json"
 KNOWN_TIMEOUT_FILE = DATA_DIR / "known_timeout_articles.json"
+KNOWN_GOVCENTER_FILE = DATA_DIR / "known_govcenter_uzletek.json"
+
+# Govcenter.hu kerület-azonosítók (onk_id).
+# A govcenter.hu publikus üzletnyilvántartást szolgáltat ezekhez a kerületekhez.
+# Bővíthető, ahogy újabb kerületek onk_id-ját azonosítjuk.
+# tip=1: bejelentéshez kötött kereskedelmi tevékenység
+# tip=2: működési engedéllyel rendelkező üzletek
+GOVCENTER_KERULETEK = [
+    {"name": "Ferencváros (IX.)", "onk_id": 507},
+    {"name": "Kispest (XIX.)", "onk_id": 548},
+]
 
 # ============================================================
 # 1. GOOGLE PLACES API - ÚJ ÉS HAMAROSAN NYÍLÓ HELYEK
@@ -473,13 +484,110 @@ def filter_new_articles(articles, known_urls):
 
 
 # ============================================================
+# ÖNKORMÁNYZATI ÜZLETNYILVÁNTARTÁS – govcenter.hu
+# ============================================================
+
+def _parse_govcenter_table(html, keruletnev):
+    """
+    Kinyeri az üzleteket a govcenter.hu HTML táblázatából.
+    A táblázat oszlopai jellemzően: nyilvántartási szám, nyilvántartásba vétel
+    dátuma, üzlet neve, cím, üzemeltető, tevékenység.
+    Mivel a pontos HTML struktúra változhat, többféle parse-stratégiát próbálunk.
+    """
+    uzletek = []
+
+    # Stratégia: minden <tr> sort kiveszünk, és a cellákat <td>-nként
+    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.IGNORECASE | re.DOTALL)
+    for row in rows:
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.IGNORECASE | re.DOTALL)
+        if len(cells) < 3:
+            continue
+        # Tisztítjuk a cellákat
+        clean = [_strip_html(c) for c in cells]
+        # Kihagyjuk a fejléceket / üres sorokat
+        if not any(clean):
+            continue
+        # Heurisztika: keresünk dátumot valamelyik cellában (YYYY.MM.DD vagy YYYY-MM-DD)
+        datum = ""
+        for c in clean:
+            m = re.search(r"\d{4}[.\-/]\s?\d{1,2}[.\-/]\s?\d{1,2}", c)
+            if m:
+                datum = m.group(0)
+                break
+        # Az üzlet neve és címe jellemzően a leghosszabb szöveges cellák
+        szoveges = [c for c in clean if len(c) > 2 and not re.fullmatch(r"[\d.\-/\s]+", c)]
+        if not szoveges:
+            continue
+        uzlet = {
+            "kerulet": keruletnev,
+            "datum": datum,
+            "cellak": clean,
+            "nev_cim": " | ".join(szoveges[:4]),
+        }
+        # Egyedi kulcs: a sor teljes tartalma
+        uzlet["kulcs"] = f"{keruletnev}::{'|'.join(clean)}"
+        uzletek.append(uzlet)
+
+    return uzletek
+
+
+def fetch_govcenter():
+    """
+    Lekérdezi a govcenter.hu üzletnyilvántartást a beállított kerületekre.
+    ASP.NET oldal, ezért kétféle megközelítést próbálunk:
+    1. Sima GET (hátha szerveroldalon renderelt a tábla)
+    2. Ha üres, jelezzük (későbbi fejlesztéshez __VIEWSTATE POST kellhet)
+    """
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "hu-HU,hu;q=0.9",
+    }
+
+    all_uzletek = []
+    for ker in GOVCENTER_KERULETEK:
+        # tip=1: bejelentés-köteles kereskedelmi tevékenység (itt vannak az éttermek)
+        url = (
+            f"https://www.govcenter.hu/uzlet/Public/Uzleteklista.aspx"
+            f"?tip=1&onk_id={ker['onk_id']}"
+        )
+        try:
+            resp = requests.get(url, headers=headers, timeout=30)
+            if resp.status_code != 200:
+                print(f"  ✗ {ker['name']}: HTTP {resp.status_code}")
+                continue
+            uzletek = _parse_govcenter_table(resp.text, ker["name"])
+            if not uzletek:
+                print(f"  ⚠️  {ker['name']}: 0 sor (lehet hogy JS-renderelt a tábla)")
+            else:
+                print(f"  ✓ {ker['name']}: {len(uzletek)} üzlet sor")
+            all_uzletek.extend(uzletek)
+        except Exception as e:
+            print(f"  ✗ Hiba {ker['name']}: {e}")
+
+    return all_uzletek
+
+
+def filter_new_govcenter(uzletek, known_keys):
+    """Csak az új üzletsorok, amik még nem voltak ismertek."""
+    return [u for u in uzletek if u.get("kulcs") not in known_keys]
+
+
+# ============================================================
 # E-MAIL FORMÁZÁS ÉS KÜLDÉS
 # ============================================================
 
 def format_email(new_places, new_domains, news,
-                 new_wlb_articles, new_funzine_articles, new_timeout_articles):
+                 new_wlb_articles, new_funzine_articles, new_timeout_articles,
+                 new_govcenter=None):
     """HTML e-mail összeállítása az új találatokkal."""
     today = datetime.now().strftime("%Y-%m-%d")
+    if new_govcenter is None:
+        new_govcenter = []
 
     html = f"""
     <html>
@@ -509,9 +617,29 @@ def format_email(new_places, new_domains, news,
       Hírek: {len(news)} &nbsp;|&nbsp;
       WLB: {len(new_wlb_articles)} &nbsp;|&nbsp;
       Funzine: {len(new_funzine_articles)} &nbsp;|&nbsp;
-      Time Out: {len(new_timeout_articles)}
+      Time Out: {len(new_timeout_articles)} &nbsp;|&nbsp;
+      🏛️ Önkormányzat: {len(new_govcenter)}
     </div>
     """
+
+    # KIEMELT: önkormányzati üzletbejelentések (a legértékesebb forrás, ezért legfelül)
+    html += "<h2>🏛️ Új önkormányzati üzletbejelentések (KIEMELT)</h2>"
+    if not new_govcenter:
+        html += '<p class="empty">Ma nem volt új önkormányzati bejelentés (vagy a forrás épp nem elérhető).</p>'
+    else:
+        html += ('<p style="color:#666;font-size:13px;">'
+                 'Frissen bejelentett kereskedelmi/vendéglátó egységek a kerületi '
+                 'nyilvántartásokból. Ezek gyakran még nincsenek fent a Google Maps-en!</p>')
+        for u in new_govcenter[:60]:
+            datum = u.get("datum", "")
+            html += f"""
+            <div class="place future">
+              <div class="name">{u.get('nev_cim', '')}</div>
+              <div class="meta">📍 {u.get('kerulet', '')}{' • 📅 ' + datum if datum else ''}</div>
+            </div>
+            """
+        if len(new_govcenter) > 60:
+            html += f"<p><em>... és még {len(new_govcenter)-60} bejelentés</em></p>"
 
     # 1. ÚJ HELYEK GOOGLE MAPS-RŐL
     html += "<h2>📍 Új helyek a Google Maps-en</h2>"
@@ -600,7 +728,7 @@ def format_email(new_places, new_domains, news,
     <hr>
     <p style="color: #999; font-size: 11px;">
       Ezt az e-mailt a Foodora Lead Finder automata küldte.
-      Adatforrások: Google Places API, crt.sh, Google News, We Love Budapest, Funzine, Time Out Budapest.
+      Adatforrások: Google Places API, crt.sh, Google News, We Love Budapest, Funzine, Time Out Budapest, önkormányzati üzletnyilvántartás (govcenter.hu).
     </p>
     </body>
     </html>
@@ -737,30 +865,41 @@ def main():
     new_timeout_articles = filter_new_articles(timeout_articles, known_timeout)
     print(f"  → {len(new_timeout_articles)} ÚJ cikk (összesen ismert: {len(known_timeout)})")
 
-    # 7. E-mail
+    # 7. Önkormányzati üzletnyilvántartás (govcenter.hu)
+    print("\n🏛️  Önkormányzati üzletnyilvántartás (govcenter.hu)...")
+    known_govcenter = load_known(KNOWN_GOVCENTER_FILE)
+    govcenter_uzletek = fetch_govcenter()
+    new_govcenter = filter_new_govcenter(govcenter_uzletek, known_govcenter)
+    print(f"  → {len(new_govcenter)} ÚJ üzletsor (összesen ismert: {len(known_govcenter)})")
+
+    # 8. E-mail
     print("\n✉️  E-mail összeállítása és küldése...")
     html = format_email(
         new_places, new_domains, news,
         new_wlb_articles, new_funzine_articles, new_timeout_articles,
+        new_govcenter,
     )
     send_email(html)
 
-    # 8. Mentés
+    # 9. Mentés
     known_place_ids.update(p.get("id") for p in all_places if p.get("id"))
     known_domains.update(found_domains)
     known_wlb.update(a["url"] for a in wlb_articles)
     known_funzine.update(a["url"] for a in funzine_articles)
     known_timeout.update(a["url"] for a in timeout_articles)
+    known_govcenter.update(u["kulcs"] for u in govcenter_uzletek)
     save_known(KNOWN_PLACES_FILE, known_place_ids)
     save_known(KNOWN_DOMAINS_FILE, known_domains)
     save_known(KNOWN_WLB_FILE, known_wlb)
     save_known(KNOWN_FUNZINE_FILE, known_funzine)
     save_known(KNOWN_TIMEOUT_FILE, known_timeout)
+    save_known(KNOWN_GOVCENTER_FILE, known_govcenter)
     print(
         f"\n💾 Adatok elmentve: {len(known_place_ids)} hely, "
         f"{len(known_domains)} domain, "
         f"{len(known_wlb)} WLB, {len(known_funzine)} Funzine, "
-        f"{len(known_timeout)} Time Out cikk"
+        f"{len(known_timeout)} Time Out cikk, "
+        f"{len(known_govcenter)} önkormányzati üzletsor"
     )
     print("✅ Kész!")
 
