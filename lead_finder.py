@@ -91,6 +91,7 @@ KNOWN_GOVCENTER_FILE = DATA_DIR / "known_govcenter_uzletek.json"
 GOVCENTER_KERULETEK = [
     {"name": "Ferencváros (IX.)", "onk_id": 507},
     {"name": "Kispest (XIX.)", "onk_id": 548},
+    {"name": "Ismeretlen (432)", "onk_id": 432},
 ]
 
 # ============================================================
@@ -591,34 +592,55 @@ def fetch_govcenter():
                 continue
             uzletek = _parse_govcenter_table(resp.text, ker["name"])
 
-            # Csak az első kerületnél, és csak ha kevés (gyanús) üzletet kaptunk:
-            # diagnosztikai info kiírása
-            if idx == 0 and len(uzletek) < 10:
-                print(f"\n  --- DIAGNOSZTIKA ({ker['name']}) ---")
+            # Diagnosztikai info kiírása:
+            # - Az első kerületnél (ha kevés sor jött, gyanús)
+            # - Vagy minden "Ismeretlen" jellegű kerületnél (mit takar az onk_id)
+            kell_diag = (
+                (idx == 0 and len(uzletek) < 10)
+                or ker["name"].lower().startswith("ismeretlen")
+            )
+            if kell_diag:
+                print(f"\n  --- DIAGNOSZTIKA ({ker['name']}, onk_id={ker['onk_id']}) ---")
                 print(f"  Válasz hossz: {len(resp.text)} karakter")
                 print(f"  Content-Type: {resp.headers.get('Content-Type', 'n/a')}")
-                # Jellemzők, amik fontosak
+                # Próbáljuk azonosítani: van-e benne "Budapest" vagy más város jelzés
+                kervaros_jel = []
+                for jel in ["Budapest", "Veszprém", "Vác", "Buda", "Pest megye",
+                            "Békéscsaba", "Debrecen", "Szeged", "Miskolc", "Győr",
+                            "Pécs", "Nyíregyháza", "Kecskemét", "Székesfehérvár"]:
+                    if jel.lower() in resp.text.lower():
+                        kervaros_jel.append(jel)
+                if kervaros_jel:
+                    print(f"  Várost azonosító szavak: {', '.join(kervaros_jel[:5])}")
+                # Próbáljuk az önkormányzat nevét megtalálni a HTML-ből
+                # Gyakori minta: <title>...Önkormányzat...</title> vagy hasonló
+                title = re.search(r"<title>(.*?)</title>", resp.text, re.IGNORECASE)
+                if title:
+                    print(f"  HTML title: {_strip_html(title.group(1))[:100]}")
+                # Keressünk specifikus kerület-jelölőket
+                ker_minta = re.search(
+                    r"(I{1,3}V?\.|IV\.|V\.|VI\.|VII\.|VIII\.|IX\.|X\.|XI\.|XII\."
+                    r"|XIII\.|XIV\.|XV\.|XVI\.|XVII\.|XVIII\.|XIX\.|XX\.|XXI\.|XXII\.|XXIII\.)\s+kerület",
+                    resp.text, re.IGNORECASE
+                )
+                if ker_minta:
+                    print(f"  Kerület megtalálva: {ker_minta.group(0)}")
                 checks = {
                     "__VIEWSTATE": "__VIEWSTATE" in resp.text,
-                    "__EVENTTARGET": "__EVENTTARGET" in resp.text,
                     "GridView": "GridView" in resp.text,
                     "<table": "<table" in resp.text,
                     "ajax": "ajax" in resp.text.lower(),
-                    "json": "{" in resp.text[:5000] and '"' in resp.text[:5000],
-                    "üzletszám": "üzletszám" in resp.text.lower() or "uzletszam" in resp.text.lower(),
-                    "ker. azon": ker["name"].split()[0].lower() in resp.text.lower(),
                 }
                 for k, v in checks.items():
                     print(f"    {k}: {'✓' if v else '✗'}")
                 print(f"  Tartalom <tr> száma: {resp.text.count('<tr')}")
                 print(f"  Tartalom <td> száma: {resp.text.count('<td')}")
-                # Az első 2000 karakter érdemi része (head után)
+                # Az első 1500 karakter érdemi része
                 body_start = resp.text.find("<body")
                 if body_start > 0:
-                    sample = resp.text[body_start:body_start + 2500]
-                    # Kompakt formátum: lebontjuk a sortöréseket
+                    sample = resp.text[body_start:body_start + 1500]
                     sample = re.sub(r"\s+", " ", sample)
-                    print(f"  --- BODY MINTA (2500 char) ---")
+                    print(f"  --- BODY MINTA (1500 char) ---")
                     print(f"  {sample}")
                     print(f"  --- VÉGE ---\n")
 
