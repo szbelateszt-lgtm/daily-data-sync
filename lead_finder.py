@@ -496,28 +496,54 @@ def _parse_govcenter_table(html, keruletnev):
     """
     uzletek = []
 
+    # Fejléc-szavak, amik egyértelműen jelzik hogy ez a fejléc sor (nem valódi üzlet)
+    fejlec_szavak = {
+        "sorszám", "sorszam", "nyilv.szám", "nyilv. szám", "nyilv.szam", "nyilvszam",
+        "üzlet", "uzlet", "kereskedő", "kereskedo", "tevékenység", "tevekenyseg",
+        "név", "nev", "cím", "cim", "üzemeltető", "uzemelteto",
+        "dátum", "datum", "típus", "tipus",
+    }
+
     # Stratégia: minden <tr> sort kiveszünk, és a cellákat <td>-nként
     rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.IGNORECASE | re.DOTALL)
     for row in rows:
-        cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.IGNORECASE | re.DOTALL)
+        cells = re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", row, re.IGNORECASE | re.DOTALL)
         if len(cells) < 3:
             continue
         # Tisztítjuk a cellákat
         clean = [_strip_html(c) for c in cells]
-        # Kihagyjuk a fejléceket / üres sorokat
+        # Kihagyjuk az üres sorokat
         if not any(clean):
             continue
+
+        # Heurisztika: ez egy fejléc sor?
+        # Ha minden cella rövid (max 25 karakter) és van benne fejléc-szó → fejléc
+        ossz_szoveg = " ".join(clean).lower()
+        is_fejlec = (
+            all(len(c) <= 25 for c in clean)
+            and any(fsz in ossz_szoveg for fsz in fejlec_szavak)
+            and not re.search(r"\d{4}", ossz_szoveg)  # ha NINCS benne év, akkor inkább fejléc
+        )
+        if is_fejlec:
+            continue
+
         # Heurisztika: keresünk dátumot valamelyik cellában (YYYY.MM.DD vagy YYYY-MM-DD)
         datum = ""
         for c in clean:
-            m = re.search(r"\d{4}[.\-/]\s?\d{1,2}[.\-/]\s?\d{1,2}", c)
+            m = re.search(r"(20\d{2})[.\-/]\s?(\d{1,2})[.\-/]\s?(\d{1,2})", c)
             if m:
-                datum = m.group(0)
+                datum = f"{m.group(1)}.{m.group(2).zfill(2)}.{m.group(3).zfill(2)}"
                 break
+
         # Az üzlet neve és címe jellemzően a leghosszabb szöveges cellák
         szoveges = [c for c in clean if len(c) > 2 and not re.fullmatch(r"[\d.\-/\s]+", c)]
         if not szoveges:
             continue
+
+        # Még egy szűrés: ha az összes szöveges cella csak fejléc-szó, kihagyjuk
+        if all(c.lower() in fejlec_szavak for c in szoveges):
+            continue
+
         uzlet = {
             "kerulet": keruletnev,
             "datum": datum,
@@ -537,6 +563,9 @@ def fetch_govcenter():
     ASP.NET oldal, ezért kétféle megközelítést próbálunk:
     1. Sima GET (hátha szerveroldalon renderelt a tábla)
     2. Ha üres, jelezzük (későbbi fejlesztéshez __VIEWSTATE POST kellhet)
+
+    DIAGNOSZTIKAI MÓD: ha 0 valódi üzletet találtunk, kiírjuk a HTML
+    elejét a logba, hogy lássuk mit kapunk valójában.
     """
     headers = {
         "User-Agent": (
@@ -549,7 +578,7 @@ def fetch_govcenter():
     }
 
     all_uzletek = []
-    for ker in GOVCENTER_KERULETEK:
+    for idx, ker in enumerate(GOVCENTER_KERULETEK):
         # tip=1: bejelentés-köteles kereskedelmi tevékenység (itt vannak az éttermek)
         url = (
             f"https://www.govcenter.hu/uzlet/Public/Uzleteklista.aspx"
@@ -561,6 +590,38 @@ def fetch_govcenter():
                 print(f"  ✗ {ker['name']}: HTTP {resp.status_code}")
                 continue
             uzletek = _parse_govcenter_table(resp.text, ker["name"])
+
+            # Csak az első kerületnél, és csak ha kevés (gyanús) üzletet kaptunk:
+            # diagnosztikai info kiírása
+            if idx == 0 and len(uzletek) < 10:
+                print(f"\n  --- DIAGNOSZTIKA ({ker['name']}) ---")
+                print(f"  Válasz hossz: {len(resp.text)} karakter")
+                print(f"  Content-Type: {resp.headers.get('Content-Type', 'n/a')}")
+                # Jellemzők, amik fontosak
+                checks = {
+                    "__VIEWSTATE": "__VIEWSTATE" in resp.text,
+                    "__EVENTTARGET": "__EVENTTARGET" in resp.text,
+                    "GridView": "GridView" in resp.text,
+                    "<table": "<table" in resp.text,
+                    "ajax": "ajax" in resp.text.lower(),
+                    "json": "{" in resp.text[:5000] and '"' in resp.text[:5000],
+                    "üzletszám": "üzletszám" in resp.text.lower() or "uzletszam" in resp.text.lower(),
+                    "ker. azon": ker["name"].split()[0].lower() in resp.text.lower(),
+                }
+                for k, v in checks.items():
+                    print(f"    {k}: {'✓' if v else '✗'}")
+                print(f"  Tartalom <tr> száma: {resp.text.count('<tr')}")
+                print(f"  Tartalom <td> száma: {resp.text.count('<td')}")
+                # Az első 2000 karakter érdemi része (head után)
+                body_start = resp.text.find("<body")
+                if body_start > 0:
+                    sample = resp.text[body_start:body_start + 2500]
+                    # Kompakt formátum: lebontjuk a sortöréseket
+                    sample = re.sub(r"\s+", " ", sample)
+                    print(f"  --- BODY MINTA (2500 char) ---")
+                    print(f"  {sample}")
+                    print(f"  --- VÉGE ---\n")
+
             if not uzletek:
                 print(f"  ⚠️  {ker['name']}: 0 sor (lehet hogy JS-renderelt a tábla)")
             else:
