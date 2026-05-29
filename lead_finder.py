@@ -633,9 +633,130 @@ def fetch_govcenter():
     return all_uzletek
 
 
+def _is_foodora_relevant(text):
+    """
+    Eldönti egy üzletsor szövegéről, hogy releváns-e Foodora szempontból.
+    Vendéglátós + élelmiszerbolt + pékség, cukrászda.
+
+    Pozitív kulcsszó kell → de negatív nem lehet (ezek tipikus tévedések).
+
+    Fontos: a negatív szavak szó-határosan keresünk (\b szóhatár), hogy ne
+    szűrjük ki pl. a "kasmírvirág" cégnevet a "virág" negatív szó miatt.
+    """
+    t = text.lower()
+
+    # NEGATÍV (kizáró) kulcsszavak — ha bármelyik megvan, NEM releváns
+    # SZÓHATÁROS keresés (\b szóhatár) — fontos!
+    negativ_szohataros = [
+        # Üzemanyag, autó
+        r"\btöltőállomás", r"\btoltoallomas", r"\btöltöállomás",
+        r"\büzemanyag", r"\bautóalkatrész", r"\balkatrész",
+        r"\bautószerel", r"\bgumiszervíz", r"\bautómosó",
+        # Barkács, festék, vegyiáru, építőanyag
+        r"\bbarkács", r"\bbarkacs", r"\bfesték", r"\bfestek",
+        r"\bvegyiáru", r"\bépítőanyag", r"\bepitoanyag",
+        r"\bcsempe", r"\bburkolat",
+        # Papír-írószer, könyv
+        r"\bpapír-írószer", r"\bírószer", r"\biroszer",
+        r"\bkönyvesbolt", r"\bkönyvtár",
+        # Virág — szóhatáros, hogy a "Kasmírvirág" ne legyen kizárva!
+        r"\bvirág\b", r"\bvirágüzlet", r"\bvirágbolt",
+        # Ruha, divat, cipő (szóhatáros)
+        r"\bruházat", r"\bruha\b", r"\bdivat", r"\bcipő\b",
+        r"\böltöny", r"\bhasználtruha",
+        # Műszaki, elektronika
+        r"\belektronika", r"\bműszaki", r"\bmuszaki",
+        r"\bszámítástechnika", r"\binformatika",
+        # Csomagküldő, posta
+        r"\bcsomagküldő", r"\bcsomagkuldo",
+        # Mozgóbolt
+        r"\bmozgóbolt", r"\bmozgobolt",
+        # Egyéb szolgáltatás
+        r"\bfodrász", r"\bfodrasz", r"\bkozmetika",
+        r"\bmasszázs", r"\bmasszazs", r"\bszolárium", r"\bmanikűr",
+        # Játék, sport, optika
+        r"\bjátékterem", r"\bjátékbolt", r"\bjáték-", r"\bjatek-",
+        r"\bsportbolt", r"\bsportszer", r"\boptika",
+        # Dohány, drogéria
+        r"\btrafik", r"\bdohánybolt", r"\bdohany", r"\bdrogéria",
+        # Áruház, vegyesbolt (de NE szűrjön ha élelmiszerre is utal)
+        r"\btedi\b", r"\blidl áruház", r"\bauchan\b", r"\bikea\b",
+        # Tárgyak
+        r"\bbútor", r"\bbutor",
+        # Poszter, dekoráció
+        r"\bposzter", r"\bdekoráció",
+    ]
+    for pattern in negativ_szohataros:
+        if re.search(pattern, t):
+            return False
+
+    # POZITÍV kulcsszavak — legalább 1 kell
+    # Itt nem kell szóhatár, mert ezek a szavak ritkán részei másiknak
+    pozitiv = [
+        # Vendéglátás — éttermek
+        "étterem", "etterem", "étkezde", "etkezde", "kifőzde", "kifozde",
+        "vendéglő", "vendeglo", "bisztró", "bisztro", "bistro",
+        "étkező", "etkezo", "falatozó", "falatozo",
+        "büfé", "bufe", "büffe", "büffé", "gyorsétterem",
+        "kantin", "csárda", "csarda",
+        # Kocsma, bár, sör
+        "kocsma", "söröző", "sörözõ", "sorozo", "pub",
+        " sör", " sor", "beer", "beerhouse", "ale",
+        "koktélbár", "koktelbar", "koktailbar", "koktail", "koktél",
+        "cocktail", "coctail",  # FéLIX Coctails miatt
+        "borozó", "borozo", "borbar", "borbár",
+        # Kávé, cukrászda
+        "kávézó", "kavezo", "kávéház", "kavehaz", "kávéháza",
+        "cukrászda", "cukraszda", "konditorei",
+        "fagylaltozó", "fagyizó", "fagylalt",
+        "pékség", "pekseg", "pék ", "bakery",
+        # Konyhatípusok
+        "pizza", "pizzéria", "pizzeria",
+        "kebab", "gyros", "gyrosos", "burger", "hamburger",
+        "ramen", "sushi", "thai", "kínai", "vietnami",
+        "taco", "burrito", "mexikói",
+        "falafel", "sandwich", "szendvics",
+        "hot dog", "hotdog",
+        # Élelmiszer
+        "élelmiszer", "elelmiszer", "élelmiszerbolt", "elelmiszerbolt",
+        "élelm.", "élelmiszerüzlet",
+        "kisbolt", "kis-bolt", "minibolt",  # Zacc platz miatt
+        "csemege", "delikát",
+        "biobolt", "bio bolt", "bio-bolt", "bio-világ", "biopiac",
+        "biouzlet", "bio üzlet",
+        "zöldséges", "zoldseges", "zöldség-gyümölcs",
+        "halbolt", "hal-bolt", "halpiac",
+        "mészárszék", "meszarszek", "húsbolt", "húsüzlet", "hentes",
+        "fűszerbolt", "fuszerbolt",
+        # Kávé alapjából (utótaggal, hogy ne legyen téves egyezés)
+        "kávé ", " kávé", "kave ",
+        # Hostel/kávéház/teaház
+        "teaház", "teahaz",
+        # Egyéb vendéglátós formák
+        "gasztro", " food", "restaurant", "ristorante",
+        "trattoria", "osteria", "pizzaholic",
+    ]
+    for p in pozitiv:
+        if p in t:
+            return True
+    return False
+
+
 def filter_new_govcenter(uzletek, known_keys):
-    """Csak az új üzletsorok, amik még nem voltak ismertek."""
-    return [u for u in uzletek if u.get("kulcs") not in known_keys]
+    """
+    Csak az új ÉS Foodora-releváns üzletsorok, amik még nem voltak ismertek.
+    A relevanciát egy whitelist + blacklist alapján dönti el.
+    """
+    result = []
+    for u in uzletek:
+        if u.get("kulcs") in known_keys:
+            continue
+        # Foodora-releváns?
+        text = u.get("nev_cim", "") + " " + " ".join(u.get("cellak", []))
+        if not _is_foodora_relevant(text):
+            continue
+        result.append(u)
+    return result
 
 
 # ============================================================
