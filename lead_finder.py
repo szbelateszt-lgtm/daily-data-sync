@@ -89,9 +89,14 @@ KNOWN_GOVCENTER_FILE = DATA_DIR / "known_govcenter_uzletek.json"
 # tip=1: bejelentéshez kötött kereskedelmi tevékenység
 # tip=2: működési engedéllyel rendelkező üzletek
 GOVCENTER_KERULETEK = [
-    {"name": "Ferencváros (IX.)", "onk_id": 507},
-    {"name": "Kispest (XIX.)", "onk_id": 548},
-    {"name": "Ismeretlen (432)", "onk_id": 432},
+    {"name": "Budapest I. (Várnegyed)", "onk_id": 544},
+    {"name": "Budapest II. (Rózsadomb)", "onk_id": 463},
+    {"name": "Budapest V. (Belváros)", "onk_id": 432},
+    {"name": "Budapest IX. (Ferencváros)", "onk_id": 507},
+    {"name": "Budapest XI. (Újbuda)", "onk_id": 465},
+    {"name": "Budapest XIV. (Zugló)", "onk_id": 563},
+    {"name": "Budapest XIX. (Kispest)", "onk_id": 548},
+    {"name": "Budapest XXIII. (Soroksár)", "onk_id": 519},
 ]
 
 # ============================================================
@@ -579,7 +584,7 @@ def fetch_govcenter():
     }
 
     all_uzletek = []
-    for idx, ker in enumerate(GOVCENTER_KERULETEK):
+    for ker in GOVCENTER_KERULETEK:
         # tip=1: bejelentés-köteles kereskedelmi tevékenység (itt vannak az éttermek)
         url = (
             f"https://www.govcenter.hu/uzlet/Public/Uzleteklista.aspx"
@@ -593,12 +598,8 @@ def fetch_govcenter():
             uzletek = _parse_govcenter_table(resp.text, ker["name"])
 
             # Diagnosztikai info kiírása:
-            # - Az első kerületnél (ha kevés sor jött, gyanús)
-            # - Vagy minden "Ismeretlen" jellegű kerületnél (mit takar az onk_id)
-            kell_diag = (
-                (idx == 0 and len(uzletek) < 10)
-                or ker["name"].lower().startswith("ismeretlen")
-            )
+            # Ha kevés sor jött (gyanús), kiírjuk a HTML jellemzőit
+            kell_diag = (len(uzletek) < 5)
             if kell_diag:
                 print(f"\n  --- DIAGNOSZTIKA ({ker['name']}, onk_id={ker['onk_id']}) ---")
                 print(f"  Válasz hossz: {len(resp.text)} karakter")
@@ -766,12 +767,19 @@ def _is_foodora_relevant(text):
 
 def filter_new_govcenter(uzletek, known_keys):
     """
-    Csak az új ÉS Foodora-releváns üzletsorok, amik még nem voltak ismertek.
-    A relevanciát egy whitelist + blacklist alapján dönti el.
+    Csak az új ÉS Foodora-releváns ÉS friss üzletsorok.
+    - Nem volt még ismert (kulcs alapján)
+    - Foodora-releváns (whitelist/blacklist)
+    - 2026.01.01 utáni bejegyzés (régi sorok nem érdekesek)
     """
+    DATUM_CUTOFF = "2026.01.01"
     result = []
     for u in uzletek:
         if u.get("kulcs") in known_keys:
+            continue
+        # Dátumszűrő: csak 2026.01.01 utáni bejegyzések
+        datum = u.get("datum", "")
+        if datum and datum < DATUM_CUTOFF:
             continue
         # Foodora-releváns?
         text = u.get("nev_cim", "") + " " + " ".join(u.get("cellak", []))
