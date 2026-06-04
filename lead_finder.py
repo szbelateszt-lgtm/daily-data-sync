@@ -41,22 +41,48 @@ SMTP_PORT = 465
 # Minden terület egy kör középponttal és sugárral (méterben)
 SEARCH_AREAS = [
     # Budapest belváros (V., VI., VII., VIII., IX.)
-    {"name": "Budapest belváros", "lat": 47.4979, "lng": 19.0521, "radius": 3000},
+    {"name": "Budapest belváros", "lat": 47.4979, "lng": 19.0521, "radius": 3000, "bp": True},
     # Budapest észak (II., III., IV., XIII., XV.)
-    {"name": "Budapest észak", "lat": 47.5500, "lng": 19.0700, "radius": 5000},
+    {"name": "Budapest észak", "lat": 47.5500, "lng": 19.0700, "radius": 5000, "bp": True},
     # Budapest dél (XI., XX., XXI., XXII., XXIII.)
-    {"name": "Budapest dél", "lat": 47.4500, "lng": 19.0700, "radius": 5000},
+    {"name": "Budapest dél", "lat": 47.4500, "lng": 19.0700, "radius": 5000, "bp": True},
     # Budapest kelet (X., XIV., XVI., XVII., XVIII., XIX.)
-    {"name": "Budapest kelet", "lat": 47.4900, "lng": 19.1500, "radius": 5000},
+    {"name": "Budapest kelet", "lat": 47.4900, "lng": 19.1500, "radius": 5000, "bp": True},
     # Budapest nyugat (I., XII.)
-    {"name": "Budapest nyugat", "lat": 47.5100, "lng": 19.0100, "radius": 3000},
-    # Agglomeráció
-    {"name": "Budaörs", "lat": 47.4626, "lng": 18.9580, "radius": 3000},
-    {"name": "Érd", "lat": 47.3950, "lng": 18.9050, "radius": 4000},
-    {"name": "Szentendre", "lat": 47.6669, "lng": 19.0760, "radius": 3000},
-    {"name": "Gödöllő", "lat": 47.6000, "lng": 19.3550, "radius": 3000},
-    {"name": "Vecsés", "lat": 47.4100, "lng": 19.2700, "radius": 3000},
-    {"name": "Dunakeszi", "lat": 47.6350, "lng": 19.1400, "radius": 3000},
+    {"name": "Budapest nyugat", "lat": 47.5100, "lng": 19.0100, "radius": 3000, "bp": True},
+    # Agglomeráció (csak alap keresések, nincs egzotikus konyha)
+    {"name": "Budaörs", "lat": 47.4626, "lng": 18.9580, "radius": 3000, "bp": False},
+    {"name": "Érd", "lat": 47.3950, "lng": 18.9050, "radius": 4000, "bp": False},
+    {"name": "Szentendre", "lat": 47.6669, "lng": 19.0760, "radius": 3000, "bp": False},
+    {"name": "Gödöllő", "lat": 47.6000, "lng": 19.3550, "radius": 3000, "bp": False},
+    {"name": "Vecsés", "lat": 47.4100, "lng": 19.2700, "radius": 3000, "bp": False},
+    {"name": "Dunakeszi", "lat": 47.6350, "lng": 19.1400, "radius": 3000, "bp": False},
+]
+
+# Alap keresési kifejezések - MINDEN területre (Budapest + agglomeráció)
+BASIC_QUERIES = ["étterem", "kávézó", "élelmiszerbolt", "pékség", "bisztró", "kifőzde"]
+
+# Plusz konyha-specifikus keresések - CSAK Budapestre
+# (egzotikus konyhák jellemzően a városban vannak, nem az agglomerációban)
+# Ezek elkapják a kisebb, kevés véleményű új helyeket is, amik a generikus
+# "étterem" keresésben nem férnének be a top 20-ba.
+EXTRA_BUDAPEST_QUERIES = [
+    "vietnami étterem",
+    "thai étterem",
+    "ramen",
+    "sushi",
+    "kebab",
+    "gyros",
+    "burger",
+    "pizzéria",
+    "indiai étterem",
+    "kínai étterem",
+    "koreai étterem",
+    "olasz étterem",
+    "török étterem",
+    "falafel",
+    "street food",
+    "fagylaltozó",
 ]
 
 # Hely típusok, amik érdekelnek minket (Foodora-szempontból releváns)
@@ -89,14 +115,29 @@ KNOWN_GOVCENTER_FILE = DATA_DIR / "known_govcenter_uzletek.json"
 # tip=1: bejelentéshez kötött kereskedelmi tevékenység
 # tip=2: működési engedéllyel rendelkező üzletek
 GOVCENTER_KERULETEK = [
+    # Megerősített kerületek (irányítószám-alapon ellenőrizve)
     {"name": "Budapest I. (Várnegyed)", "onk_id": 544},
     {"name": "Budapest II. (Rózsadomb)", "onk_id": 463},
     {"name": "Budapest V. (Belváros)", "onk_id": 432},
+    {"name": "Budapest VI. (Terézváros)", "onk_id": 182},
+    {"name": "Budapest VII. (Erzsébetváros)", "onk_id": 647},
+    {"name": "Budapest VIII. (Józsefváros)", "onk_id": 58},
     {"name": "Budapest IX. (Ferencváros)", "onk_id": 507},
     {"name": "Budapest XI. (Újbuda)", "onk_id": 465},
+    {"name": "Budapest XII. (Hegyvidék)", "onk_id": 126},
     {"name": "Budapest XIV. (Zugló)", "onk_id": 563},
+    {"name": "Budapest XV. (Rákospalota)", "onk_id": 169},
+    {"name": "Budapest XVI. (Sashalom)", "onk_id": 10},
+    {"name": "Budapest XVIII. (Pestszentlőrinc)", "onk_id": 462},
     {"name": "Budapest XIX. (Kispest)", "onk_id": 548},
+    {"name": "Budapest XX. (Pesterzsébet)", "onk_id": 578},
+    {"name": "Budapest XXI. (Csepel)", "onk_id": 564},
+    {"name": "Budapest XXII. (Budafok-Tétény)", "onk_id": 583},
     {"name": "Budapest XXIII. (Soroksár)", "onk_id": 519},
+    {"name": "Budapest XXIII/b (Soroksár)", "onk_id": 587},
+    # Bizonytalan — az első futás megmutatja melyik kerület valójában
+    {"name": "Budapest III.? (Óbuda?)", "onk_id": 1},
+    {"name": "Budapest IV.? (Újpest?)", "onk_id": 7},
 ]
 
 # ============================================================
@@ -125,11 +166,14 @@ def fetch_google_places():
     }
 
     for area in SEARCH_AREAS:
+        # Budapestnél a bővített (alap + konyha-specifikus) lista,
+        # agglomerációnál csak az alap lista.
+        if area.get("bp"):
+            queries = BASIC_QUERIES + EXTRA_BUDAPEST_QUERIES
+        else:
+            queries = BASIC_QUERIES
         # FUTURE_OPENING helyek - ezek hamarosan nyílnak, a legértékesebb leadek!
-        # A 'restaurant' includedType szándékosan szűkebb keresést kényszerít.
-        # Mivel a 'bakery', 'cafe', 'bar' stb. nem 'restaurant' típus, ezért
-        # nem alkalmazunk includedType-ot - hagyjuk hogy a textQuery vezessen.
-        for query in ["étterem", "kávézó", "élelmiszerbolt", "pékség", "bisztró"]:
+        for query in queries:
             body = {
                 "textQuery": f"{query} {area['name']}",
                 "locationBias": {
@@ -566,12 +610,10 @@ def _parse_govcenter_table(html, keruletnev):
 def fetch_govcenter():
     """
     Lekérdezi a govcenter.hu üzletnyilvántartást a beállított kerületekre.
-    ASP.NET oldal, ezért kétféle megközelítést próbálunk:
-    1. Sima GET (hátha szerveroldalon renderelt a tábla)
-    2. Ha üres, jelezzük (későbbi fejlesztéshez __VIEWSTATE POST kellhet)
-
-    DIAGNOSZTIKAI MÓD: ha 0 valódi üzletet találtunk, kiírjuk a HTML
-    elejét a logba, hogy lássuk mit kapunk valójában.
+    Mindkét nyilvántartás-típust lekéri:
+      tip=1: bejelentés-köteles kereskedelmi tevékenység
+      tip=2: működési engedélyhez kötött üzletek
+    Így nem marad ki étterem egyik listáról sem.
     """
     headers = {
         "User-Agent": (
@@ -583,75 +625,33 @@ def fetch_govcenter():
         "Accept-Language": "hu-HU,hu;q=0.9",
     }
 
+    TIP_NEVEK = {1: "bejelentés", 2: "működési eng."}
     all_uzletek = []
+
     for ker in GOVCENTER_KERULETEK:
-        # tip=1: bejelentés-köteles kereskedelmi tevékenység (itt vannak az éttermek)
-        url = (
-            f"https://www.govcenter.hu/uzlet/Public/Uzleteklista.aspx"
-            f"?tip=1&onk_id={ker['onk_id']}"
-        )
-        try:
-            resp = requests.get(url, headers=headers, timeout=30)
-            if resp.status_code != 200:
-                print(f"  ✗ {ker['name']}: HTTP {resp.status_code}")
-                continue
-            uzletek = _parse_govcenter_table(resp.text, ker["name"])
+        ker_total = 0
+        for tip in [1, 2]:
+            url = (
+                f"https://www.govcenter.hu/uzlet/Public/Uzleteklista.aspx"
+                f"?tip={tip}&onk_id={ker['onk_id']}"
+            )
+            try:
+                resp = requests.get(url, headers=headers, timeout=30)
+                if resp.status_code != 200:
+                    print(f"  ✗ {ker['name']} (tip={tip}): HTTP {resp.status_code}")
+                    continue
+                uzletek = _parse_govcenter_table(resp.text, ker["name"])
+                ker_total += len(uzletek)
+                all_uzletek.extend(uzletek)
+            except Exception as e:
+                print(f"  ✗ Hiba {ker['name']} (tip={tip}): {e}")
 
-            # Diagnosztikai info kiírása:
-            # Ha kevés sor jött (gyanús), kiírjuk a HTML jellemzőit
-            kell_diag = (len(uzletek) < 5)
-            if kell_diag:
-                print(f"\n  --- DIAGNOSZTIKA ({ker['name']}, onk_id={ker['onk_id']}) ---")
-                print(f"  Válasz hossz: {len(resp.text)} karakter")
-                print(f"  Content-Type: {resp.headers.get('Content-Type', 'n/a')}")
-                # Próbáljuk azonosítani: van-e benne "Budapest" vagy más város jelzés
-                kervaros_jel = []
-                for jel in ["Budapest", "Veszprém", "Vác", "Buda", "Pest megye",
-                            "Békéscsaba", "Debrecen", "Szeged", "Miskolc", "Győr",
-                            "Pécs", "Nyíregyháza", "Kecskemét", "Székesfehérvár"]:
-                    if jel.lower() in resp.text.lower():
-                        kervaros_jel.append(jel)
-                if kervaros_jel:
-                    print(f"  Várost azonosító szavak: {', '.join(kervaros_jel[:5])}")
-                # Próbáljuk az önkormányzat nevét megtalálni a HTML-ből
-                # Gyakori minta: <title>...Önkormányzat...</title> vagy hasonló
-                title = re.search(r"<title>(.*?)</title>", resp.text, re.IGNORECASE)
-                if title:
-                    print(f"  HTML title: {_strip_html(title.group(1))[:100]}")
-                # Keressünk specifikus kerület-jelölőket
-                ker_minta = re.search(
-                    r"(I{1,3}V?\.|IV\.|V\.|VI\.|VII\.|VIII\.|IX\.|X\.|XI\.|XII\."
-                    r"|XIII\.|XIV\.|XV\.|XVI\.|XVII\.|XVIII\.|XIX\.|XX\.|XXI\.|XXII\.|XXIII\.)\s+kerület",
-                    resp.text, re.IGNORECASE
-                )
-                if ker_minta:
-                    print(f"  Kerület megtalálva: {ker_minta.group(0)}")
-                checks = {
-                    "__VIEWSTATE": "__VIEWSTATE" in resp.text,
-                    "GridView": "GridView" in resp.text,
-                    "<table": "<table" in resp.text,
-                    "ajax": "ajax" in resp.text.lower(),
-                }
-                for k, v in checks.items():
-                    print(f"    {k}: {'✓' if v else '✗'}")
-                print(f"  Tartalom <tr> száma: {resp.text.count('<tr')}")
-                print(f"  Tartalom <td> száma: {resp.text.count('<td')}")
-                # Az első 1500 karakter érdemi része
-                body_start = resp.text.find("<body")
-                if body_start > 0:
-                    sample = resp.text[body_start:body_start + 1500]
-                    sample = re.sub(r"\s+", " ", sample)
-                    print(f"  --- BODY MINTA (1500 char) ---")
-                    print(f"  {sample}")
-                    print(f"  --- VÉGE ---\n")
+        if ker_total == 0:
+            print(f"  ⚠️  {ker['name']}: 0 sor (tip=1 és tip=2 is üres)")
+        else:
+            print(f"  ✓ {ker['name']}: {ker_total} üzlet sor (tip=1+2)")
 
-            if not uzletek:
-                print(f"  ⚠️  {ker['name']}: 0 sor (lehet hogy JS-renderelt a tábla)")
-            else:
-                print(f"  ✓ {ker['name']}: {len(uzletek)} üzlet sor")
-            all_uzletek.extend(uzletek)
-        except Exception as e:
-            print(f"  ✗ Hiba {ker['name']}: {e}")
+    return all_uzletek
 
     return all_uzletek
 
