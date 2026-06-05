@@ -39,50 +39,70 @@ SMTP_PORT = 465
 
 # Keresési területek: Budapest 23 kerülete + agglomeráció főbb városai
 # Minden terület egy kör középponttal és sugárral (méterben)
-SEARCH_AREAS = [
-    # Budapest belváros (V., VI., VII., VIII., IX.)
-    {"name": "Budapest belváros", "lat": 47.4979, "lng": 19.0521, "radius": 3000, "bp": True},
-    # Budapest észak (II., III., IV., XIII., XV.)
-    {"name": "Budapest észak", "lat": 47.5500, "lng": 19.0700, "radius": 5000, "bp": True},
-    # Budapest dél (XI., XX., XXI., XXII., XXIII.)
-    {"name": "Budapest dél", "lat": 47.4500, "lng": 19.0700, "radius": 5000, "bp": True},
-    # Budapest kelet (X., XIV., XVI., XVII., XVIII., XIX.)
-    {"name": "Budapest kelet", "lat": 47.4900, "lng": 19.1500, "radius": 5000, "bp": True},
-    # Budapest nyugat (I., XII.)
-    {"name": "Budapest nyugat", "lat": 47.5100, "lng": 19.0100, "radius": 3000, "bp": True},
-    # Agglomeráció (csak alap keresések, nincs egzotikus konyha)
-    {"name": "Budaörs", "lat": 47.4626, "lng": 18.9580, "radius": 3000, "bp": False},
-    {"name": "Érd", "lat": 47.3950, "lng": 18.9050, "radius": 4000, "bp": False},
-    {"name": "Szentendre", "lat": 47.6669, "lng": 19.0760, "radius": 3000, "bp": False},
-    {"name": "Gödöllő", "lat": 47.6000, "lng": 19.3550, "radius": 3000, "bp": False},
-    {"name": "Vecsés", "lat": 47.4100, "lng": 19.2700, "radius": 3000, "bp": False},
-    {"name": "Dunakeszi", "lat": 47.6350, "lng": 19.1400, "radius": 3000, "bp": False},
+# ============================================================
+# KERESÉSI KONFIGURÁCIÓ
+# ============================================================
+# Háromféle terület-típus:
+#  1) Belvárosi sűrű rács: kis (350m) körök, DISTANCE rangsor → az új,
+#     kevés véleményű helyek is beférnek a 20-as limitbe, mert a kör
+#     elég kicsi és a legközelebbieket adja vissza (nem a legnépszerűbbeket)
+#  2) Külső Budapest: nagy körök, RELEVANCE + konyha-specifikus keresések
+#  3) Agglomeráció: nagy körök, csak alap keresések
+
+# Query-listák
+BASIC_QUERIES = ["étterem", "kávézó", "élelmiszerbolt", "pékség", "bisztró", "kifőzde"]
+GRID_QUERIES = ["étterem", "kávézó", "bisztró", "kifőzde", "pékség"]
+OUTER_CUISINE = [
+    "vietnami étterem", "thai étterem", "ramen", "sushi",
+    "kebab", "burger", "pizzéria", "kínai étterem",
 ]
 
-# Alap keresési kifejezések - MINDEN területre (Budapest + agglomeráció)
-BASIC_QUERIES = ["étterem", "kávézó", "élelmiszerbolt", "pékség", "bisztró", "kifőzde"]
+# Belvárosi rács középpontjai (~600m-enként, 350m sugarú körök)
+# Lefedi az V., VI., VII., VIII., IX. kerület magját, ahol a legtöbb új hely nyílik.
+_BELVAROS_GRID = [
+    (47.5033, 19.0441), (47.5033, 19.0521), (47.5033, 19.0601),
+    (47.4979, 19.0441), (47.4979, 19.0521), (47.4979, 19.0601),
+    (47.4925, 19.0441), (47.4925, 19.0521), (47.4925, 19.0601),
+]
 
-# Plusz konyha-specifikus keresések - CSAK Budapestre
-# (egzotikus konyhák jellemzően a városban vannak, nem az agglomerációban)
-# Ezek elkapják a kisebb, kevés véleményű új helyeket is, amik a generikus
-# "étterem" keresésben nem férnének be a top 20-ba.
-EXTRA_BUDAPEST_QUERIES = [
-    "vietnami étterem",
-    "thai étterem",
-    "ramen",
-    "sushi",
-    "kebab",
-    "gyros",
-    "burger",
-    "pizzéria",
-    "indiai étterem",
-    "kínai étterem",
-    "koreai étterem",
-    "olasz étterem",
-    "török étterem",
-    "falafel",
-    "street food",
-    "fagylaltozó",
+SEARCH_AREAS = []
+
+# 1) Belvárosi sűrű rács
+for _i, (_lat, _lng) in enumerate(_BELVAROS_GRID, 1):
+    SEARCH_AREAS.append({
+        "name": f"Belváros #{_i}",
+        "qloc": "Budapest",        # ezt fűzzük a query-hez (a kört a locationBias adja)
+        "lat": _lat, "lng": _lng, "radius": 350,
+        "queries": GRID_QUERIES,
+        "rank": "DISTANCE",
+    })
+
+# 2) Külső Budapest (nagy körök, relevancia + konyha-specifikus)
+SEARCH_AREAS += [
+    {"name": "Budapest észak", "qloc": "Budapest észak", "lat": 47.5500, "lng": 19.0700,
+     "radius": 5000, "queries": BASIC_QUERIES + OUTER_CUISINE, "rank": "RELEVANCE"},
+    {"name": "Budapest dél", "qloc": "Budapest dél", "lat": 47.4500, "lng": 19.0700,
+     "radius": 5000, "queries": BASIC_QUERIES + OUTER_CUISINE, "rank": "RELEVANCE"},
+    {"name": "Budapest kelet", "qloc": "Budapest kelet", "lat": 47.4900, "lng": 19.1500,
+     "radius": 5000, "queries": BASIC_QUERIES + OUTER_CUISINE, "rank": "RELEVANCE"},
+    {"name": "Budapest nyugat", "qloc": "Budapest nyugat", "lat": 47.5100, "lng": 19.0100,
+     "radius": 3000, "queries": BASIC_QUERIES + OUTER_CUISINE, "rank": "RELEVANCE"},
+]
+
+# 3) Agglomeráció (nagy körök, csak alap keresések)
+SEARCH_AREAS += [
+    {"name": "Budaörs", "qloc": "Budaörs", "lat": 47.4626, "lng": 18.9580,
+     "radius": 3000, "queries": BASIC_QUERIES, "rank": "RELEVANCE"},
+    {"name": "Érd", "qloc": "Érd", "lat": 47.3950, "lng": 18.9050,
+     "radius": 4000, "queries": BASIC_QUERIES, "rank": "RELEVANCE"},
+    {"name": "Szentendre", "qloc": "Szentendre", "lat": 47.6669, "lng": 19.0760,
+     "radius": 3000, "queries": BASIC_QUERIES, "rank": "RELEVANCE"},
+    {"name": "Gödöllő", "qloc": "Gödöllő", "lat": 47.6000, "lng": 19.3550,
+     "radius": 3000, "queries": BASIC_QUERIES, "rank": "RELEVANCE"},
+    {"name": "Vecsés", "qloc": "Vecsés", "lat": 47.4100, "lng": 19.2700,
+     "radius": 3000, "queries": BASIC_QUERIES, "rank": "RELEVANCE"},
+    {"name": "Dunakeszi", "qloc": "Dunakeszi", "lat": 47.6350, "lng": 19.1400,
+     "radius": 3000, "queries": BASIC_QUERIES, "rank": "RELEVANCE"},
 ]
 
 # Hely típusok, amik érdekelnek minket (Foodora-szempontból releváns)
@@ -166,16 +186,11 @@ def fetch_google_places():
     }
 
     for area in SEARCH_AREAS:
-        # Budapestnél a bővített (alap + konyha-specifikus) lista,
-        # agglomerációnál csak az alap lista.
-        if area.get("bp"):
-            queries = BASIC_QUERIES + EXTRA_BUDAPEST_QUERIES
-        else:
-            queries = BASIC_QUERIES
-        # FUTURE_OPENING helyek - ezek hamarosan nyílnak, a legértékesebb leadek!
+        queries = area["queries"]
+        rank = area.get("rank", "RELEVANCE")
         for query in queries:
             body = {
-                "textQuery": f"{query} {area['name']}",
+                "textQuery": f"{query} {area['qloc']}",
                 "locationBias": {
                     "circle": {
                         "center": {
@@ -186,7 +201,8 @@ def fetch_google_places():
                     }
                 },
                 "maxResultCount": 20,
-                "includeFutureOpeningBusinesses": True,  # 2026 márciustól ez a helyes név
+                "rankPreference": rank,
+                "includeFutureOpeningBusinesses": True,
             }
 
             try:
