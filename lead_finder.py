@@ -1044,6 +1044,28 @@ def save_known(path, items):
         json.dump(sorted(list(items)), f, ensure_ascii=False, indent=2)
 
 
+def load_known_places(path):
+    """
+    Betölti az ismert helyeket.
+    Régi formátum (lista): ["id1", "id2"] → dict-té alakítja részletek nélkül
+    Új formátum (dict): {"id1": {"name": ..., "address": ..., ...}}
+    """
+    if not path.exists():
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if isinstance(data, list):
+        # Régi formátum → migráció részletek nélkül
+        return {pid: None for pid in data}
+    return data
+
+
+def save_known_places(path, places_dict):
+    """Elmenti az ismert helyeket dict formátumban."""
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(places_dict, f, ensure_ascii=False, indent=2)
+
+
 # ============================================================
 # MAIN
 # ============================================================
@@ -1055,10 +1077,10 @@ def main():
 
     # 1. Google Places
     print("\n📍 Google Places API lekérdezés...")
-    known_place_ids = load_known(KNOWN_PLACES_FILE)
+    known_places = load_known_places(KNOWN_PLACES_FILE)
     all_places = fetch_google_places()
-    new_places = filter_new_places(all_places, known_place_ids)
-    print(f"  → {len(new_places)} ÚJ hely (összesen ismert: {len(known_place_ids)})")
+    new_places = filter_new_places(all_places, set(known_places.keys()))
+    print(f"  → {len(new_places)} ÚJ hely (összesen ismert: {len(known_places)})")
 
     # 2. Új domainek
     print("\n🌐 crt.sh új domainek lekérdezése...")
@@ -1110,20 +1132,41 @@ def main():
     send_email(html)
 
     # 9. Mentés
-    known_place_ids.update(p.get("id") for p in all_places if p.get("id"))
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    for p in all_places:
+        pid = p.get("id")
+        if not pid:
+            continue
+        if pid not in known_places:
+            known_places[pid] = {
+                "name": p.get("displayName", {}).get("text", ""),
+                "address": p.get("formattedAddress", ""),
+                "phone": p.get("nationalPhoneNumber", ""),
+                "type": p.get("primaryType", ""),
+                "discovered_at": today_str,
+            }
+        elif known_places[pid] is None:
+            # Régi bejegyzés migráció
+            known_places[pid] = {
+                "name": p.get("displayName", {}).get("text", ""),
+                "address": p.get("formattedAddress", ""),
+                "phone": p.get("nationalPhoneNumber", ""),
+                "type": p.get("primaryType", ""),
+                "discovered_at": None,
+            }
     known_domains.update(found_domains)
     known_wlb.update(a["url"] for a in wlb_articles)
     known_funzine.update(a["url"] for a in funzine_articles)
     known_timeout.update(a["url"] for a in timeout_articles)
     known_govcenter.update(u["kulcs"] for u in govcenter_uzletek)
-    save_known(KNOWN_PLACES_FILE, known_place_ids)
+    save_known_places(KNOWN_PLACES_FILE, known_places)
     save_known(KNOWN_DOMAINS_FILE, known_domains)
     save_known(KNOWN_WLB_FILE, known_wlb)
     save_known(KNOWN_FUNZINE_FILE, known_funzine)
     save_known(KNOWN_TIMEOUT_FILE, known_timeout)
     save_known(KNOWN_GOVCENTER_FILE, known_govcenter)
     print(
-        f"\n💾 Adatok elmentve: {len(known_place_ids)} hely, "
+        f"\n💾 Adatok elmentve: {len(known_places)} hely, "
         f"{len(known_domains)} domain, "
         f"{len(known_wlb)} WLB, {len(known_funzine)} Funzine, "
         f"{len(known_timeout)} Time Out cikk, "
