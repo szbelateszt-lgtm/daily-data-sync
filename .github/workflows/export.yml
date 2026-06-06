@@ -1,0 +1,50 @@
+name: Export - Ismert helyek letöltése
+
+on:
+  workflow_dispatch:
+    inputs:
+      enrich:
+        description: 'Google API-val dúsítja a hiányzó adatokat? (igen/nem)'
+        required: false
+        default: 'nem'
+      limit:
+        description: 'Max hány hiányzó helyet dúsítson? (0 = mind)'
+        required: false
+        default: '200'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Függőségek telepítése
+        run: pip install requests openpyxl
+
+      - name: Export futtatása
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          ENRICH="${{ github.event.inputs.enrich }}"
+          LIMIT="${{ github.event.inputs.limit }}"
+          if [ "$ENRICH" = "igen" ] && [ "$LIMIT" != "0" ]; then
+            python export_places.py --enrich --limit $LIMIT
+          elif [ "$ENRICH" = "igen" ]; then
+            python export_places.py --enrich
+          else
+            python export_places.py
+          fi
+
+      - name: XLSX feltöltése artifact-ként
+        uses: actions/upload-artifact@v4
+        with:
+          name: ismert-helyek-${{ github.run_id }}
+          path: data/ismert_helyek.xlsx
+          retention-days: 7
