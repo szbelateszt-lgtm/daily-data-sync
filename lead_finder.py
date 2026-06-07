@@ -16,15 +16,19 @@ Az új találatokat e-mailben küldi el.
 
 import os
 import re
+import io
 import json
 import smtplib
 import ssl
 from datetime import datetime, timedelta
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 from pathlib import Path
 import requests
 import feedparser
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Alignment
 
 # ============================================================
 # KONFIGURÁCIÓ
@@ -781,23 +785,16 @@ def _is_foodora_relevant(text):
     return False
 
 
-def filter_new_govcenter(uzletek, known_keys):
-    """
-    Csak az új ÉS Foodora-releváns ÉS friss üzletsorok.
-    - Nem volt még ismert (kulcs alapján)
-    - Foodora-releváns (whitelist/blacklist)
-    - 2026.01.01 utáni bejegyzés (régi sorok nem érdekesek)
-    """
+def filter_new_govcenter(uzletek, known_govcenter_dict):
+    """Csak az új ÉS Foodora-releváns ÉS friss üzletsorok."""
     DATUM_CUTOFF = "2026.01.01"
     result = []
     for u in uzletek:
-        if u.get("kulcs") in known_keys:
+        if u.get("kulcs") in known_govcenter_dict:
             continue
-        # Dátumszűrő: csak 2026.01.01 utáni bejegyzések
         datum = u.get("datum", "")
         if datum and datum < DATUM_CUTOFF:
             continue
-        # Foodora-releváns?
         text = u.get("nev_cim", "") + " " + " ".join(u.get("cellak", []))
         if not _is_foodora_relevant(text):
             continue
@@ -1028,6 +1025,122 @@ def send_email(html_content):
     print(f"✉️  E-mail elküldve: {EMAIL_TO}")
 
 
+def generate_daily_xlsx(new_places, new_govcenter, new_wlb, new_funzine):
+    """
+    Elkészíti a mai napi új találatok xlsx-ét mellékletként küldéshez.
+    Oszlopok: Forrás, Név/Üzlet, Cím, Telefon, Kerület, Dátum, Link
+    """
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Mai új találatok"
+
+    # Fejléc
+    header_fill = PatternFill("solid", start_color="1A5276")
+    header_font = Font(bold=True, color="FFFFFF", name="Arial", size=10)
+    headers = ["Forrás", "Név / Üzlet", "Cím", "Telefon", "Kerület",
+               "Dátum / Bejelentés", "Link / Maps"]
+    col_widths = [18, 35, 40, 18, 22, 20, 50]
+
+    for col, (h, w) in enumerate(zip(headers, col_widths), 1):
+        cell = ws.cell(row=1, column=col, value=h)
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+        ws.column_dimensions[cell.column_letter].width = w
+    ws.row_dimensions[1].height = 20
+
+    row = 2
+    data_font = Font(name="Arial", size=9)
+
+    # Forrás-szín map
+    source_colors = {
+        "Önkormányzat": "D5F5E3",   # halvány zöld
+        "Google Maps":  "D6EAF8",   # halvány kék
+        "WLB":          "FDEBD0",   # halvány narancs
+        "Funzine":      "F9EBEA",   # halvány piros
+    }
+
+    def add_row(source, name, address, phone, kerulet, datum, link):
+        nonlocal row
+        fill_color = source_colors.get(source, "FFFFFF")
+        fill = PatternFill("solid", start_color=fill_color)
+        values = [source, name, address, phone, kerulet, datum, link]
+        for col, val in enumerate(values, 1):
+            cell = ws.cell(row=row, column=col, value=val)
+            cell.fill = fill
+            cell.font = data_font
+            cell.alignment = Alignment(vertical="center", wrap_text=(col == 3))
+        row += 1
+
+    # 1. Önkormányzati bejelentések
+    for u in new_govcenter:
+        cellak = u.get("cellak", [])
+        nev_cim = u.get("nev_cim", "")
+        parts = nev_cim.split(" | ") if nev_cim else []
+        nev = parts[0] if parts else ""
+        cim = parts[1] if len(parts) > 1 else ""
+        add_row("Önkormányzat", nev, cim, "", u.get("kerulet", ""),
+                u.get("datum", ""), "")
+
+    # 2. Google Maps helyek
+    for p in new_places:
+        name = p.get("displayName", {}).get("text", "")
+        address = p.get("formattedAddress", "")
+        phone = p.get("nationalPhoneNumber", "")
+        maps_link = p.get("googleMapsUri", "")
+        ptype = p.get("primaryType", "")
+        add_row("Google Maps", name, address, phone, "", "", maps_link)
+
+    # 3. We Love Budapest
+    for a in new_wlb:
+        add_row("WLB", a.get("title", ""), "", "", "", "", a.get("url", ""))
+
+    # 4. Funzine
+    for a in new_funzine:
+        add_row("Funzine", a.get("title", ""), "", "", "", "", a.get("url", ""))
+
+    ws.auto_filter.ref = f"A1:G{row-1}"
+    ws.freeze_panes = "A2"
+
+    buf = io.BytesIO()
+    wb.save(buf)
+    buf.seek(0)
+    return buf.getvalue()
+
+
+def send_xlsx_email(xlsx_bytes, total_new):
+    """Elküldi a napi xlsx-et mellékletként külön e-mailben."""
+    if not (EMAIL_FROM and EMAIL_TO and EMAIL_PASSWORD):
+        print("⚠️  E-mail credentials hiányoznak, xlsx küldés kihagyva.")
+        return
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    filename = f"Foodora_leadek_{today}.xlsx"
+
+    msg = MIMEMultipart()
+    msg["Subject"] = f"📊 Foodora Lead Finder – napi táblázat ({today}, {total_new} új találat)"
+    msg["From"] = EMAIL_FROM
+    msg["To"] = EMAIL_TO
+
+    body = MIMEText(
+        f"Mai nap {total_new} új találat. A részletes lista csatolva.\n\n"
+        f"Oszlopok: Forrás | Név/Üzlet | Cím | Telefon | Kerület | Dátum | Link\n"
+        f"Forrás színek: zöld=Önkormányzat, kék=Google Maps, narancs=WLB, piros=Funzine",
+        "plain", "utf-8"
+    )
+    msg.attach(body)
+
+    attachment = MIMEApplication(xlsx_bytes, Name=filename)
+    attachment["Content-Disposition"] = f'attachment; filename="{filename}"'
+    msg.attach(attachment)
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=context) as server:
+        server.login(EMAIL_FROM, EMAIL_PASSWORD)
+        server.send_message(msg)
+    print(f"📊 Xlsx e-mail elküldve: {EMAIL_TO} ({filename})")
+
+
 # ============================================================
 # ADATTÁROLÁS - mit láttunk már
 # ============================================================
@@ -1045,25 +1158,35 @@ def save_known(path, items):
 
 
 def load_known_places(path):
-    """
-    Betölti az ismert helyeket.
-    Régi formátum (lista): ["id1", "id2"] → dict-té alakítja részletek nélkül
-    Új formátum (dict): {"id1": {"name": ..., "address": ..., ...}}
-    """
+    """Visszafelé kompatibilis betöltés: lista → dict migráció."""
     if not path.exists():
         return {}
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     if isinstance(data, list):
-        # Régi formátum → migráció részletek nélkül
         return {pid: None for pid in data}
     return data
 
 
 def save_known_places(path, places_dict):
-    """Elmenti az ismert helyeket dict formátumban."""
     with open(path, "w", encoding="utf-8") as f:
         json.dump(places_dict, f, ensure_ascii=False, indent=2)
+
+
+def load_known_govcenter(path):
+    """Visszafelé kompatibilis betöltés: lista → dict migráció."""
+    if not path.exists():
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if isinstance(data, list):
+        return {kulcs: None for kulcs in data}
+    return data
+
+
+def save_known_govcenter(path, govcenter_dict):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(govcenter_dict, f, ensure_ascii=False, indent=2)
 
 
 # ============================================================
@@ -1117,12 +1240,12 @@ def main():
 
     # 7. Önkormányzati üzletnyilvántartás (govcenter.hu)
     print("\n🏛️  Önkormányzati üzletnyilvántartás (govcenter.hu)...")
-    known_govcenter = load_known(KNOWN_GOVCENTER_FILE)
+    known_govcenter = load_known_govcenter(KNOWN_GOVCENTER_FILE)
     govcenter_uzletek = fetch_govcenter()
     new_govcenter = filter_new_govcenter(govcenter_uzletek, known_govcenter)
     print(f"  → {len(new_govcenter)} ÚJ üzletsor (összesen ismert: {len(known_govcenter)})")
 
-    # 8. E-mail
+    # 8. E-mail (HTML összefoglaló)
     print("\n✉️  E-mail összeállítása és küldése...")
     html = format_email(
         new_places, new_domains, news,
@@ -1131,7 +1254,16 @@ def main():
     )
     send_email(html)
 
-    # 9. Mentés
+    # 9. Xlsx melléklet küldése külön e-mailben
+    total_new = len(new_places) + len(new_govcenter) + len(new_wlb_articles) + len(new_funzine_articles)
+    if total_new > 0:
+        print("\n📊 Napi xlsx melléklet összeállítása és küldése...")
+        xlsx_bytes = generate_daily_xlsx(new_places, new_govcenter, new_wlb_articles, new_funzine_articles)
+        send_xlsx_email(xlsx_bytes, total_new)
+    else:
+        print("\n📊 Nincs új találat, xlsx melléklet kihagyva.")
+
+    # 10. Mentés
     today_str = datetime.now().strftime("%Y-%m-%d")
     for p in all_places:
         pid = p.get("id")
@@ -1146,7 +1278,6 @@ def main():
                 "discovered_at": today_str,
             }
         elif known_places[pid] is None:
-            # Régi bejegyzés migráció
             known_places[pid] = {
                 "name": p.get("displayName", {}).get("text", ""),
                 "address": p.get("formattedAddress", ""),
@@ -1154,23 +1285,34 @@ def main():
                 "type": p.get("primaryType", ""),
                 "discovered_at": None,
             }
+    # Govcenter részletek mentése
+    for u in govcenter_uzletek:
+        kulcs = u.get("kulcs")
+        if not kulcs:
+            continue
+        if kulcs not in known_govcenter or known_govcenter[kulcs] is None:
+            known_govcenter[kulcs] = {
+                "nev_cim": u.get("nev_cim", ""),
+                "datum": u.get("datum", ""),
+                "kerulet": u.get("kerulet", ""),
+                "discovered_at": today_str,
+            }
     known_domains.update(found_domains)
     known_wlb.update(a["url"] for a in wlb_articles)
     known_funzine.update(a["url"] for a in funzine_articles)
     known_timeout.update(a["url"] for a in timeout_articles)
-    known_govcenter.update(u["kulcs"] for u in govcenter_uzletek)
     save_known_places(KNOWN_PLACES_FILE, known_places)
     save_known(KNOWN_DOMAINS_FILE, known_domains)
     save_known(KNOWN_WLB_FILE, known_wlb)
     save_known(KNOWN_FUNZINE_FILE, known_funzine)
     save_known(KNOWN_TIMEOUT_FILE, known_timeout)
-    save_known(KNOWN_GOVCENTER_FILE, known_govcenter)
+    save_known_govcenter(KNOWN_GOVCENTER_FILE, known_govcenter)
     print(
         f"\n💾 Adatok elmentve: {len(known_places)} hely, "
         f"{len(known_domains)} domain, "
         f"{len(known_wlb)} WLB, {len(known_funzine)} Funzine, "
-        f"{len(known_timeout)} Time Out cikk, "
-        f"{len(known_govcenter)} önkormányzati üzletsor"
+        f"{len(known_timeout)} Time Out, "
+        f"{len(known_govcenter)} önkormányzati bejegyzés"
     )
     print("✅ Kész!")
 
