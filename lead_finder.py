@@ -1025,107 +1025,151 @@ def send_email(html_content):
     print(f"✉️  E-mail elküldve: {EMAIL_TO}")
 
 
-def generate_daily_xlsx(new_places, new_govcenter, new_wlb, new_funzine):
+def generate_full_database_xlsx(known_places, known_govcenter):
     """
-    Elkészíti a mai napi új találatok xlsx-ét mellékletként küldéshez.
-    Oszlopok: Forrás, Név/Üzlet, Cím, Telefon, Kerület, Dátum, Link
+    Exportálja a TELJES ismert helyek adatbázisát xlsx-be.
+    - Google Places: minden ismert hely (névvel, címmel, telefonnal ahol van)
+    - Govcenter: csak a Foodora-releváns bejegyzések
+    Napról napra egyre teljesebb lesz ahogy a helyek újra előkerülnek.
     """
     wb = Workbook()
-    ws = wb.active
-    ws.title = "Mai új találatok"
 
-    # Fejléc
+    # ── 1. lap: Google Places ─────────────────────────────────
+    ws1 = wb.active
+    ws1.title = "Google Places"
+
     header_fill = PatternFill("solid", start_color="1A5276")
     header_font = Font(bold=True, color="FFFFFF", name="Arial", size=10)
-    headers = ["Forrás", "Név / Üzlet", "Cím", "Telefon", "Kerület",
-               "Dátum / Bejelentés", "Link / Maps"]
-    col_widths = [18, 35, 40, 18, 22, 20, 50]
+    data_font   = Font(name="Arial", size=9)
 
-    for col, (h, w) in enumerate(zip(headers, col_widths), 1):
-        cell = ws.cell(row=1, column=col, value=h)
+    headers1 = ["Felfedezve", "Név", "Cím", "Telefon", "Típus", "Google Maps link"]
+    widths1   = [15, 35, 45, 18, 20, 55]
+    for col, (h, w) in enumerate(zip(headers1, widths1), 1):
+        cell = ws1.cell(row=1, column=col, value=h)
         cell.fill = header_fill
         cell.font = header_font
         cell.alignment = Alignment(horizontal="center", vertical="center")
-        ws.column_dimensions[cell.column_letter].width = w
-    ws.row_dimensions[1].height = 20
+        ws1.column_dimensions[cell.column_letter].width = w
+    ws1.row_dimensions[1].height = 20
+    ws1.freeze_panes = "A2"
 
+    def sort_key(item):
+        details = item[1]
+        if details and details.get("name"):
+            # Teljes adatú sorok elöl, legújabb felfedezés elöl
+            date = details.get("discovered_at") or "0000-00-00"
+            return (0, date)
+        return (1, "")
+
+    # Rendezés: teljes adatú sorok elöl (legújabb elöl), hiányos sorok hátul
+    sorted_places = sorted(known_places.items(), key=sort_key, reverse=False)
+    # A dátum szerint fordítva akarjuk (legújabb elöl) de csak az első csoportban
+    with_data = [(k,v) for k,v in sorted_places if v and v.get("name")]
+    without_data = [(k,v) for k,v in sorted_places if not (v and v.get("name"))]
+    with_data.sort(key=lambda x: x[1].get("discovered_at") or "0000", reverse=True)
+    sorted_places = with_data + without_data
     row = 2
-    data_font = Font(name="Arial", size=9)
+    fill_even = PatternFill("solid", start_color="D6EAF8")
+    fill_odd  = PatternFill("solid", start_color="FFFFFF")
+    fill_empty = PatternFill("solid", start_color="F2F3F4")
 
-    # Forrás-szín map
-    source_colors = {
-        "Önkormányzat": "D5F5E3",   # halvány zöld
-        "Google Maps":  "D6EAF8",   # halvány kék
-        "WLB":          "FDEBD0",   # halvány narancs
-        "Funzine":      "F9EBEA",   # halvány piros
-    }
-
-    def add_row(source, name, address, phone, kerulet, datum, link):
-        nonlocal row
-        fill_color = source_colors.get(source, "FFFFFF")
-        fill = PatternFill("solid", start_color=fill_color)
-        values = [source, name, address, phone, kerulet, datum, link]
-        for col, val in enumerate(values, 1):
-            cell = ws.cell(row=row, column=col, value=val)
+    for pid, details in sorted_places:
+        has_data = details and details.get("name")
+        fill = fill_empty if not has_data else (fill_even if row % 2 == 0 else fill_odd)
+        if has_data:
+            vals = [
+                details.get("discovered_at") or "?",
+                details.get("name", ""),
+                details.get("address", ""),
+                details.get("phone", ""),
+                details.get("type", ""),
+                f"https://maps.google.com/?cid={pid}" if pid else "",
+            ]
+        else:
+            vals = ["ismeretlen", "", "", "", "", ""]
+        for col, val in enumerate(vals, 1):
+            cell = ws1.cell(row=row, column=col, value=val)
             cell.fill = fill
             cell.font = data_font
-            cell.alignment = Alignment(vertical="center", wrap_text=(col == 3))
+            cell.alignment = Alignment(vertical="center")
         row += 1
 
-    # 1. Önkormányzati bejelentések
-    for u in new_govcenter:
-        cellak = u.get("cellak", [])
-        nev_cim = u.get("nev_cim", "")
-        parts = nev_cim.split(" | ") if nev_cim else []
-        nev = parts[0] if parts else ""
-        cim = parts[1] if len(parts) > 1 else ""
-        add_row("Önkormányzat", nev, cim, "", u.get("kerulet", ""),
-                u.get("datum", ""), "")
+    ws1.auto_filter.ref = f"A1:F{row-1}"
 
-    # 2. Google Maps helyek
-    for p in new_places:
-        name = p.get("displayName", {}).get("text", "")
-        address = p.get("formattedAddress", "")
-        phone = p.get("nationalPhoneNumber", "")
-        maps_link = p.get("googleMapsUri", "")
-        ptype = p.get("primaryType", "")
-        add_row("Google Maps", name, address, phone, "", "", maps_link)
+    # ── 2. lap: Önkormányzati bejelentések ───────────────────
+    ws2 = wb.create_sheet("Önkormányzat")
+    headers2 = ["Felfedezve", "Bejelentés dátuma", "Kerület", "Üzlet neve / Cím"]
+    widths2   = [15, 20, 28, 80]
+    for col, (h, w) in enumerate(zip(headers2, widths2), 1):
+        cell = ws2.cell(row=1, column=col, value=h)
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(horizontal="center", vertical="center")
+        ws2.column_dimensions[cell.column_letter].width = w
+    ws2.row_dimensions[1].height = 20
+    ws2.freeze_panes = "A2"
 
-    # 3. We Love Budapest
-    for a in new_wlb:
-        add_row("WLB", a.get("title", ""), "", "", "", "", a.get("url", ""))
+    row2 = 2
+    fill_gov_even = PatternFill("solid", start_color="D5F5E3")
+    fill_gov_odd  = PatternFill("solid", start_color="FFFFFF")
 
-    # 4. Funzine
-    for a in new_funzine:
-        add_row("Funzine", a.get("title", ""), "", "", "", "", a.get("url", ""))
+    # Csak Foodora-releváns govcenter bejegyzések, dátum szerint rendezve
+    gov_entries = []
+    for kulcs, details in known_govcenter.items():
+        if details is None:
+            continue
+        nev_cim = details.get("nev_cim", "")
+        if not _is_foodora_relevant(nev_cim):
+            continue
+        gov_entries.append(details)
 
-    ws.auto_filter.ref = f"A1:G{row-1}"
-    ws.freeze_panes = "A2"
+    gov_entries.sort(key=lambda d: d.get("datum") or "0000", reverse=True)
+
+    for details in gov_entries:
+        fill = fill_gov_even if row2 % 2 == 0 else fill_gov_odd
+        vals = [
+            details.get("discovered_at") or "?",
+            details.get("datum", ""),
+            details.get("kerulet", ""),
+            details.get("nev_cim", ""),
+        ]
+        for col, val in enumerate(vals, 1):
+            cell = ws2.cell(row=row2, column=col, value=val)
+            cell.fill = fill
+            cell.font = data_font
+            cell.alignment = Alignment(vertical="center")
+        row2 += 1
+
+    ws2.auto_filter.ref = f"A1:D{row2-1}"
 
     buf = io.BytesIO()
     wb.save(buf)
     buf.seek(0)
-    return buf.getvalue()
+    return buf.getvalue(), len(known_places), len(gov_entries)
 
 
-def send_xlsx_email(xlsx_bytes, total_new):
-    """Elküldi a napi xlsx-et mellékletként külön e-mailben."""
+def send_xlsx_email(xlsx_bytes, places_count, gov_count):
+    """Elküldi a teljes adatbázis xlsx-et mellékletként külön e-mailben."""
     if not (EMAIL_FROM and EMAIL_TO and EMAIL_PASSWORD):
         print("⚠️  E-mail credentials hiányoznak, xlsx küldés kihagyva.")
         return
 
     today = datetime.now().strftime("%Y-%m-%d")
-    filename = f"Foodora_leadek_{today}.xlsx"
+    filename = f"Foodora_adatbazis_{today}.xlsx"
+    total = places_count + gov_count
 
     msg = MIMEMultipart()
-    msg["Subject"] = f"📊 Foodora Lead Finder – napi táblázat ({today}, {total_new} új találat)"
+    msg["Subject"] = f"📊 Foodora adatbázis ({today}) – {total} bejegyzés"
     msg["From"] = EMAIL_FROM
     msg["To"] = EMAIL_TO
 
     body = MIMEText(
-        f"Mai nap {total_new} új találat. A részletes lista csatolva.\n\n"
-        f"Oszlopok: Forrás | Név/Üzlet | Cím | Telefon | Kerület | Dátum | Link\n"
-        f"Forrás színek: zöld=Önkormányzat, kék=Google Maps, narancs=WLB, piros=Funzine",
+        f"Napi adatbázis exportálás – {today}\n\n"
+        f"Google Places lap: {places_count} hely\n"
+        f"Önkormányzati lap: {gov_count} Foodora-releváns bejegyzés\n\n"
+        f"A táblázat napról napra bővül és gazdagodik.\n"
+        f"Kék sorok = Google Places | Zöld sorok = Önkormányzat\n"
+        f"Szürke sorok = még hiányos adat (idővel feltöltődik)",
         "plain", "utf-8"
     )
     msg.attach(body)
@@ -1138,7 +1182,7 @@ def send_xlsx_email(xlsx_bytes, total_new):
     with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=context) as server:
         server.login(EMAIL_FROM, EMAIL_PASSWORD)
         server.send_message(msg)
-    print(f"📊 Xlsx e-mail elküldve: {EMAIL_TO} ({filename})")
+    print(f"📊 Adatbázis xlsx elküldve: {EMAIL_TO} ({filename}, {total} sor)")
 
 
 # ============================================================
@@ -1254,37 +1298,45 @@ def main():
     )
     send_email(html)
 
-    # 9. Xlsx melléklet küldése külön e-mailben
-    total_new = len(new_places) + len(new_govcenter) + len(new_wlb_articles) + len(new_funzine_articles)
-    if total_new > 0:
-        print("\n📊 Napi xlsx melléklet összeállítása és küldése...")
-        xlsx_bytes = generate_daily_xlsx(new_places, new_govcenter, new_wlb_articles, new_funzine_articles)
-        send_xlsx_email(xlsx_bytes, total_new)
-    else:
-        print("\n📊 Nincs új találat, xlsx melléklet kihagyva.")
+    # 9. Xlsx melléklet: a mentés UTÁN küldjük, hogy az aznap pótolt adatok is benne legyenek
 
-    # 10. Mentés
+    # 10. Mentés + hiányzó adatok pótlása
     today_str = datetime.now().strftime("%Y-%m-%d")
+    enriched = 0
     for p in all_places:
         pid = p.get("id")
         if not pid:
             continue
+        name = p.get("displayName", {}).get("text", "")
+        address = p.get("formattedAddress", "")
+        phone = p.get("nationalPhoneNumber", "")
+        ptype = p.get("primaryType", "")
+
         if pid not in known_places:
+            # Új hely: teljes adattal mentjük
             known_places[pid] = {
-                "name": p.get("displayName", {}).get("text", ""),
-                "address": p.get("formattedAddress", ""),
-                "phone": p.get("nationalPhoneNumber", ""),
-                "type": p.get("primaryType", ""),
+                "name": name,
+                "address": address,
+                "phone": phone,
+                "type": ptype,
                 "discovered_at": today_str,
             }
-        elif known_places[pid] is None:
-            known_places[pid] = {
-                "name": p.get("displayName", {}).get("text", ""),
-                "address": p.get("formattedAddress", ""),
-                "phone": p.get("nationalPhoneNumber", ""),
-                "type": p.get("primaryType", ""),
-                "discovered_at": None,
-            }
+        else:
+            # Már ismert hely: ha hiányoznak az adatok, pótoljuk
+            existing = known_places[pid]
+            if existing is None or not (existing or {}).get("name"):
+                # Régi lista-formátum migráció VAGY hiányzó adatok
+                original_date = (existing or {}).get("discovered_at") if existing else None
+                known_places[pid] = {
+                    "name": name,
+                    "address": address,
+                    "phone": phone,
+                    "type": ptype,
+                    "discovered_at": original_date,  # eredeti felfedezési dátum megtartása
+                }
+                enriched += 1
+    if enriched:
+        print(f"  ✓ {enriched} régi bejegyzés adatai pótolva")
     # Govcenter részletek mentése
     for u in govcenter_uzletek:
         kulcs = u.get("kulcs")
@@ -1314,6 +1366,12 @@ def main():
         f"{len(known_timeout)} Time Out, "
         f"{len(known_govcenter)} önkormányzati bejegyzés"
     )
+
+    # 11. Teljes adatbázis xlsx küldése (mentés UTÁN, hogy az aznap pótolt adatok is benne legyenek)
+    print("\n📊 Teljes adatbázis xlsx összeállítása és küldése...")
+    xlsx_bytes, places_cnt, gov_cnt = generate_full_database_xlsx(known_places, known_govcenter)
+    send_xlsx_email(xlsx_bytes, places_cnt, gov_cnt)
+
     print("✅ Kész!")
 
 
