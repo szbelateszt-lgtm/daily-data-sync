@@ -160,7 +160,13 @@
   },
   "ChIJ0-RtISXJQUcRC8qiItM65C4": null,
   "ChIJ00gB38DdQUcRtB54GZDsVKc": null,
-  "ChIJ00vT96zCQUcRHlE8rj5CClI": null,
+  "ChIJ00vT96zCQUcRHlE8rj5CClI": {
+    "name": "Kemence Pék",
+    "address": "Budapest, Kossuth Lajos utca, 1203 Hungary",
+    "phone": "06 20 336 7961",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJ03E8Dn7dQUcR-F2HE5t4MTY": {
     "name": "Félegyházi Pékség",
     "address": "Budapest, Mester u. 54, 1095 Hungary",
@@ -1496,7 +1502,13 @@
     "type": "bistro",
     "discovered_at": null
   },
-  "ChIJ8RsuwwfdQUcRvVFGCs9zDYU": null,
+  "ChIJ8RsuwwfdQUcRvVFGCs9zDYU": {
+    "name": "Cookie Beacon Brunch",
+    "address": "Budapest, Hercegprímás u. 15, 1051 Hungary",
+    "phone": "06 30 688 9438",
+    "type": "brunch_restaurant",
+    "discovered_at": null
+  },
   "ChIJ8TBf_RPcQUcRxv-zIxWCGc0": {
     "name": "SPAR szupermarket",
     "address": "Budapest, Nyugati tér 1-2, 1066 Hungary",
@@ -3027,7 +3039,13 @@
     "discovered_at": null
   },
   "ChIJH3tMk2ncQUcRKsK0GhUotPg": null,
-  "ChIJH4_Q6VvcQUcRtIMZNwb37m8": null,
+  "ChIJH4_Q6VvcQUcRtIMZNwb37m8": {
+    "name": "Lumen Café",
+    "address": "Budapest, Horánszky u. 5, 1085 Hungary",
+    "phone": "06 20 530 0850",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJH5R1PCPJQUcRmINr4WZGn7E": {
     "name": "Toth Bakery",
     "address": "Gödöllő, Palotakert 1-3, 2100 Hungary",
@@ -3495,7 +3513,13 @@
     "type": "thai_restaurant",
     "discovered_at": null
   },
-  "ChIJK0fp0JrdQUcR4LEJha4alZ4": null,
+  "ChIJK0fp0JrdQUcR4LEJha4alZ4": {
+    "name": "Rain Coffee",
+    "address": "Budapest, Nyugati tér 8, 1055 Hungary",
+    "phone": "06 70 593 8899",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJK1Gxx5zRQUcRGARY5W2TBqE": null,
   "ChIJK1_DfhrdQUcRdowxYcx9hUw": {
     "name": "Tabemasu Sushi Bar",
@@ -3625,7 +3649,13 @@
   },
   "ChIJKxVayWrcQUcRM_EXaU0oFTo": null,
   "ChIJKy78eIvdQUcRiG2lR-wcq_Q": null,
-  "ChIJKyTzK17dQUcRlevbiP8rUNg": null,
+  "ChIJKyTzK17dQUcRlevbiP8rUNg": {
+    "name": "Príma Pék",
+    "address": "Budapest, Hunyadi tér 4, 1067 Hungary",
+    "phone": "06 30 740 5518",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJKyfDBjrdQUcRG41etU3uRUs": {
     "name": "Le Petit Beefbar Budapest",
     "address": "Budapest, W Budapest, Andrássy út 25, 1061 Hungary",
@@ -4253,7 +4283,13 @@
     "type": "vietnamese_restaurant",
     "discovered_at": null
   },
-  "ChIJOze2cVLXQUcRpg8GPoJHRvQ": null,
+  "ChIJOze2cVLXQUcRpg8GPoJHRvQ": {
+    "name": "KépTerasz",
+    "address": "Szentendre, Dumtsa Jenő u. 22, 2000 Hungary",
+    "phone": "06 70 391 9026",
+    "type": "bar",
+    "discovered_at": null
+  },
   "ChIJP0ahsxXcQUcR7QlkCeFi9ko": {
     "name": "Trattoria Pomo D'Oro",
     "address": "Budapest, Arany János u. 9, 1051 Hungary",
@@ -4432,7 +4468,13 @@
     "discovered_at": null
   },
   "ChIJPesFdf_QQUcRFGt8QMwhp4Y": null,
-  "ChIJPesL_-rBQUcR13vE7eSxZk8": null,
+  "ChIJPesL_-rBQUcR13vE7eSxZk8": {
+    "name": "Lidl Supermarket",
+    "address": "XI, Budapest, Bartók Béla út 47. 47, 1114 Hungary",
+    "phone": "06 80 020 534",
+    "type": "discount_supermarket",
+    "discovered_at": null
+  },
   "ChIJPf77z5zbQUcRjl7BDc-ocW8": {
     "name": "Sport Bisztró",
     "address": "Budapest, Szőnyi út 2, 1142 Hungary",
@@ -5137,7 +5179,13 @@
     "type": "grocery_store",
     "discovered_at": null
   },
-  "ChIJTcY0MNfdQUcRnQ0XfhpdQg0": null,
+  "ChIJTcY0MNfdQUcRnQ0XfhpdQg0": {
+    "name": "Polish delicacies",
+    "address": "Budapest, Margit körút 46, 1027 Hungary",
+    "phone": "06 20 330 9607",
+    "type": "general_store",
+    "discovered_at": null
+  },
   "ChIJTdypFk3hQUcRp-HyWN1_5tw": {
     "name": "Pékanyu",
     "address": "Diósd, Gyár u. 38, 2049 Hungary",
@@ -6346,7 +6394,13 @@
     "discovered_at": null
   },
   "ChIJ_UtEmincQUcRfmrMihpcE90": null,
-  "ChIJ_XOge9rBQUcRDXdGec9cydY": null,
+  "ChIJ_XOge9rBQUcRDXdGec9cydY": {
+    "name": "Jópáros Zöldség Gyümölcs",
+    "address": "Vecsés, Fő út 167, 2220 Hungary",
+    "phone": "",
+    "type": "general_store",
+    "discovered_at": null
+  },
   "ChIJ_Y180mPdQUcR8npXNgAJqIo": {
     "name": "Király Kenyér Pékség és Kávézó",
     "address": "Budapest, Budapest Király utca 95, Rózsa u. sarok, 1077 Hungary",
@@ -6607,7 +6661,13 @@
     "type": "asian_restaurant",
     "discovered_at": null
   },
-  "ChIJb2jYflnRQUcRwqENekyxH0Q": null,
+  "ChIJb2jYflnRQUcRwqENekyxH0Q": {
+    "name": "Zöldség-gyümölcs",
+    "address": "Dunakeszi, Madách Imre u. 26, 2120 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJb3yUcmjZQUcRwynNrWff8Ys": {
     "name": "Pizza Paradicsom",
     "address": "Budapest, Vörösvári út 13, 1035 Hungary",
@@ -7826,7 +7886,13 @@
     "discovered_at": null
   },
   "ChIJhdnMQd7CQUcRiIcDtmnFYBU": null,
-  "ChIJheC8RZ3XQUcREaewDQF-i_g": null,
+  "ChIJheC8RZ3XQUcREaewDQF-i_g": {
+    "name": "ArtV8 Bisztró & Bowling Szentendre",
+    "address": "Szentendre, Kálvária út 16c, 2000 Hungary",
+    "phone": "06 30 712 9869",
+    "type": "sports_club",
+    "discovered_at": null
+  },
   "ChIJhefL-dXRQUcReKI68rYjUKM": {
     "name": "KK Gastro Stúdió",
     "address": "Dunakeszi, Lajos u. 28, 2120 Hungary",
@@ -8342,7 +8408,13 @@
     "type": "cafe",
     "discovered_at": null
   },
-  "ChIJl9C5z8zBQUcRcIY0-AWN_tI": null,
+  "ChIJl9C5z8zBQUcRcIY0-AWN_tI": {
+    "name": "Vecsés Fő út Lakótelep Üzletsor",
+    "address": "Vecsés, Fő út 212, 2220 Hungary",
+    "phone": "06 70 317 7964",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJlQ4m7yTJQUcRdnaLxKqlUMY": {
     "name": "Monarchy Strudel House",
     "address": "Gödöllő, Szabadság tér 5, 2100 Hungary",
@@ -8570,7 +8642,13 @@
     "type": "ramen_restaurant",
     "discovered_at": null
   },
-  "ChIJm2A_lKDdQUcRVK9B-ZGhHWM": null,
+  "ChIJm2A_lKDdQUcRVK9B-ZGhHWM": {
+    "name": "ItalPincér",
+    "address": "Budapest, Csengery u. 78, 1067 Hungary",
+    "phone": "06 20 416 1616",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJm2rlLXjZQUcRlir243z2A-A": {
     "name": "Málna The Pastry Shop",
     "address": "Budapest, Hercegprímás u. 17, 1052 Hungary",
@@ -9088,7 +9166,13 @@
     "type": "chinese_restaurant",
     "discovered_at": null
   },
-  "ChIJocEWrtbBQUcR-Qti4aM7mfw": null,
+  "ChIJocEWrtbBQUcR-Qti4aM7mfw": {
+    "name": "Taverna Gyros",
+    "address": "Vecsés, Halmy József tér 18, 2220 Hungary",
+    "phone": "06 30 749 4040",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJocnjDK3dQUcR27ytJEU9GxI": null,
   "ChIJocnqGgDdQUcR2KdwThenvQI": {
     "name": "Destino Vietnamese Resto",
@@ -9993,7 +10077,13 @@
     "discovered_at": null
   },
   "ChIJu0aLHFHcQUcRFqVp5XsKXWc": null,
-  "ChIJu3Tt-szcQUcRs9dETpudgBI": null,
+  "ChIJu3Tt-szcQUcRs9dETpudgBI": {
+    "name": "DunaPanda Supermarket",
+    "address": "Budapest, Jegenye u. 26-28, 1107 Hungary",
+    "phone": "",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJu6Hj-OHdQUcRt2fVqmQU9wU": null,
   "ChIJu6cm20bcQUcRVaYMYw-rxdU": {
     "name": "Százéves Étterem",
@@ -10478,7 +10568,13 @@
     "type": "breakfast_restaurant",
     "discovered_at": null
   },
-  "ChIJwdBgMbrdQUcRVMR_bX0GGqI": null,
+  "ChIJwdBgMbrdQUcRVMR_bX0GGqI": {
+    "name": "Maia",
+    "address": "Budapest, Hercegprímás u. 12, 1051 Hungary",
+    "phone": "06 70 542 0059",
+    "type": "fusion_restaurant",
+    "discovered_at": null
+  },
   "ChIJwehWAwDbQUcRjSKWPqCiVfg": null,
   "ChIJwwkJg97cQUcRvps8XmtXbxA": {
     "name": "Lipóti Bakery",
@@ -10736,7 +10832,13 @@
     "discovered_at": null
   },
   "ChIJy6JmaYjdQUcRlVsD_1lREDw": null,
-  "ChIJy886WHfdQUcRHOA5OipY_oA": null,
+  "ChIJy886WHfdQUcRHOA5OipY_oA": {
+    "name": "Mokka's Bagel & Coffee",
+    "address": "Budapest, József nádor tér 9, 1051 Hungary",
+    "phone": "06 30 338 5806",
+    "type": "cafe",
+    "discovered_at": null
+  },
   "ChIJy8YmwK3VQUcRFIvWsjAnPFE": {
     "name": "ZsóFree",
     "address": "Szentendre, Ady Endre út 37/A, 2000 Hungary",
@@ -10779,7 +10881,13 @@
     "type": "italian_restaurant",
     "discovered_at": null
   },
-  "ChIJyU_sR-fjQUcRSklSCM969ho": null,
+  "ChIJyU_sR-fjQUcRSklSCM969ho": {
+    "name": "Szilvakék Zöldséges",
+    "address": "Érd, Velencei út 28, 2030 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJyV9F8l3CQUcRCoGjoAxj6Cs": {
     "name": "Arbab Döner Kebab",
     "address": "Budapest, Kondor Béla stny., 1181 Hungary",
@@ -10853,7 +10961,13 @@
     "type": "kebab_shop",
     "discovered_at": null
   },
-  "ChIJyxfueyrZQUcRBmme2f-tpU0": null,
+  "ChIJyxfueyrZQUcRBmme2f-tpU0": {
+    "name": "Kínai gyorsbüfé",
+    "address": "Budapest, Szentendrei út 8, 1035 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": null
+  },
   "ChIJyyYpgESVQUcRSD_-XUJvgS4": null,
   "ChIJyzcwzjHRQUcRtO7CGBIKFrY": {
     "name": "Jun Hong Kinai Büfé",
@@ -12077,5 +12191,89 @@
     "phone": "",
     "type": "food",
     "discovered_at": "2026-06-12"
+  },
+  "ChIJ80rqBgndQUcROm7sKrEhHLo": {
+    "name": "Goli Restaurant",
+    "address": "Budapest, Arany János u. 32, 1051 Hungary",
+    "phone": "06 20 333 6289",
+    "type": "mediterranean_restaurant",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJiaHPOBXcQUcRE2IZJzOqQjo": {
+    "name": "Hungary - Traditional Hungarian Restaurant",
+    "address": "Budapest, Október 6. u. 5, 1051 Hungary",
+    "phone": "06 70 388 8983",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJhdkr-s7dQUcRtd6jUFszON8": {
+    "name": "Meraki Görög Ételbár x Oktogon",
+    "address": "Budapest, Teréz krt. 27, 1067 Hungary",
+    "phone": "06 20 338 5392",
+    "type": "restaurant",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJy7n47DPdQUcRNl7ADODWHiI": {
+    "name": "Kürtőskalács",
+    "address": "Budapest, Teréz krt. 17, 1067 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJ9VZfd_XbQUcRKHBZGC6SiiU": {
+    "name": "Keleti fűszerek",
+    "address": "Budapest, Váci út 9, 1134 Hungary",
+    "phone": "",
+    "type": "store",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJu9HgVUXdQUcRWPQjmKYoE7U": {
+    "name": "Mr.Smash",
+    "address": "Budapest, Október 6. u. 11, 1051 Hungary",
+    "phone": "06 70 232 9885",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJo6qxkAbdQUcRc70X3FydNSw": {
+    "name": "Bazilika Café 1851",
+    "address": "Budapest, Hercegprímás u. 8, 1051 Hungary",
+    "phone": "06 30 313 0498",
+    "type": "restaurant",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJr_T96WzdQUcRRKvs8R2CLLI": {
+    "name": "Parasztkonyha",
+    "address": "Budapest, Váci u 79, 1056 Hungary",
+    "phone": "06 70 435 0802",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJ-7CGFgDXQUcRvNXtjLfoyoM": {
+    "name": "Múzeum Kert Kávézó",
+    "address": "Szentendre, Bogdányi út 34, 2000 Hungary",
+    "phone": "",
+    "type": "bar",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJTSLWYlLXQUcRoVQ2nZvkOxA": {
+    "name": "Édeni Handmade Chocolate and Hot Chocolate Shop",
+    "address": "Szentendre, Dumtsa Jenő u. 7, 2000 Hungary",
+    "phone": "",
+    "type": "cafe",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJacxCk6HXQUcROCk84kMHKpM": {
+    "name": "RegenTag Műhelygaléria",
+    "address": "Szentendre, Kucsera Ferenc u. 2/A, 2000 Hungary",
+    "phone": "",
+    "type": "manufacturer",
+    "discovered_at": "2026-06-13"
+  },
+  "ChIJ75-g3WHWQUcRlzNKqbhme8s": {
+    "name": "Kisgömböc",
+    "address": "Szentendre, Vasúti Villasor 7, 2000 Hungary",
+    "phone": "06 70 609 1773",
+    "type": "butcher_shop",
+    "discovered_at": "2026-06-13"
   }
 }
