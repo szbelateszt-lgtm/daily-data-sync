@@ -2797,7 +2797,13 @@
     "type": "grocery_store",
     "discovered_at": null
   },
-  "ChIJFbyKQEXcQUcRoZTF9dlHizQ": null,
+  "ChIJFbyKQEXcQUcRoZTF9dlHizQ": {
+    "name": "Cafe Frei",
+    "address": "Budapest, Váci u 74, 1056 Hungary",
+    "phone": "",
+    "type": "cafe",
+    "discovered_at": null
+  },
   "ChIJFdH2w1rcQUcRgwI32Nf82tg": null,
   "ChIJFeAKKoHdQUcRUalble9yNdQ": {
     "name": "Forni di Napoli",
@@ -4438,7 +4444,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJPZwEOTzCQUcRaPxoihAdH_k": null,
+  "ChIJPZwEOTzCQUcRaPxoihAdH_k": {
+    "name": "Yellow Cab Kifőzde",
+    "address": "Budapest, Üllői út 609, 1182 Hungary",
+    "phone": "(06 1) 291 0527",
+    "type": "hungarian_restaurant",
+    "discovered_at": null
+  },
   "ChIJP_7lVvHdQUcRvADCsZ366Eg": {
     "name": "Galffis Caffee&Bar - Budapest",
     "address": "Budapest, Batthyány tér 2, 1011 Hungary",
@@ -12443,5 +12455,47 @@
     "phone": "",
     "type": "coffee_shop",
     "discovered_at": "2026-06-14"
+  },
+  "ChIJ39WL8KLdQUcRSXMChytzn-E": {
+    "name": "Menü Műhely",
+    "address": "Budapest, Dohány u. 73-75, 1074 Hungary",
+    "phone": "06 30 389 9834",
+    "type": "food",
+    "discovered_at": "2026-06-15"
+  },
+  "ChIJd-Gcsg7dQUcRMdpkiX94M6s": {
+    "name": "Namgyal Momo - Tibetan Canteen and Teahouse",
+    "address": "Budapest, Bakáts tér 9, 1092 Hungary",
+    "phone": "06 70 409 8214",
+    "type": "restaurant",
+    "discovered_at": "2026-06-15"
+  },
+  "ChIJN1_eRADdQUcR2Cd9QAkrkTo": {
+    "name": "Bödön Étkezde",
+    "address": "Budapest, Ferenc krt. 31, 1094 Hungary",
+    "phone": "06 30 165 5965",
+    "type": "food",
+    "discovered_at": "2026-06-15"
+  },
+  "ChIJLQ-ZSQDdQUcR98YRJdHH0c0": {
+    "name": "Pizza Point Budapest",
+    "address": "Budapest, Teréz krt. 42, 1066 Hungary",
+    "phone": "06 30 552 8062",
+    "type": "halal_restaurant",
+    "discovered_at": "2026-06-15"
+  },
+  "ChIJ__bmGGTDQUcR5m1WmBv9HkM": {
+    "name": "Sultan doner kebab ujhegyi",
+    "address": "Budapest, Újhegyi stny. 12, 1108 Hungary",
+    "phone": "06 20 589 1559",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-06-15"
+  },
+  "ChIJL3jJEQDBQUcRMoeCPGRZin8": {
+    "name": "BOTTEGA PROSECCO BAR & CAFFE, Budapest",
+    "address": "Budapest, Budapest Ferenc Liszt International Airport, 2B Terminál, 1185 Hungary",
+    "phone": "",
+    "type": "italian_restaurant",
+    "discovered_at": "2026-06-15"
   }
 }
