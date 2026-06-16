@@ -778,7 +778,13 @@
   },
   "ChIJ43t6L2bdQUcRfv8SzRhaL1U": null,
   "ChIJ44EELp7dQUcRSmejryMPZrM": null,
-  "ChIJ45E_TM7bQUcR3y362A8mSLg": null,
+  "ChIJ45E_TM7bQUcR3y362A8mSLg": {
+    "name": "Fornetti Cukrászda pékség",
+    "address": "Budapest, Angyalföld, 1138 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJ45gHr5vRQUcROml6yAEj9J0": {
     "name": "LAZA Bistro",
     "address": "Dunakeszi, Fő út 139, 2120 Hungary",
@@ -1581,7 +1587,13 @@
     "type": "grocery_store",
     "discovered_at": null
   },
-  "ChIJ8cyqWgDXQUcR7UFqJQNRKZ8": null,
+  "ChIJ8cyqWgDXQUcR7UFqJQNRKZ8": {
+    "name": "Little Rome",
+    "address": "Szentendre, Kucsera Ferenc u. 15, 2000 Hungary",
+    "phone": "06 30 631 8715",
+    "type": "pastry_shop",
+    "discovered_at": null
+  },
   "ChIJ8dyHPC7bQUcRwf80sBx_Rxg": {
     "name": "Kínai Gyorsétterem",
     "address": "Budapest, Ipoly u., 1133 Hungary",
@@ -3071,7 +3083,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJH5lwhQncQUcRP012pzecFpw": null,
+  "ChIJH5lwhQncQUcRP012pzecFpw": {
+    "name": "Kyros Gyros",
+    "address": "Budapest, Hegedűs Gyula u. 36, 1136 Hungary",
+    "phone": "06 20 923 7694",
+    "type": "fast_food_restaurant",
+    "discovered_at": null
+  },
   "ChIJH7QZVAXRQUcRnlFQFx0mrgM": {
     "name": "Kávégép javítás Dunakeszi - Full Kávé Szerviz",
     "address": "Dunakeszi, Váci Mihály u. 37, 2120 Hungary",
@@ -4327,7 +4345,13 @@
     "type": "italian_restaurant",
     "discovered_at": null
   },
-  "ChIJP1SUWy7ZQUcRkcL1U_FqRTw": null,
+  "ChIJP1SUWy7ZQUcRkcL1U_FqRTw": {
+    "name": "Pistor Pékség, Kávézó és Cukrászda",
+    "address": "Budapest, Tímár u. 8b, 1036 Hungary",
+    "phone": "06 30 074 4330",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJP1W6dILcQUcRgS-f5XPkm5c": {
     "name": "MIÉNK élelmiszer",
     "address": "Budapest, Hungária krt. 136, 1143 Hungary",
@@ -4370,7 +4394,13 @@
     "type": "cafe",
     "discovered_at": null
   },
-  "ChIJP9xPiQfoQUcRjK8O-OBkcog": null,
+  "ChIJP9xPiQfoQUcRjK8O-OBkcog": {
+    "name": "TESO ABC",
+    "address": "Budapest, Széchenyi István u. 92b, 1212 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJPSIuH2ndQUcRriLTBRpJY_E": {
     "name": "EnniValó Bolt és Bisztró",
     "address": "Budapest, Batthyány u. 48, 1015 Hungary",
@@ -5675,7 +5705,13 @@
     "type": "food",
     "discovered_at": null
   },
-  "ChIJW670YADdQUcRHKVXC6VWT6g": null,
+  "ChIJW670YADdQUcRHKVXC6VWT6g": {
+    "name": "Hyggelig Café & Gallery / A.P. Art Gallery",
+    "address": "Budapest, József krt. 64, 1085 Hungary",
+    "phone": "06 70 362 3642",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJW7HJOjfdQUcR_VMiRO3yDQI": null,
   "ChIJW9TpJjXdQUcRBWz8OtEnSGw": {
     "name": "Café Francesco",
@@ -5841,7 +5877,13 @@
   },
   "ChIJXQhEgT3bQUcRyrRACvn3Kyw": null,
   "ChIJXTQqvjHcQUcRLBB7MkC-mPM": null,
-  "ChIJXVNkf2jcQUcR8clZl71sz0Y": null,
+  "ChIJXVNkf2jcQUcR8clZl71sz0Y": {
+    "name": "Alanya Kebab Török-Görög Étterem",
+    "address": "Budapest, Wesselényi utca 34, 1077 Hungary",
+    "phone": "",
+    "type": "greek_restaurant",
+    "discovered_at": null
+  },
   "ChIJXW4om-LdQUcRXzaKWMaF2aQ": null,
   "ChIJXWI_fnPcQUcReWEgx4Abr70": null,
   "ChIJXWSWb4ffQUcRNtbvqaEpW8k": {
@@ -12497,5 +12539,131 @@
     "phone": "",
     "type": "italian_restaurant",
     "discovered_at": "2026-06-15"
+  },
+  "ChIJ7SFmPnLdQUcRRRspN2AJQu4": {
+    "name": "Csücsök bakery",
+    "address": "Budapest, Varsányi Irén u. 1, 1027 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJafPGQBLcQUcRxvTmEJiIOjU": {
+    "name": "Csem' N Go Élelmiszer Üzlet Szendvicsbár,Pékség",
+    "address": "Budapest, Szalay u. 13, 1055 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJ54KG7dDbQUcRz1HgSyJgtBY": {
+    "name": "Marina Csemege",
+    "address": "Budapest, Danubius u. 16, 1138 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJZZ0m6e3bQUcR1Z6awtkkI8A": {
+    "name": "Manna ABC",
+    "address": "Budapest, 1138 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJg17bLz7bQUcRzg_wwUIG-wI": {
+    "name": "SPAR szupermarket",
+    "address": "Budapest, Váci út 178-fszt. 3/b, 1138 Hungary",
+    "phone": "06 20 747 5256",
+    "type": "supermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJTTG9ZwDbQUcRG7yA-P6SDmA": {
+    "name": "Market",
+    "address": "Budapest, Úszódaru u. 14, 1138 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJdVuilc7bQUcRwVnWrDoWkiA": {
+    "name": "SPAR szupermarket",
+    "address": "XIII:, Budapest, Gyöngyösi stny. 2, 1131 Hungary",
+    "phone": "06 20 823 7818",
+    "type": "supermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJDWgAXLrbQUcRO9z8g5469rI": {
+    "name": "Marina Market",
+    "address": "Budapest, Danubius u. 4, 1138 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJPx-oesbbQUcRevOcSbeYDv0": {
+    "name": "SPAR",
+    "address": "Budapest, Tomori köz 7, 1138 Hungary",
+    "phone": "06 20 745 1179",
+    "type": "supermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJ7_jpAEvaQUcRQVGSL56m3ps": {
+    "name": "SPAR szupermarket",
+    "address": "Budapest, Nap u. 16, 1045 Hungary",
+    "phone": "06 20 823 7136",
+    "type": "supermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJQTVMKKTbQUcRM2Zf54Setg8": {
+    "name": "Manna ABC Agora",
+    "address": "Budapest, Esztergomi út 31-43, 1138 Hungary",
+    "phone": "06 70 932 8739",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJR84N7sHbQUcRjlQa4lUzhQY": {
+    "name": "City SPAR",
+    "address": "Budapest, Váci út 138/a, 1138 Hungary",
+    "phone": "06 20 823 7128",
+    "type": "supermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJ7xrgu23bQUcRcx5IiNaaw9s": {
+    "name": "Tesco Hipermarket Budapest Váci út",
+    "address": "Budapest, Gács u. 3, 1138 Hungary",
+    "phone": "06 80 222 333",
+    "type": "hypermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJm2Qk4TbaQUcRkozmIt_Dnh0": {
+    "name": "SPAR szupermarket",
+    "address": "Budapest, István út 10, 1042 Hungary",
+    "phone": "06 20 823 7762",
+    "type": "supermarket",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJITNVtZPbQUcRPYM2aEAsJcI": {
+    "name": "Buddha Original",
+    "address": "Budapest, Váci út 121-127-D épület, 1138 Hungary",
+    "phone": "06 70 770 0337",
+    "type": "restaurant",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJ02hLyq3CQUcRmCcuvRyrjaE": {
+    "name": "Ételbár-Kifőzde",
+    "address": "Budapest, Berkenye stny. 1, 1201 Hungary",
+    "phone": "06 20 203 5622",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJf1gVgSHdQUcR2l6545q2X-M": {
+    "name": "finiz - Újbuda | smash burger",
+    "address": "Budapest, Tétényi út 63, 1119 Hungary",
+    "phone": "",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-06-16"
+  },
+  "ChIJEx2KqNDdQUcRnp_zqf-4huU": {
+    "name": "Ke La La Wok",
+    "address": "Budapest, Üllői út 113, 1096 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-06-16"
   }
 }
