@@ -1051,7 +1051,13 @@
     "type": "supermarket",
     "discovered_at": null
   },
-  "ChIJ5XSDBdDBQUcR9kQ7-AiOZf4": null,
+  "ChIJ5XSDBdDBQUcR9kQ7-AiOZf4": {
+    "name": "Avion Étterem",
+    "address": "Vecsés, Lőrinci u. 130/a, 2220 Hungary",
+    "phone": "(06 1) 688 2000",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJ5YIUA8jXQUcReknGtw4k7co": {
     "name": "A Sonkás Szentendre",
     "address": "Szentendre, Dunakanyar krt. 10, 2000 Hungary",
@@ -2101,7 +2107,13 @@
     "type": "pizza_restaurant",
     "discovered_at": null
   },
-  "ChIJBdWlu5DdQUcRrEVTAmEMvJQ": null,
+  "ChIJBdWlu5DdQUcRrEVTAmEMvJQ": {
+    "name": "SIMON'S BURGER FLAGSHIP",
+    "address": "Budapest, Bárczy István u. 4, 1052 Hungary",
+    "phone": "06 70 308 7699",
+    "type": "hamburger_restaurant",
+    "discovered_at": null
+  },
   "ChIJBdl5ydzdQUcRkAUucalvNL0": {
     "name": "Caferol Kávézó Bistro",
     "address": "Budapest, Andrássy út 79, 1062 Hungary",
@@ -4263,7 +4275,13 @@
     "type": "brunch_restaurant",
     "discovered_at": null
   },
-  "ChIJOSc7sB3cQUcRTEqbT32YGMw": null,
+  "ChIJOSc7sB3cQUcRTEqbT32YGMw": {
+    "name": "MÓKA Kávézó (Módszertani Kabinet)",
+    "address": "Budapest, Varsányi Irén u. 9, 1027 Hungary",
+    "phone": "06 20 559 9658",
+    "type": "cafe",
+    "discovered_at": null
+  },
   "ChIJOSiixFndQUcRHabwy-4jRQo": {
     "name": "Croccante Patisserie",
     "address": "Budapest, Károly krt. 3, 1075 Hungary",
@@ -4287,7 +4305,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJOXUzOXDfQUcRwXnjS-Ran5I": null,
+  "ChIJOXUzOXDfQUcRwXnjS-Ran5I": {
+    "name": "The Rusty Coffee Buda",
+    "address": "Budapest, Pasaréti út 51, 1026 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJOYYWWXTDQUcRCkvMo9JNyAI": null,
   "ChIJOYt0DGfcQUcRq84jnD80_Jg": {
     "name": "Istanbul Kebab Akácfa",
@@ -6628,7 +6652,13 @@
     "type": "japanese_restaurant",
     "discovered_at": null
   },
-  "ChIJa7YxrdbdQUcRbheh241Eyts": null,
+  "ChIJa7YxrdbdQUcRbheh241Eyts": {
+    "name": "Baltazár Grill Restaurant in the Buda Castle",
+    "address": "Budapest, Országház u. 31, 1014 Hungary",
+    "phone": "(06 1) 300 7050",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJa9I2B0DcQUcRlOxgxPV9BI0": {
     "name": "Quán Nón Restaurant",
     "address": "Budapest, Erzsébet tér 1, 1051 Hungary",
@@ -6717,7 +6747,13 @@
     "discovered_at": null
   },
   "ChIJaZz3l-XdQUcRxFGZqvty9qM": null,
-  "ChIJadV4OyPAQUcR4Qhxv04yuzI": null,
+  "ChIJadV4OyPAQUcR4Qhxv04yuzI": {
+    "name": "EPRESPARK",
+    "address": "Vecsés, Fő út 72, 2220 Hungary",
+    "phone": "06 30 216 3799",
+    "type": "wedding_venue",
+    "discovered_at": null
+  },
   "ChIJadrjqWzcQUcRdalVK7SNIMY": null,
   "ChIJaetu80TcQUcR2xc4_DnilN0": {
     "name": "Belvárosi Disznótoros - Károlyi utca",
@@ -7366,7 +7402,13 @@
     "discovered_at": null
   },
   "ChIJdytuLfDdQUcR5KNoZDyDLag": null,
-  "ChIJdz3BXv3jQUcR7EZ5C1uESAI": null,
+  "ChIJdz3BXv3jQUcR7EZ5C1uESAI": {
+    "name": "Kati Mami bakery",
+    "address": "Érd, Béke tér 7, 2030 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJdzMTNMvnQUcRS4VZsF1Ch0o": {
     "name": "Ohanam Vietnámi Bisztró",
     "address": "Budapest, Szent István út 77, 1212 Hungary",
@@ -10210,7 +10252,13 @@
     "discovered_at": null
   },
   "ChIJtfU2XM3BQUcRdROm6WsnlA4": null,
-  "ChIJtfzFXUPcQUcR3mCDIuuQb1g": null,
+  "ChIJtfzFXUPcQUcR3mCDIuuQb1g": {
+    "name": "Csendes Létterem - Vintage Bar & Café",
+    "address": "Budapest, Ferenczy István u. 5, 1053 Hungary",
+    "phone": "06 30 727 2100",
+    "type": "bar",
+    "discovered_at": null
+  },
   "ChIJtw7uo2PjQUcRA6AjcW6DZPc": {
     "name": "Market point",
     "address": "Érd, Érd felőli üzletsor, Béke tér 24, 2030 Hungary",
@@ -12868,5 +12916,68 @@
     "phone": "",
     "type": "butcher_shop",
     "discovered_at": "2026-06-17"
+  },
+  "ChIJWU9L83bdQUcRPpCOUOsiAqo": {
+    "name": "Rojt és Bojt Coffee",
+    "address": "Budapest, Budapest Tábor u. 5 Bejárat a Gránit lépcső felől, Tábor u. 5, 1012 Hungary",
+    "phone": "06 30 364 0342",
+    "type": "coffee_shop",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJJ1aW_4jdQUcR0xvx_yQPHok": {
+    "name": "MERON - Specialty Coffee & Brunch",
+    "address": "Budapest, Kecskeméti u. 8, 1053 Hungary",
+    "phone": "06 30 072 4932",
+    "type": "brunch_restaurant",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJVca32DLdQUcRTgm-5gMZuSw": {
+    "name": "Manna ABC (grocery store)",
+    "address": "Budapest, Soroksári út 44, 1095 Hungary",
+    "phone": "06 70 932 8725",
+    "type": "convenience_store",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJK_DTOVLDQUcRYmIKwZ5ycLk": {
+    "name": "Prézli Ételbár Étterem és Kifőzde házhozszállítással | Prézli Food Bar & Restaurant with delivery",
+    "address": "Budapest, Gyömrői út 156, 1103 Hungary",
+    "phone": "06 30 936 9127",
+    "type": "restaurant",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJ1woRcHLdQUcRgHqDA5ujlUQ": {
+    "name": "Wrapsta – Keleti Pályaudvar",
+    "address": "Budapest, Baross tér 2, 1087 Hungary",
+    "phone": "06 30 726 7611",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJwYyIRSjcQUcRy8FQDAUy8Ng": {
+    "name": "Budai 3",
+    "address": "Budapest, Kiss János altábornagy u. 35A, 1126 Hungary",
+    "phone": "(06 1) 613 8763",
+    "type": "cafe",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJg7sT0IHZQUcRMxslGL-_uY0": {
+    "name": "Pinocchio Pizzeria",
+    "address": "Budapest, Bécsi út 121, 1034 Hungary",
+    "phone": "06 20 318 4874",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJ3YfAVrL7QUcRHL_phPKUR-0": {
+    "name": "Soós Pékség",
+    "address": "Ercsi, Fő u. 8, 2451 Hungary",
+    "phone": "(06 25) 490 037",
+    "type": "bakery",
+    "discovered_at": "2026-06-18"
+  },
+  "ChIJw0WC-kviQUcRKLkYipFobBQ": {
+    "name": "Europe Bakery",
+    "address": "Tárnok, Rákóczi út 46, 2461 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-18"
   }
 }
