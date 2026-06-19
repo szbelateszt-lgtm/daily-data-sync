@@ -1992,7 +1992,13 @@
     "type": "cafe",
     "discovered_at": null
   },
-  "ChIJB67CYj3eQUcR4P9WuLAvQgU": null,
+  "ChIJB67CYj3eQUcR4P9WuLAvQgU": {
+    "name": "Suhajda Confectionery",
+    "address": "Budaörs, Farkasréti út 43, 2040 Hungary",
+    "phone": "06 30 668 7267",
+    "type": "pastry_shop",
+    "discovered_at": null
+  },
   "ChIJB6sSU4HcQUcRBQExQJ1vGSA": {
     "name": "A KERT Bisztró",
     "address": "Budapest, Thököly út 57/b, 1146 Hungary",
@@ -8707,7 +8713,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJlWWuTADdQUcRucGCdUr9Ev4": null,
+  "ChIJlWWuTADdQUcRucGCdUr9Ev4": {
+    "name": "KOKURA - Japanese Restaurant",
+    "address": "Budapest, Pilvax köz 1, 1052 Hungary",
+    "phone": "06 30 598 9302",
+    "type": "japanese_restaurant",
+    "discovered_at": null
+  },
   "ChIJlWxK1DHRQUcR8UztXlK3FI0": {
     "name": "Keszi Center Kávézó Söröző",
     "address": "Dunakeszi, Fő út 70, 2120 Hungary",
@@ -12979,5 +12991,61 @@
     "phone": "",
     "type": "bakery",
     "discovered_at": "2026-06-18"
+  },
+  "ChIJM5WLci3dQUcREsljnbtO4qE": {
+    "name": "Cafe Brunch Budapest - Anker",
+    "address": "Budapest, Anker köz 1-3, 1061 Hungary",
+    "phone": "06 70 621 0741",
+    "type": "breakfast_restaurant",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJO_L7YsXdQUcRooSH-AzaxlQ": {
+    "name": "Shabba's Bistro",
+    "address": "Budapest, Deák Ferenc u. 12, 1139 Hungary",
+    "phone": "06 70 377 0914",
+    "type": "bistro",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJB7fJH2rcQUcRvbdHxShAv7Y": {
+    "name": "2 Spaghi - Fresh Pasta Bar",
+    "address": "Passage, Budapest, Gozsdu Udvar 16-building 5, 1072 Hungary",
+    "phone": "06 70 636 6753",
+    "type": "italian_restaurant",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJOYTq12ncQUcRy5Ri8SVklL0": {
+    "name": "Spinoza Restaurant",
+    "address": "Budapest, Dob u. 15, 1074 Hungary",
+    "phone": "(06 1) 413 7488",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJJx0XDgDXQUcRC0umYPWu9Uw": {
+    "name": "Little Rome Gelato & Delizie Italiane",
+    "address": "Szentendre, Kucsera Ferenc u. 15, 2000 Hungary",
+    "phone": "06 30 631 8715",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJ-Yov8TPJQUcRzVCTM-aBGdQ": {
+    "name": "PENNY Gödöllő",
+    "address": "Gödöllő, Dózsa György út 90-92, 2100 Hungary",
+    "phone": "(06 29) 339 345",
+    "type": "discount_store",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJc7xzSuPrQUcRRpxI3CX1gpo": {
+    "name": "Nagymama kifőzdéje",
+    "address": "Gyál, Széchenyi u. 4, 2360 Hungary",
+    "phone": "06 70 419 2923",
+    "type": "buffet_restaurant",
+    "discovered_at": "2026-06-19"
+  },
+  "ChIJQeC8jQPUQUcRkLzerBh1fGg": {
+    "name": "Nezaj Pékség",
+    "address": "Göd, Pesti út 2, 2131 Hungary",
+    "phone": "06 30 334 5983",
+    "type": "bakery",
+    "discovered_at": "2026-06-19"
   }
 }
