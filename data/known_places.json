@@ -1747,7 +1747,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJ9VDwAvLdQUcRiK_JBcXZ19Q": null,
+  "ChIJ9VDwAvLdQUcRiK_JBcXZ19Q": {
+    "name": "Brucker Pékség",
+    "address": "Budapest, Móricz Zsigmond körtér 1, 1111 Hungary",
+    "phone": "06 30 205 6240",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJ9VyuRfjcQUcRZ4XokHcEnow": {
     "name": "Rengeteg RomKafé - avagy Míves 3.0",
     "address": "Budapest, Szinyei Merse u 22, 1063 Hungary",
@@ -2076,7 +2082,13 @@
     "discovered_at": null
   },
   "ChIJBYv0NyDdQUcRXtvQ1d7QAcg": null,
-  "ChIJBZfZgh3cQUcRAP-kwEW4FaQ": null,
+  "ChIJBZfZgh3cQUcRAP-kwEW4FaQ": {
+    "name": "Roni ABC",
+    "address": "Budapest, Margit körút 58, 1027 Hungary",
+    "phone": "06 70 380 4923",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJBahfbXfhQUcRhOAg4D8mC44": {
     "name": "DOBOS KRISZTIÁN GÁBOR E.V.",
     "address": "Érd, Tállya u. 5, 2030 Hungary",
@@ -5720,7 +5732,13 @@
     "discovered_at": null
   },
   "ChIJVXldHV7ZQUcRsutgjSQjtS4": null,
-  "ChIJVZooFErPQUcRkAZyfx9ofVM": null,
+  "ChIJVZooFErPQUcRkAZyfx9ofVM": {
+    "name": "DESPAR",
+    "address": "Gödöllő, Bejövő oldal M3 24,5 km ÉSZAK, 2100 Hungary",
+    "phone": "06 30 527 5759",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJVZpJkmzcQUcR-U4inJ58EEI": {
     "name": "Sophie Budapest",
     "address": "Budapest, Hajós u. 25, 1065 Hungary",
@@ -5839,7 +5857,13 @@
     "type": "italian_restaurant",
     "discovered_at": null
   },
-  "ChIJWWqf_6zdQUcR_eFOHbg_seM": null,
+  "ChIJWWqf_6zdQUcR_eFOHbg_seM": {
+    "name": "Syrian Center",
+    "address": "Budapest, Karinthy Frigyes út 27, 1111 Hungary",
+    "phone": "(06 1) 279 1768",
+    "type": "food_store",
+    "discovered_at": null
+  },
   "ChIJWYBRfTLaQUcR-sO00J3KjZY": {
     "name": "Feng Lai Gyorsétterem",
     "address": "Budapest, Árva u. 10, 1138 Hungary",
@@ -5963,7 +5987,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJXQKrewDhQUcRdDJzV_SJVRY": null,
+  "ChIJXQKrewDhQUcRdDJzV_SJVRY": {
+    "name": "Ruby Sushi Budaors",
+    "address": "Budaörs, Baross u. 160, 2040 Hungary",
+    "phone": "06 70 362 7909",
+    "type": "asian_restaurant",
+    "discovered_at": null
+  },
   "ChIJXQbBCwDRQUcRNpvTGGPYGQ0": {
     "name": "SIMON'S BURGER DUNAKESZI",
     "address": "Dunakeszi, Auchan, 2120 Hungary",
@@ -6311,7 +6341,13 @@
     "type": "cafe",
     "discovered_at": null
   },
-  "ChIJYdrcK5DBQUcRiX_rUg4Z0XY": null,
+  "ChIJYdrcK5DBQUcRiX_rUg4Z0XY": {
+    "name": "Feszt Gelato",
+    "address": "Vecsés, Dózsa György út 12/A, 2220 Hungary",
+    "phone": "",
+    "type": "ice_cream_shop",
+    "discovered_at": null
+  },
   "ChIJYdtQnurdQUcREPGBEAlE7ic": {
     "name": "Arch&Beans Kávéművek",
     "address": "Budapest, Rákóczi út 5, 1088 Hungary",
@@ -7118,7 +7154,13 @@
   },
   "ChIJcSfnUQ3cQUcRXwTP0N4UOkY": null,
   "ChIJcUHpnwLdQUcRRY5efnXkFOc": null,
-  "ChIJcUUrNdXbQUcRwayqcK_pmew": null,
+  "ChIJcUUrNdXbQUcRwayqcK_pmew": {
+    "name": "Deák Kebab Török Étterem",
+    "address": "Budapest, Károly krt. 21, 1075 Hungary",
+    "phone": "",
+    "type": "turkish_restaurant",
+    "discovered_at": null
+  },
   "ChIJcUeEOwDdQUcRGGtG6d4zj6U": {
     "name": "Xin Chào - Vietnámi étterem",
     "address": "Budapest, Egressy út 16, 1149 Hungary",
@@ -7247,7 +7289,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJcyYaLDLAQUcR4paTGfBweKY": null,
+  "ChIJcyYaLDLAQUcR4paTGfBweKY": {
+    "name": "ABC 108.sz.",
+    "address": "Vecsés, Fő út 175, 2220 Hungary",
+    "phone": "(06 29) 350 355",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJd0jOvg7dQUcRPn1FttTjaks": {
     "name": "Sushi Garden",
     "address": "Budapest, Baross u 8, 1085 Hungary",
@@ -7818,7 +7866,13 @@
     "discovered_at": null
   },
   "ChIJfYzSqm7cQUcR5IiOp_XVMck": null,
-  "ChIJfZq9CqPhQUcRLW_H-b5BVIo": null,
+  "ChIJfZq9CqPhQUcRLW_H-b5BVIo": {
+    "name": "PENNY Érd II",
+    "address": "Érd, Bajcsy-Zsilinszky út 133-135, 2030 Hungary",
+    "phone": "(06 29) 339 345",
+    "type": "discount_store",
+    "discovered_at": null
+  },
   "ChIJfbUQLyXJQUcRo_JbgR_pIEw": {
     "name": "Tóth Bakery",
     "address": "Gödöllő, Szabadság tér 8, 2100 Hungary",
@@ -11387,7 +11441,13 @@
     "type": "grocery_store",
     "discovered_at": null
   },
-  "ChIJzSIiHmvcQUcRMMUlLe9gMuo": null,
+  "ChIJzSIiHmvcQUcRMMUlLe9gMuo": {
+    "name": "Roni abc",
+    "address": "Budapest, Bajcsy-Zsilinszky út 15c, 1065 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJzShTRUHDQUcRpau1OAIBap8": null,
   "ChIJzTZMJOnBQUcRvH2oJnx3XQo": null,
   "ChIJzU3m--3dQUcR2w_Eu1Ekyek": null,
@@ -13159,5 +13219,61 @@
     "phone": "",
     "type": "food",
     "discovered_at": "2026-06-20"
+  },
+  "ChIJOygAumncQUcRj5mDcDKq45I": {
+    "name": "Kőleves kert",
+    "address": "Budapest, Kazinczy u. 37-41, 1075 Hungary",
+    "phone": "06 20 213 5999",
+    "type": "restaurant",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJj5TWY0bYQUcRbVZB9QedqFU": {
+    "name": "Élelmiszerbolt Abc",
+    "address": "Üröm, 2096 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJn0THagDdQUcRxnoMRwCpdio": {
+    "name": "Budapest, keleti pálya udvar",
+    "address": "Budapest, Rózsák tere 1, 1074 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJIfBU3CrpQUcRM-qtW4536Us": {
+    "name": "Hamza kebab",
+    "address": "Budapest, Dózsa György u. 2, 1188 Hungary",
+    "phone": "",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJLw1-B_LDQUcRhqCFCydG4NU": {
+    "name": "Ustam Török Kebab (Köki Center)",
+    "address": "Budapest, Vak Bottyán u. 75/A, 1191 Hungary",
+    "phone": "06 20 425 3466",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJMQmJRADJQUcRSM-tPnuxP3s": {
+    "name": "Sweet Beans Gödöllő Cafe",
+    "address": "Gödöllő, Szabadság tér 6, 2100 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJmQjbvsrOQUcRAkmiirH1e5Y": {
+    "name": "Lidl",
+    "address": "Gödöllő, Ottó Ferenc u. 2-4, 2100 Hungary",
+    "phone": "06 80 020 534",
+    "type": "discount_supermarket",
+    "discovered_at": "2026-06-21"
+  },
+  "ChIJFzRWXjTJQUcRE-W2ffuAdHg": {
+    "name": "ALDI",
+    "address": "Gödöllő, Bossányi Krisztina utca 4, 2100 Hungary",
+    "phone": "06 80 088 264",
+    "type": "supermarket",
+    "discovered_at": "2026-06-21"
   }
 }
