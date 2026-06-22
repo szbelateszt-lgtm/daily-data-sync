@@ -181,7 +181,13 @@
     "type": "",
     "discovered_at": null
   },
-  "ChIJ05k0xQ7dQUcRtS4c2F3ZcOo": null,
+  "ChIJ05k0xQ7dQUcRtS4c2F3ZcOo": {
+    "name": "Tesco Hipermarket Budapest Arena Plaza",
+    "address": "Budapest, Kerepesi út 9, 1087 Hungary",
+    "phone": "06 80 222 333",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJ05nAux_hQUcRq2yP0-CJqJo": {
     "name": "FunnyGuys Pizzéria",
     "address": "Érd, Botond u. 45, 2030 Hungary",
@@ -877,7 +883,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJ4V95M_TfQUcR_ObNcwle6gI": null,
+  "ChIJ4V95M_TfQUcR_ObNcwle6gI": {
+    "name": "FeteKert",
+    "address": "Budapest, Fény utcai Piac 2. szint, Lövőház u. 12-III. emelet /12, 1024 Hungary",
+    "phone": "06 30 728 6217",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJ4VRmKWzcQUcRRPInBbOrHrc": {
     "name": "Bigfish Seafood Bistro",
     "address": "Budapest, Andrássy út 44, 1061 Hungary",
@@ -5058,7 +5070,13 @@
     "type": "kebab_shop",
     "discovered_at": null
   },
-  "ChIJRzNUDCTeQUcR8_Gv1uWgWCI": null,
+  "ChIJRzNUDCTeQUcR8_Gv1uWgWCI": {
+    "name": "Komló és Tehén",
+    "address": "Budaörs, Budapesti út 36, 2040 Hungary",
+    "phone": "06 30 865 7317",
+    "type": "hamburger_restaurant",
+    "discovered_at": null
+  },
   "ChIJS0MCuRnhQUcRI1BLxPza8fY": {
     "name": "Mézi by B&N",
     "address": "Érd, Salgói u. 46, 2030 Hungary",
@@ -8690,7 +8708,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJl0diYS_JQUcRcs_yfJjpy_g": null,
+  "ChIJl0diYS_JQUcRcs_yfJjpy_g": {
+    "name": "Zöldség Gyümölcs",
+    "address": "Gödöllő, 2100 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJl0r2_iXeQUcRPe1eFV1QKaw": {
     "name": "Budaörsi Delicatesse",
     "address": "Budaörs, Szabadság út 100, 2040 Hungary",
@@ -13275,5 +13299,61 @@
     "phone": "06 80 088 264",
     "type": "supermarket",
     "discovered_at": "2026-06-21"
+  },
+  "ChIJ58z4qRzdQUcR-Du5OzU31gQ": {
+    "name": "FELIX Kitchen&Bar",
+    "address": "Budapest, Ybl Miklós tér 9, 1013 Hungary",
+    "phone": "06 30 735 5041",
+    "type": "restaurant",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJt2BZIWjZQUcRkZiNKUv_k_I": {
+    "name": "Harapó Mókus Vendéglő",
+    "address": "Budapest, Zápor u. 69, 1032 Hungary",
+    "phone": "(06 1) 388 6151",
+    "type": "restaurant",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJvVNFcgrbQUcRvJE1nobo9P0": {
+    "name": "Netcsemege élelmiszer-házhozszállítás",
+    "address": "Budapest, Apolló u. 13, 1158 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJY9tjYDrbQUcRPxV1UraYWUo": {
+    "name": "Ltd. Market Chef.",
+    "address": "Budapest, Késmárk u 9, 1158 Hungary",
+    "phone": "(06 1) 919 9999",
+    "type": "wholesaler",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJ-Ytw-_7bQUcRV384z4-K-PI": {
+    "name": "Gyros Brothers",
+    "address": "Budapest, Árpád út 37, 1042 Hungary",
+    "phone": "06 30 390 3201",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJZ643Q9bbQUcR_hVQRzlmtlA": {
+    "name": "TOTO KINAI BUFE",
+    "address": "Budapest, Szent István tér 2, 1042 Hungary",
+    "phone": "06 30 391 6579",
+    "type": "restaurant",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJcfuv-a3CQUcReQ5V6dx08oY": {
+    "name": "Chinese Restaurant",
+    "address": "Budapest, Kossuth Lajos utca 48, 1204 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-06-22"
+  },
+  "ChIJ5wHqxWfZQUcRdXlOGg2IvP4": {
+    "name": "Torkos Büfé",
+    "address": "Budapest, Szél u. 5, 1035 Hungary",
+    "phone": "(06 1) 367 2670",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-06-22"
   }
 }
