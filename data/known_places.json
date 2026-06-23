@@ -14,7 +14,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJ-5aHIA3dQUcRW3Jws2c_P68": null,
+  "ChIJ-5aHIA3dQUcRW3Jws2c_P68": {
+    "name": "Fabrik Specialty Coffee - Design - Workshop",
+    "address": "Budapest, Visegrádi u. 14, 1132 Hungary",
+    "phone": "06 30 616 8122",
+    "type": "cafe",
+    "discovered_at": null
+  },
   "ChIJ-6KbLYzjQUcR8a_B6zfKmwE": null,
   "ChIJ-6R6kL3hQUcR0B_VBrOG_Pg": {
     "name": "Tésztaház - Érd",
@@ -3677,7 +3683,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJK9b5Uo_dQUcRBc2xpuI2hZE": null,
+  "ChIJK9b5Uo_dQUcRBc2xpuI2hZE": {
+    "name": "Kemenes cukrászda – Keleti aluljáró",
+    "address": "Budapest, F3XJ+XRX, 1087 Hungary",
+    "phone": "06 20 519 2550",
+    "type": "dessert_shop",
+    "discovered_at": null
+  },
   "ChIJK9pxcgDdQUcRezfAk-oQVMA": {
     "name": "SPYRÓ Café Budapest",
     "address": "Budapest, Királyi Pál u. 9, 1053 Hungary",
@@ -6101,7 +6113,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJXweqkALdQUcR5-DCevlpaM4": null,
+  "ChIJXweqkALdQUcR5-DCevlpaM4": {
+    "name": "G'Roby Józsefvárosi Supermarket",
+    "address": "Budapest, Krúdy u 20, 1085 Hungary",
+    "phone": "(06 1) 429 0225",
+    "type": "general_store",
+    "discovered_at": null
+  },
   "ChIJXxBKTFPdQUcRF9N9LHiCMSI": null,
   "ChIJXxHyLgDRQUcRNQrNveipddY": {
     "name": "Luna Bakery",
@@ -11343,7 +11361,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJz-34R13cQUcReb2sm8VPf_A": null,
+  "ChIJz-34R13cQUcReb2sm8VPf_A": {
+    "name": "Tesco Expressz Budapest Rákóczi út",
+    "address": "Budapest, Rákóczi út 20, 1074 Hungary",
+    "phone": "06 80 222 333",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJz-DKao7cQUcRUrofKqkyECM": {
     "name": "Cafe Frei",
     "address": "Budapest, Kerepesi út 9, 1087 Hungary",
@@ -13355,5 +13379,89 @@
     "phone": "(06 1) 367 2670",
     "type": "fast_food_restaurant",
     "discovered_at": "2026-06-22"
+  },
+  "ChIJG1sRoH7dQUcR8KvYZzC18jA": {
+    "name": "Lucha Matcha Budapest",
+    "address": "Budapest, Budapest Bejárat:Ó utca 21, Hajós u. 14, 1065 Hungary",
+    "phone": "06 20 233 4869",
+    "type": "tea_house",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJQWunRgDdQUcRCiN9I4HuA80": {
+    "name": "CsingaKala Street food",
+    "address": "Budapest, Dohány u. 46, 1074 Hungary",
+    "phone": "",
+    "type": "catering_service",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJb-8EaM3dQUcREuMRzRX5Lqs": {
+    "name": "Freyja - the bakery",
+    "address": "Budapest, Csarnok tér, 1093 Hungary",
+    "phone": "06 30 376 1721",
+    "type": "bakery",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJoTSBa3XZQUcRoVzv_vacspQ": {
+    "name": "Ohana Coffee Kálvin",
+    "address": "Budapest, Ohana Coffee, Kálvin tér 3, 1053 Hungary",
+    "phone": "06 70 793 1157",
+    "type": "coffee_shop",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJNyxf8VjdQUcR30ntCW4jees": {
+    "name": "ALDI",
+    "address": "Budapest, Soroksári út 138-142, 1095, 1095 Hungary",
+    "phone": "06 80 088 264",
+    "type": "supermarket",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJM2Ms4iDcQUcRAW8VhZBI3-A": {
+    "name": "Príma",
+    "address": "Budapest, Krisztina krt. 37, 1013 Hungary",
+    "phone": "(06 1) 489 0320",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJ59q7EADfQUcR7Qyc9OLU6bY": {
+    "name": "Deli Provence Pékség",
+    "address": "Budapest, Fény u., 1024 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJPaUaSADnQUcRTOfGGihQ4Bg": {
+    "name": "Még 1 Kifli-t Kézműves pékség",
+    "address": "Budapest, Nagytétényi út 48-50, 1222 Hungary",
+    "phone": "06 20 484 3844",
+    "type": "bakery",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJ1WD3IIjnQUcRdWldTB8wPMs": {
+    "name": "Kaj-Álom kifőzde",
+    "address": "Budapest, Karácsony Sándor u. 10a, 1211 Hungary",
+    "phone": "06 70 354 9149",
+    "type": "restaurant",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJTaery2fcQUcRrAb9UdKYrbI": {
+    "name": "DEEP Burger",
+    "address": "Budapest, Dob u. 20, 1072 Hungary",
+    "phone": "06 30 473 1307",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJZXfNGabZQUcRJFu_cwCEAOA": {
+    "name": "Tom Yum Budapest Garden",
+    "address": "Budapest, Árpád fejedelem útja 125, 1036 Hungary",
+    "phone": "06 70 630 6318",
+    "type": "thai_restaurant",
+    "discovered_at": "2026-06-23"
+  },
+  "ChIJPTG0pWDjQUcR57vrJy4A3AE": {
+    "name": "Érdi termelői bolt",
+    "address": "Érd, Budai út 5, 2030 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-23"
   }
 }
