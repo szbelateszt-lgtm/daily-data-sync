@@ -4250,7 +4250,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJNyg1KQDRQUcR6A11xdniXaI": null,
+  "ChIJNyg1KQDRQUcR6A11xdniXaI": {
+    "name": "Édes Élet Cukrászat",
+    "address": "Dunakeszi, Garas u. 16, 2120 Hungary",
+    "phone": "06 30 851 4174",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJO0shtjXZQUcR9HGyMC4EpzM": {
     "name": "Fuji Restaurant",
     "address": "Budapest, Szépvölgyi út 21, 1037 Hungary",
@@ -4873,7 +4879,13 @@
     "discovered_at": null
   },
   "ChIJR30OQwDdQUcRgUYXpzl_spE": null,
-  "ChIJR3OlC7PdQUcRqw6glPM-kHs": null,
+  "ChIJR3OlC7PdQUcRqw6glPM-kHs": {
+    "name": "SPAR Market",
+    "address": "Budapest, Bartók Béla út 51, 1114 Hungary",
+    "phone": "06 20 823 7113",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJR3m2DlHcQUcR0qJDxO-BMV4": {
     "name": "Esetleg Bisztró",
     "address": "Budapest, Fővám tér 11-12, 1097 Hungary",
@@ -7062,7 +7074,13 @@
   },
   "ChIJbZgDcADhQUcRCsDrvpD0ZvI": null,
   "ChIJbbQ4wA7cQUcR1Gs3L-KfOcE": null,
-  "ChIJbbUmQ3DRQUcRNJOdd5VHcpI": null,
+  "ChIJbbUmQ3DRQUcRNJOdd5VHcpI": {
+    "name": "Kun Cukrászműhely",
+    "address": "Dunakeszi, Fő út 106, 2120 Hungary",
+    "phone": "06 70 601 0739",
+    "type": "confectionery",
+    "discovered_at": null
+  },
   "ChIJbcfecWvRQUcR6jk6hJ-OPzY": {
     "name": "Zsike konyhája",
     "address": "Dunakeszi, Posta u. 24, 2120 Hungary",
@@ -9677,7 +9695,13 @@
     "type": "coffee_shop",
     "discovered_at": null
   },
-  "ChIJpcnghUXcQUcR5HodGCU0GuM": null,
+  "ChIJpcnghUXcQUcR5HodGCU0GuM": {
+    "name": "Trattoria Toscana Italian Restaurant",
+    "address": "Budapest, Belgrád rkp. 13 - 15, 1056 Hungary",
+    "phone": "(06 1) 327 0045",
+    "type": "italian_restaurant",
+    "discovered_at": null
+  },
   "ChIJpdwVBX3WQUcRbXj1C7KZZIA": {
     "name": "Skanzen-Ház Pékség",
     "address": "Szentendre, Malom u. 2, 2000 Hungary",
@@ -10700,7 +10724,13 @@
     "discovered_at": null
   },
   "ChIJvVwuJTfRQUcRfZOMILhcfuc": null,
-  "ChIJvWI2sCXJQUcRSVjWFbKlsy4": null,
+  "ChIJvWI2sCXJQUcRSVjWFbKlsy4": {
+    "name": "Fit & Sweet Sugar Free Confectionery",
+    "address": "Dunakeszi, Fóti út 71, 2120 Hungary",
+    "phone": "06 70 701 0908",
+    "type": "pastry_shop",
+    "discovered_at": null
+  },
   "ChIJvXgTfULdQUcRHOqe46DunGY": {
     "name": "Royal Guard Cafe",
     "address": "Budapest, Palota Hunyadi-udvar, 1014 Hungary",
@@ -13463,5 +13493,68 @@
     "phone": "",
     "type": "grocery_store",
     "discovered_at": "2026-06-23"
+  },
+  "ChIJMfu7VaHdQUcR6hDkrnnvVCU": {
+    "name": "N28 Wine and Kitchen",
+    "address": "Budapest, Nagymező u. 28, 1065 Hungary",
+    "phone": "06 70 659 4312",
+    "type": "restaurant",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJ0UGUwGfcQUcRm0CDsyvtWKk": {
+    "name": "Barack és Szilva Restaurant | Budapest Jewish Quarter",
+    "address": "Budapest, Klauzál u. 13, 1072 Hungary",
+    "phone": "(06 1) 798 8285",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJgyEuTkTcQUcRzev3P1ndqb0": {
+    "name": "BorLaBor Étterem",
+    "address": "Budapest, Veres Pálné u. 7, 1053 Hungary",
+    "phone": "06 20 572 0906",
+    "type": "restaurant",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJa6DmFqzdQUcRiZbDcG0LD90": {
+    "name": "SPAR Supermarket",
+    "address": "Budapest, Irinyi József u. 34, 1117 Hungary",
+    "phone": "06 20 823 7815",
+    "type": "supermarket",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJyY-5mjTnQUcRb17d2XAgd_8": {
+    "name": "Döner Kebab & Pizzeria Ricsi - Városház tér",
+    "address": "Budapest, Városház tér 15, 1221 Hungary",
+    "phone": "06 70 675 3074",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJ31lj6O_nQUcR75cy_cDa3gM": {
+    "name": "Kínai Büfé",
+    "address": "Budapest, Görgey Artúr tér 7, 1212 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJjSK-4o3dQUcRFtsxXhYGRJ0": {
+    "name": "Hacky's Mexikói Étterem & GasztroPub",
+    "address": "Budapest, Nefelejcs u. 51, 1078 Hungary",
+    "phone": "06 70 581 5384",
+    "type": "mexican_restaurant",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJ9wNWrVTRQUcRBSmrDlhWNXs": {
+    "name": "Gesztenyés Réteskert és Pékség",
+    "address": "Fót, Erkel Ferenc tér 1, 2151 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-24"
+  },
+  "ChIJJdeiRQDRQUcRFQe6ST9bgWM": {
+    "name": "Dunakeszi Fő út 58.",
+    "address": "Dunakeszi, 2120 Hungary",
+    "phone": "",
+    "type": "transportation_service",
+    "discovered_at": "2026-06-24"
   }
 }
