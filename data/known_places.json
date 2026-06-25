@@ -2544,7 +2544,13 @@
     "type": "cafe",
     "discovered_at": null
   },
-  "ChIJDd59OV3cQUcRWI5fbMxvllw": null,
+  "ChIJDd59OV3cQUcRWI5fbMxvllw": {
+    "name": "City SPAR",
+    "address": "Budapest, Rákóczi út 19, 1088 Hungary",
+    "phone": "06 20 823 7119",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJDezsdgnXQUcRvot8GO869r0": {
     "name": "Passata",
     "address": "Szentendre, Alkotmány u. 2, 2000 Hungary",
@@ -5147,7 +5153,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJS7fGewDTQUcRSSWgl36eggw": null,
+  "ChIJS7fGewDTQUcRSSWgl36eggw": {
+    "name": "MÁZ specialty kávézó",
+    "address": "Göd, Nemeskéri-Kiss Miklós út 100, 2131 Hungary",
+    "phone": "06 70 363 9987",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJS9QfgjHJQUcR7OmCF6PhVG0": {
     "name": "Yellow Pub Restaurant",
     "address": "Gödöllő, Dózsa György út 64, 2100 Hungary",
@@ -13556,5 +13568,68 @@
     "phone": "",
     "type": "transportation_service",
     "discovered_at": "2026-06-24"
+  },
+  "ChIJCanrPwDdQUcRAntKeeFiTh4": {
+    "name": "Tutto Restaurant & Bar",
+    "address": "Budapest, Nagymező u. 38, 1065 Hungary",
+    "phone": "06 30 138 2431",
+    "type": "italian_restaurant",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJv8Cv53rdQUcR7uSmXMjniBk": {
+    "name": "Spago Budapest by Wolfgang Puck",
+    "address": "Budapest, Váci u 36, 1056 Hungary",
+    "phone": "06 70 534 9000",
+    "type": "restaurant",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJERmYoHTdQUcR4GJ_DUCnmVI": {
+    "name": "Alma & Körte Restaurant",
+    "address": "Budapest, Lőrinc Pap tér 3, 1088 Hungary",
+    "phone": "(06 1) 786 7803",
+    "type": "restaurant",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJzaZIZ6XbQUcRP3saLuFK1m0": {
+    "name": "Utasellátó Kávéház",
+    "address": "Budapest, Tatai u. 95, 1142 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJu5pVbwDbQUcR9YKAYE3a73U": {
+    "name": "Viet Nam Food",
+    "address": "Budapest, Petőfi u. 28, 1042 Hungary",
+    "phone": "06 30 680 3478",
+    "type": "vietnamese_restaurant",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJB5Dkwc3dQUcRB6YWL8_4Rpo": {
+    "name": "hanasushi",
+    "address": "Budapest, Nagymező u. 28, 1065 Hungary",
+    "phone": "06 30 417 0751",
+    "type": "asian_restaurant",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJ_Wvq4RvdQUcRyBR0Fpjp0I8": {
+    "name": "Happy Panda kínai büfé",
+    "address": "Budapest, Nefelejcs u. 3, 1078 Hungary",
+    "phone": "",
+    "type": "meal_takeaway",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJfT3XLwDdQUcRCYnv7JeFbBY": {
+    "name": "Wolt Market Buda",
+    "address": "Budapest, Soroksári út 48, 1095 Hungary",
+    "phone": "",
+    "type": "convenience_store",
+    "discovered_at": "2026-06-25"
+  },
+  "ChIJ4R7jjQvcQUcR7pglq-TUKPQ": {
+    "name": "Barátságos kínai gyorsbüfé",
+    "address": "Budapest, Radnóti Miklós u., 1137 Hungary",
+    "phone": "06 30 359 2286",
+    "type": "restaurant",
+    "discovered_at": "2026-06-25"
   }
 }
