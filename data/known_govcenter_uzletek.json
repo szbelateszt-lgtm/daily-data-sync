@@ -79109,5 +79109,323 @@
     "datum": "2012.12.19",
     "kerulet": "Budapest IV.? (Újpest?)",
     "discovered_at": "2026-06-25"
+  },
+  "Budapest V. (Belváros)::12535|14642/2026|Máté Péter Pál egyéni vállalkozó|1036 Budapest Lajos utca 91. 3. em. 40.|61632952|53155836-4712-231-01|Budapest Souvenir Market|1051 Budapest József Attila utca 16.|212||H: 10:00 - 22:00, K: 10:00 - 22:00, Sze: 10:00 - 22:00, Cs: 10:00 - 23:00, P: 10:00 - 23:00, Szo: 10:00 - 23:00, V: 10:00 - 22:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Édességáru | Egyéb élelmiszer | Dohányterméket kiegészítő termék | Textil | Ruházat | Lábbeli- és bőráru | Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Villamos háztartási készülék és villamossági cikk | Audió- és videóberendezés | Telekommunikációs cikk | Vasáru, barkács, és építési anyag | Könyv | Papír- és írószer, művészellátó cikk | Illatszer, drogéria | Óra- és ékszer | Játékáru | Optikai cikk | Emlék- és ajándéktárgy | Numizmatikai termék|2026.06.12|2026.06.25||||||||": {
+    "nev_cim": "Máté Péter Pál egyéni vállalkozó | 1036 Budapest Lajos utca 91. 3. em. 40. | Budapest Souvenir Market | 1051 Budapest József Attila utca 16.",
+    "datum": "2026.06.12",
+    "kerulet": "Budapest V. (Belváros)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest V. (Belváros)::12534|14641/2026|Car-Cool Kft.|1051 Budapest Október 6. utca 3.|01-09-424965|24742142-5611-113-01|Parasztkonyha|1056 Budapest Váci utca 79.|254|80|H: 17:00 - 23:00, K: 17:00 - 23:00, Sze: 17:00 - 23:00, Cs: 17:00 - 23:00, P: 12:00 - 23:00, Szo: 12:00 - 23:00, V: 12:00 - 23:00,|Igen|Igen||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék|2026.06.19|2026.06.25||||||||Étterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Car-Cool Kft. | 1051 Budapest Október 6. utca 3. | Parasztkonyha | 1056 Budapest Váci utca 79.",
+    "datum": "2026.06.19",
+    "kerulet": "Budapest V. (Belváros)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest VII. (Erzsébetváros)::8665|7425/2026|Alis Taverna Kft.|1075 Budapest Király utca 21. fszt. 1.|01 09 452639|32981483-5611-113-01|Melissa Bistro|1075 Budapest Király utca 21. fszt. 1.|55|15|H: 11:00 - 24:00, K: 11:00 - 24:00, Sze: 11:00 - 24:00, Cs: 11:00 - 24:00, P: 11:00 - 24:00, Szo: 11:00 - 24:00, V: 11:00 - 24:00,|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék||2026.06.25||||||||Gyorsétterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Alis Taverna Kft. | 1075 Budapest Király utca 21. fszt. 1. | Melissa Bistro | 1075 Budapest Király utca 21. fszt. 1.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest VII. (Erzsébetváros)::8664|7424/2026|Gyuricza Tamás e.v.|1071 Budapest Dembinszky utca 34.|62443360|92137996-4712-231-01|nincsneve||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Országos|csomagküldő kereskedelem|kiskereskedelem||||Lábbeli- és bőráru||2026.06.17||||||||": {
+    "nev_cim": "Gyuricza Tamás e.v. | 1071 Budapest Dembinszky utca 34. | nincsneve | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2026.06.17",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest VII. (Erzsébetváros)::8663|7423/2026|Éhes Sarok Kft.|1092 Budapest Ráday utca 18. 2.lph. 1.em. 3..|01 09 359411|27966398-5611-113-01|Chimney Cake|1074 Budapest Dohány utca 28. fszt. 3.ajtó|40||H: 10:00 - 22:00, K: 10:00 - 22:00, Sze: 10:00 - 22:00, Cs: 10:00 - 22:00, P: 08:00 - 24:00, Szo: 08:00 - 24:00, V: 08:00 - 24:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|Sör | Alkoholtermék | Egyéb csendes és habzó erjesztett ital|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék|2026.06.23|2026.06.23||||||||": {
+    "nev_cim": "Éhes Sarok Kft. | 1092 Budapest Ráday utca 18. 2.lph. 1.em. 3.. | Chimney Cake | 1074 Budapest Dohány utca 28. fszt. 3.ajtó",
+    "datum": "2026.06.23",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest VII. (Erzsébetváros)::8662|7422/2026|Farkas Nikoletta|1078 Budapest Nefelejcs utca 10. fszt. 2/A.|19913609|92022823-5612-231-01|NIXILAND||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Magyarország|mozgóbolt útján folytatott kereskedelmi tevékenység|kiskereskedelem|Sör | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital|2026.06.03|2026.06.25||||||||": {
+    "nev_cim": "Farkas Nikoletta | 1078 Budapest Nefelejcs utca 10. fszt. 2/A. | NIXILAND | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2026.06.03",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::150|393570/E/1/2026|ZIN Family 686 Kft.|1154 Budapest Pöltenberg Ernő utca 7|01-09-450180|32933222-4711-113-01|ÁZSIA DISZKONT|1123 Budapest Alkotás utca 7/A|154||H: 07:00 - 20:00, K: 07:00 - 20:00, Sze: 07:00 - 20:00, Cs: 07:00 - 20:00, P: 07:00 - 20:00, Szo: 09:00 - 18:00, V: 09:00 - 16:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Illatszer, drogéria | Háztartási tisztítószer, vegyi áru|2018.10.19|2026.03.27||||||||": {
+    "nev_cim": "393570/E/1/2026 | ZIN Family 686 Kft. | 1154 Budapest Pöltenberg Ernő utca 7 | ÁZSIA DISZKONT",
+    "datum": "2018.10.19",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::149|368324/E/1/2025|Petfirst Kft.|2890 Tata Kossuth tér 6|11-09-031548|26198549-4773-113-11|PETFIRST ÁLLATPATIKA|1126 Budapest Kiss János Altábornagy utca 48/B fszt. 3.|60||H: 10:00 - 19:00, K: 10:00 - 19:00, Sze: 10:00 - 19:00, Cs: 10:00 - 19:00, P: 10:00 - 19:00, Szo: 09:00 - 14:00, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||Állatgyógyászati készítmények és hatóanyagaik||2025.04.28|2025.05.05||||||||": {
+    "nev_cim": "368324/E/1/2025 | Petfirst Kft. | 2890 Tata Kossuth tér 6 | PETFIRST ÁLLATPATIKA",
+    "datum": "2025.04.28",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::148|361093/B/1/2024|VILMOS BÖRDÍSZMŰ Kft.|1086 Budapest Teleki László tér 4 1/15|01-09-371602|28735681-4789-113-01|Közterületi értékesítés|1126 Budapest Böszörményi út 23-25|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||közterületi értékesítés|kiskereskedelem||||Lábbeli- és bőráru||2024.11.15||||||||": {
+    "nev_cim": "361093/B/1/2024 | VILMOS BÖRDÍSZMŰ Kft. | 1086 Budapest Teleki László tér 4 1/15 | Közterületi értékesítés",
+    "datum": "2024.11.15",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::147|356667/2024|Ecsetbolt.hu Kft.|1122 Budapest Városmajor utca 1/B. fszt/1.|Cg.01-09-351293|27271939-4778-113-01|Ecsetbolt|1122 Budapest Magyar Jakobinusok tere 4/B.|140||H: 09:00 - 15:00, K: 09:00 - 15:00, Sze: 09:00 - 15:00, Cs: 09:00 - 15:00, P: 09:00 - 15:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|||2024.08.07||||||||": {
+    "nev_cim": "Ecsetbolt.hu Kft. | 1122 Budapest Városmajor utca 1/B. fszt/1. | Cg.01-09-351293 | Ecsetbolt",
+    "datum": "2024.08.07",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::146|355350/E/1/2024|Semmelweis Egyetem|1085 Budapest Üllői út 26|FI62576|19308674-8542-563-01|Intézeti ABC|1121 Budapest Szanatórium utca 19|62||H: 07:00 - 15:00, K: 07:00 - 15:00, Sze: 07:00 - 15:00, Cs: 07:00 - 15:00, P: 07:00 - 15:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Közérzetjavító és étrend-kiegészítő termék | Könyv | Újság, napilap, folyóirat, periodikus kiadvány | Papír- és írószer, művészellátó cikk | Háztartási tisztítószer, vegyi áru | Gépjármű-kenőanyag, -hűtőanyag, adalékanyag és a jövedéki adóról szóló törvény szerinti üzemanyag | Játékáru | Közérzettel kapcsolatos nem élelmiszer termék | Emlék- és ajándéktárgy|2024.06.19|2024.06.19||2024.11.12||||||": {
+    "nev_cim": "355350/E/1/2024 | Semmelweis Egyetem | 1085 Budapest Üllői út 26 | FI62576",
+    "datum": "2024.06.19",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::145|334663/E/1/2023|Veréb Krisztina|1126 Budapest Németvölgyi út 14/B 1/1|55359919|56687035-9602-231-01|Vörös Veréb Szalon|1126 Budapest Németvölgyi út 14/B 1/1.|76||H: 09:00 - 19:00, K: 09:00 - 19:00, Sze: 09:00 - 19:00, Cs: 09:00 - 19:00, P: 09:00 - 19:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Közérzetjavító és étrend-kiegészítő termék | Illatszer, drogéria|2023.02.06|2023.02.20||||||||": {
+    "nev_cim": "334663/E/1/2023 | Veréb Krisztina | 1126 Budapest Németvölgyi út 14/B 1/1 | Vörös Veréb Szalon",
+    "datum": "2023.02.06",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::143|320157/E/1/2022|TB-KRIBAMA Korlátolt Felelősségű Társaság|8183 Papkeszi Kossuth utca 21|19-09-522503|27482878-8121-113-19|KRIBAMA|1122 Budapest Városmajor utca 1/C|22||H: 09:00 - 16:00, K: 09:00 - 16:00, Sze: 09:00 - 16:00, Cs: 09:00 - 16:00, P: 09:00 - 16:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Illatszer, drogéria | Háztartási tisztítószer, vegyi áru | Emlék- és ajándéktárgy | Kreatív-hobbi és dekorációs termék|2022.02.07|2022.03.07||2024.12.06||||||": {
+    "nev_cim": "320157/E/1/2022 | TB-KRIBAMA Korlátolt Felelősségű Társaság | 8183 Papkeszi Kossuth utca 21 | KRIBAMA",
+    "datum": "2022.02.07",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::144|320157/E/2/2024|TB-KRIBAMA Korlátolt Felelősségű Társaság|8183 Papkeszi Kossuth utca 21|19-09-522503|27482878-8121-113-19|KRIBAMA|1122 Budapest Városmajor utca 1/B|25||H: 09:00 - 14:00, K: 09:00 - 14:00, Sze: 09:00 - 14:00, Cs: 09:00 - 14:00, P: 09:00 - 14:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag||2024.10.28|2024.11.08||||||||": {
+    "nev_cim": "320157/E/2/2024 | TB-KRIBAMA Korlátolt Felelősségű Társaság | 8183 Papkeszi Kossuth utca 21 | KRIBAMA",
+    "datum": "2024.10.28",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::142|318794/B/1/2022|SZINKER Kft.|1124 Budapest Jagelló út 30|01-09-566580|12226407-4791-113-01|Conrad.hu|||||Nem|Nem|Magyarország egész területén|csomagküldő kereskedelem|kiskereskedelem||||Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Villamos háztartási készülék és villamossági cikk | Audió- és videóberendezés | Telekommunikációs cikk | Vasáru, barkács, és építési anyag | Papír- és írószer, művészellátó cikk | Számítógépes hardver- és szoftver termék | Óra- és ékszer | Sportszer, sporteszköz | Játékáru | Közérzettel kapcsolatos nem élelmiszer termék | Virág és kertészeti cikk | Fotócikk | Optikai cikk | Emlék- és ajándéktárgy | Irodagép, -berendezés, irodabútor | Speciális gép, berendezés | Kreatív-hobbi és dekorációs termék||2022.01.11||2024.02.05||||||": {
+    "nev_cim": "318794/B/1/2022 | SZINKER Kft. | 1124 Budapest Jagelló út 30 | Conrad.hu",
+    "datum": "2022.01.11",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::141|312997/2024|Gottdiener Judit|1121 Budapest Szanatórium utca 19.|60552338|91147480-5611-231-01|Szanatórium kisbolt|1121 Budapest Szanatórium utca 19.|20|0|H: 07:00 - 18:00, K: 07:00 - 18:00, Sze: 07:00 - 18:00, Cs: 07:00 - 18:00, P: 07:00 - 18:00, Szo: 07:00 - 18:00, V: 07:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|||2024.11.12||||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Gottdiener Judit | 1121 Budapest Szanatórium utca 19. | Szanatórium kisbolt | 1121 Budapest Szanatórium utca 19.",
+    "datum": "2024.11.12",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::140|180972/E/1/2022|Spirit Shape Hungary Kft|1174 Budapest Sóska utca 52|Cg. 01-09-373246|28769053-9313-113-01|Spirit Shape Fittness and Beauty|1121 Budapest Rácz Aladár út 158|184||hétfőtől – péntekig: 09.00-21.00 szombat - vasárnap: 09.00-17.00|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Édességáru | Közérzetjavító és étrend-kiegészítő termék | Illatszer, drogéria | Háztartási tisztítószer, vegyi áru | Sportszer, sporteszköz|2020.10.28|2022.03.10||||||||": {
+    "nev_cim": "180972/E/1/2022 | Spirit Shape Hungary Kft | 1174 Budapest Sóska utca 52 | Cg. 01-09-373246",
+    "datum": "2020.10.28",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::139|123281/2026|TROVET HUNGARY Kft.|1212 Budapest Szent István út 69.|01-09-738293|13496799-7500-113-01|Petlegio Petshop Márvány|1126 Budapest Márvány utca 44.|43||H: 10:00 - 18:00, K: 10:00 - 18:00, Sze: 10:00 - 18:00, Cs: 10:00 - 18:00, P: 10:00 - 18:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||Állatgyógyászati készítmények és hatóanyagaik|||2026.06.25||||||||": {
+    "nev_cim": "TROVET HUNGARY Kft. | 1212 Budapest Szent István út 69. | Petlegio Petshop Márvány | 1126 Budapest Márvány utca 44.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::106|15/2010|Márvány Trade Kft.|1121 Budapest Árnyas út 32-36. b. ép.|Cg.0109882035|13962315-4711-113-01|Szarvas Csemege|1125 Budapest Szarvas Gábor út 8/a.|161||hétfőtől - péntekig: 06.30-21.00 szombat: 07.00-19.00 vasárnap: Z Á R V A Az üzlet adventi vasárnap nyitva tart 08.00-17.00, választott vasárnap 2015. december 27. 08.00-17.00|Nem|Nem||Nincs átfordítva|kiskereskedelem|Alkoholtermék | Köztes alkoholtermék | Sör | Bor | Pezsgő|||Élelmiszer | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Hal | Édességáru | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Tej, tejtermék | Egyéb élelmiszer | Ruházat | Textil | Audiovizuális termék | Audió- és videóberendezés | Könyv | Újság, napilap, folyóirat, periodikus kiadvány|2010.02.17|2010.01.01|2010.02.15|2016.05.25||||||": {
+    "nev_cim": "Márvány Trade Kft. | 1121 Budapest Árnyas út 32-36. b. ép. | Cg.0109882035 | Szarvas Csemege",
+    "datum": "2010.02.17",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::107|15/2016|Timi & Peti Kft.|1161 Budapest Pálya utca 116|01-09-288381|25774948-4711-113-01|DISZKONT VEGYESKERESKEDELEM|1126 Budapest Böszörményi út 3/a.|144||H: 08:00 - 19:00, K: 08:00 - 19:00, Sze: 08:00 - 19:00, Cs: 08:00 - 19:00, P: 08:00 - 19:00, Szo: 09:00 - 17:00, V: 09:00 - 16:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem|Alkoholtermék | Sör | Bor | Pezsgő | Köztes alkoholtermék|||Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Édességáru | Cukrászati készítmény, édesipari termék | Dohányterméket kiegészítő termék | Közérzetjavító és étrend-kiegészítő termék | Textil | Ruházat | Babatermék | Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Villamos háztartási készülék és villamossági cikk | Illatszer, drogéria | Háztartási tisztítószer, vegyi áru | Játékáru | Emlék- és ajándéktárgy | Kreatív-hobbi és dekorációs termék||2016.12.08||||||||": {
+    "nev_cim": "Timi & Peti Kft. | 1161 Budapest Pálya utca 116 | DISZKONT VEGYESKERESKEDELEM | 1126 Budapest Böszörményi út 3/a.",
+    "datum": "2016.12.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::99|14/2016|HR General Kft.|2013 Pomáz Táncsics Mihály utca 48.|Cg. 1309140748|22956105-5630-113-13|Édes Pötty MOM Park|1126 Budapest Dolgos utca 2. h ép. 4. fszt. 193.|38|10|hétfőtől – péntekig: 08.00-18.30 szombat: 09.00-18.30 vasárnap: 10.00-13.00|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Élelmiszer | Cukrászati készítmény, édesipari termék | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Közérzetjavító és étrend-kiegészítő termék | Pirotechnikai termék | Emlék- és ajándéktárgy | Kreatív-hobbi és dekorációs termék|2016.10.28|2016.11.24||||||||": {
+    "nev_cim": "HR General Kft. | 2013 Pomáz Táncsics Mihály utca 48. | Cg. 1309140748 | Édes Pötty MOM Park",
+    "datum": "2016.10.28",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::100|14/2010|Márvány Trade Kft.|1121 Budapest Árnyas út 32-36. b. ép.|Cg.0109882035|13962315-4711-113-01|Márvány Csemege|1126 Budapest Márvány utca 33.|379||hétfőtől - péntekig: 06.30-21.00 szombat: 07.00-19.00 vasárnap: Z Á R V A Az üzlet adventi vasárnap (2015. december, 13-án, 20-án) 08.00-17.00, választott vasárnap 2015. december 27. 08.00-17.00|Nem|Nem||Nincs átfordítva|kiskereskedelem|Alkoholtermék | Köztes alkoholtermék | Sör | Bor | Pezsgő|||Élelmiszer | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Hal | Édességáru | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Tej, tejtermék | Egyéb élelmiszer | Ruházat | Textil | Audiovizuális termék | Audió- és videóberendezés | Könyv | Újság, napilap, folyóirat, periodikus kiadvány|2010.02.17|2010.01.01|2010.02.15|2016.06.09||||||": {
+    "nev_cim": "Márvány Trade Kft. | 1121 Budapest Árnyas út 32-36. b. ép. | Cg.0109882035 | Márvány Csemege",
+    "datum": "2010.02.17",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::101|14/2017|Országos Orvosi Rehabilitációs Intézet|1528 Budapest Szanatórium utca 19|309798|15309790-8610-312-01|OORI INTÉZETI ABC|1121 Budapest Szanatórium utca 19|62||hétfőtől – vasárnapig: 06.00-18.00|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | „A” és „B” tűzveszélyességi osztályba sorolt anyag, kivéve a Jöt. szerinti tüzelőolaj, propán vagy propán-bután gáz és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Fegyver, lőszer, robbanó- és robbantószer, gázspray, pirotechnikai termék, a polgári célú pirotechnikai tevékenységekről szóló kormányrendelet szerinti 1., 2. és 3. pirotechnikai osztályba tartozó termékek, az ott meghatározott kivételekkel|Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Cukrászati készítmény, édesipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Élelmiszer | Közérzetjavító és étrend-kiegészítő termék | Illatszer, drogéria | Villamos háztartási készülék és villamossági cikk | Háztartási tisztítószer, vegyi áru | Textil | Játékáru||2017.12.08||2021.04.30||||||": {
+    "nev_cim": "Országos Orvosi Rehabilitációs Intézet | 1528 Budapest Szanatórium utca 19 | OORI INTÉZETI ABC | 1121 Budapest Szanatórium utca 19",
+    "datum": "2017.12.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::97|13/2017|VALESCO Kft.|1134 Budapest Váci út 46. fszt. 1.|Cg.0109944925|22923569-4711-113-01|LIKE SHOP ABC|1122 Budapest Magyar Jakobinusok tere 1.|78|5|hétfőtől – vasárnapig: 00.00-24.00|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | „A” és „B” tűzveszélyességi osztályba sorolt anyag, kivéve a Jöt. szerinti tüzelőolaj, propán vagy propán-bután gáz és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Fegyver, lőszer, robbanó- és robbantószer, gázspray, pirotechnikai termék, a polgári célú pirotechnikai tevékenységekről szóló kormányrendelet szerinti 1., 2. és 3. pirotechnikai osztályba tartozó termékek, az ott meghatározott kivételekkel|Meleg-, hideg étel | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Hal | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Élelmiszer | Közérzetjavító és étrend-kiegészítő termék | Babatermék | Audiovizuális termék | Audió- és videóberendezés | Könyv | Újság, napilap, folyóirat, periodikus kiadvány | Illatszer, drogéria | Villamos háztartási készülék és villamossági cikk | Háztartási tisztítószer, vegyi áru | Textil | Játékáru | Állateledel, takarmány | Kedvtelésből tartott állat|2017.11.15|2017.11.17||2019.05.10||||||Nincs még bejelentve": {
+    "nev_cim": "VALESCO Kft. | 1134 Budapest Váci út 46. fszt. 1. | Cg.0109944925 | LIKE SHOP ABC",
+    "datum": "2017.11.15",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::98|13/2016|CHIMPEX HUNGÁRIA Kft.|1037 Budapest Bécsi út 267.|Cg. 0109564342|12193273-4636-113-01|ITAL, KÁVÉ, ÉDESSÉG, VEGYIÁRU DISZKONT|1123 Budapest Alkotás utca 15.|317||hétfőtől – péntekig: 08.00-22.00 szombat: 08.00-20.00 vasárnap: zárva|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem|Alkoholtermék | Sör | Bor | Pezsgő | Köztes alkoholtermék|||Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Kenyér- és pékáru, sütőipari termék | Cukrászati készítmény, édesipari termék | Édességáru | Egyéb élelmiszer | Élelmiszer | Textil | Ruházat | Babatermék | Lábbeli- és bőráru | Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Audiovizuális termék | Audió- és videóberendezés | Könyv | Papír- és írószer, művészellátó cikk | Illatszer, drogéria | Villamos háztartási készülék és villamossági cikk | Óra- és ékszer | Sportszer, sporteszköz | Tapéta, padlóburkoló, szőnyeg, függöny | Állateledel, takarmány | Kedvtelésből tartott állat | Kegytárgy, kegyszer, egyházi cikk | Emlék- és ajándéktárgy|2016.10.20|2016.10.20||||||||": {
+    "nev_cim": "CHIMPEX HUNGÁRIA Kft. | 1037 Budapest Bécsi út 267. | Cg. 0109564342 | ITAL, KÁVÉ, ÉDESSÉG, VEGYIÁRU DISZKONT",
+    "datum": "2016.10.20",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::88|12/2016|H&M Hennes & Mauritz Kft.|1052 Budapest Deák Ferenc utca 3-5.|Cg. 0109733827|13410595-4771-113-01|H&M RUHÁZATI ÜZLET|1123 Budapest Alkotás utca 53.|1819||H: 10:00 - 20:00, K: 10:00 - 20:00, Sze: 10:00 - 20:00, Cs: 10:00 - 20:00, P: 10:00 - 20:00, Szo: 10:00 - 20:00, V: 10:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Textil | Ruházat | Babatermék | Lábbeli- és bőráru | Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Telekommunikációs cikk | Könyv | Papír- és írószer, művészellátó cikk | Illatszer, drogéria | Villamos háztartási készülék és villamossági cikk | Óra- és ékszer | Sportszer, sporteszköz | Játékáru | Optikai cikk | Emlék- és ajándéktárgy||2016.07.28|2018.10.03|||||||": {
+    "nev_cim": "H&M Hennes & Mauritz Kft. | 1052 Budapest Deák Ferenc utca 3-5. | Cg. 0109733827 | H&M RUHÁZATI ÜZLET",
+    "datum": "2016.07.28",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::89|12/2017|Vanília Kft.|1052 Budapest Párisi utca 3.|Cg.0109728921|13314107-5610-113-01|Szamos Marcipán Budai Cukrászda|1126 Budapest Böszörményi út 44.|82|24|hétfőtől – vasárnapig: 09.00-20.00|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék||Fegyver, lőszer, robbanó- és robbantószer, gázspray, pirotechnikai termék, a polgári célú pirotechnikai tevékenységekről szóló kormányrendelet szerinti 1., 2. és 3. pirotechnikai osztályba tartozó termékek, az ott meghatározott kivételekkel | Dohánytermékek | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Élelmiszer | Könyv||2017.11.07||||||||": {
+    "nev_cim": "Vanília Kft. | 1052 Budapest Párisi utca 3. | Cg.0109728921 | Szamos Marcipán Budai Cukrászda",
+    "datum": "2017.11.07",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::86|11/2017|Vanília Kft.|1052 Budapest Párisi utca 3.|Cg.0109728921|13314107-5610-113-01|Szamos Marcipán Szépkilátás Cukrászda|9999 1121 Budapest, Szépkilátás u. 1.|226|50|hétfőtől – vasárnapig: 09.00-20.00|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék||Fegyver, lőszer, robbanó- és robbantószer, gázspray, pirotechnikai termék, a polgári célú pirotechnikai tevékenységekről szóló kormányrendelet szerinti 1., 2. és 3. pirotechnikai osztályba tartozó termékek, az ott meghatározott kivételekkel | Dohánytermékek | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Élelmiszer | Könyv||2017.09.20||||||||": {
+    "nev_cim": "Vanília Kft. | 1052 Budapest Párisi utca 3. | Cg.0109728921 | Szamos Marcipán Szépkilátás Cukrászda",
+    "datum": "2017.09.20",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::87|11/2016|Robert Solar Bt.|1063 Budapest Szinyei Merse utca 10.|Cg.0106787105|24694812-4649-212-01|GEOWAY INFRA STÚDIÓ|1126 Budapest Márvány utca 23.|60|||Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | „A” és „B” tűzveszélyességi osztályba sorolt anyag, kivéve a Jöt. szerinti tüzelőolaj, propán vagy propán-bután gáz és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Fegyver, lőszer, robbanó- és robbantószer, gázspray, pirotechnikai termék, a polgári célú pirotechnikai tevékenységekről szóló kormányrendelet szerinti 1., 2. és 3. pirotechnikai osztályba tartozó termékek, az ott meghatározott kivételekkel|Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital | Közérzetjavító és étrend-kiegészítő termék | Cukrászati készítmény, édesipari termék | Illatszer, drogéria | Villamos háztartási készülék és villamossági cikk | Háztartási tisztítószer, vegyi áru | Textil | Közérzettel kapcsolatos nem élelmiszer termék | Élelmiszer||2016.07.06|2019.02.20|2019.03.11||||||": {
+    "nev_cim": "Robert Solar Bt. | 1063 Budapest Szinyei Merse utca 10. | Cg.0106787105 | GEOWAY INFRA STÚDIÓ",
+    "datum": "2016.07.06",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::41|5/2019|FREE BUILD Kft.|1126 Budapest Hertelendy utca 4/b. al.|Cg. 0109722545|13182087-4339-113-01|FESTÉK – HÁZTARTÁS - BARKÁCS|1123 Budapest Alkotás utca 35 al. 1.|61||hétfőtől - péntekig 07.00-18.00, szombat 07.00-12.00, vasárnap zárva|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Villamos háztartási készülék és villamossági cikk | Festék, lakk | Vasáru, barkács, és építési anyag | Szaniteráru | Illatszer, drogéria | Háztartási tisztítószer, vegyi áru | Tapéta, padlóburkoló, szőnyeg, függöny|2019.02.15|2019.07.16||||||||": {
+    "nev_cim": "FREE BUILD Kft. | 1126 Budapest Hertelendy utca 4/b. al. | Cg. 0109722545 | FESTÉK – HÁZTARTÁS - BARKÁCS",
+    "datum": "2019.02.15",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::42|5/2012|TEDDY-SOR Kft.|1122 Budapest Csaba utca 8.|Cg.0109702808|12774364-4752-113-01|FESTÉK ÜZLET|1122 Budapest Csaba utca 8.|92||H: 06:30 - 18:00, K: 06:30 - 18:00, Sze: 06:30 - 18:00, Cs: 06:30 - 18:00, P: 06:30 - 18:00, Szo: 06:30 - 12:00, V: 06:30 - 12:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | „A” és „B” tűzveszélyességi osztályba sorolt anyag, kivéve a Jöt. szerinti tüzelőolaj, propán vagy propán-bután gáz és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Dohánytermékek | Fegyver, lőszer, robbanó- és robbantószer, gázspray, pirotechnikai termék, a polgári célú pirotechnikai tevékenységekről szóló kormányrendelet szerinti 1., 2. és 3. pirotechnikai osztályba tartozó termékek, az ott meghatározott kivételekkel|Festék, lakk | Vasáru, barkács, és építési anyag | Közérzetjavító és étrend-kiegészítő termék | Tapéta, padlóburkoló, szőnyeg, függöny | Textil|1997.07.03|2012.01.01|2012.03.30|2023.12.18||||||": {
+    "nev_cim": "TEDDY-SOR Kft. | 1122 Budapest Csaba utca 8. | Cg.0109702808 | FESTÉK ÜZLET",
+    "datum": "2012.01.01",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::12|2/2020|SV Lucky Hair Kft.|1122 Budapest Hajnóczy József utca 19 1/5|Cg.01-09-296798|25928745-9602-113-01|Biohair Szalon|1122 Budapest Krisztina körút 2-4|110||hétfőtől - szombatig 08.00-20.00, vasárnap zárva|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|Illatszer, drogéria||2020.02.17||2025.02.27||||||": {
+    "nev_cim": "SV Lucky Hair Kft. | 1122 Budapest Hajnóczy József utca 19 1/5 | Cg.01-09-296798 | Biohair Szalon",
+    "datum": "2020.02.17",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::13|2/2019|KÓPÉ BT.|1121 Budapest Bazin utca 6|Cg,01-09-319872|228529606477611701|„KÓPÉ Állateledel és Felszerelés Üzlet”|1122 Budapest Magyar Jakobinusok tere 1|80||hétfőtől – péntekig: 09:00-19:00 szombat: 09:00-14:00 vasárnap: zárva|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||Állatgyógyászati készítmények és hatóanyagaik|||2019.04.02||||||||": {
+    "nev_cim": "KÓPÉ BT. | 1121 Budapest Bazin utca 6 | Cg,01-09-319872 | „KÓPÉ Állateledel és Felszerelés Üzlet”",
+    "datum": "2019.04.02",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::10|1/2020|Ecsetbolt.hu Kft.|1122 Budapest Városmajor utca 1/B. fszt/1.|Cg.01-09-351293|27271939-4778-113-01|Ecset Szaküzlet|1122 Budapest Városmajor utca 1/b|22||H: 09:00 - 17:00, K: 09:00 - 17:00, Sze: 09:00 - 17:00, Cs: 09:00 - 17:00, P: 09:00 - 15:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|||2020.01.30||2024.09.18||||||": {
+    "nev_cim": "Ecsetbolt.hu Kft. | 1122 Budapest Városmajor utca 1/B. fszt/1. | Cg.01-09-351293 | Ecset Szaküzlet",
+    "datum": "2020.01.30",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XII. (Hegyvidék)::11|1/2021|Monsanto Hungária Kft.|1123 Budapest Alkotás utca 50|01-09-366115|10989218-4621-113-01|MONSANTO Hungária Növényvédő szer Üzlet|1123 Budapest Alkotás utca 50 B szárny 59.|6||hétfőtől – péntekig: 08.00-17.30 szombat - vasárnap: Z Á R V A|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|nagykereskedelem|||Növényvédő szerek és hatóanyagaik|Mezőgazdasági, méhészeti és borászati cikk, növényvédő szer, termésnövelő anyag, a tevékenységhez szükséges eszköz, kisgép||2021.01.18||2021.10.27||||||": {
+    "nev_cim": "Monsanto Hungária Kft. | 1123 Budapest Alkotás utca 50 | MONSANTO Hungária Növényvédő szer Üzlet | 1123 Budapest Alkotás utca 50 B szárny 59.",
+    "datum": "2021.01.18",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XV. (Rákospalota)::5297|5006/2026|Köves Zoltán|1154 Budapest Nádastó utca 66.|51928162|68564436-8230-231-01|csomagküldő|||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|országos|csomagküldő kereskedelem|kiskereskedelem||||Illatszer, drogéria||2026.06.25||||||||": {
+    "nev_cim": "Köves Zoltán | 1154 Budapest Nádastó utca 66. | csomagküldő | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest XV. (Rákospalota)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XVI. (Sashalom)::3579|5376/2026|Harsányi Gábor Péter egyéni vállalkozó|1165 Budapest Hangulat utca 14.|9235378|64364863-0125-231-01|Harsányi Pincészet|1162 Budapest Timur utca 76.|28||H: 10:00 - 13:00, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital||2026.06.25||||||||": {
+    "nev_cim": "Harsányi Gábor Péter egyéni vállalkozó | 1165 Budapest Hangulat utca 14. | Harsányi Pincészet | 1162 Budapest Timur utca 76.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest XVI. (Sashalom)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XIX. (Kispest)::4880|11926/2026|Lorina Coffee Kft.|1196 Budapest Kossuth Lajos utca 171. fszt.4.|01-09-456566|33052322-5630-113-01|Lorina Coffee|1191 Budapest Vak Bottyán utca 72. fszt.4.|21|6|H: 07:00 - 16:30, K: 07:00 - 16:30, Sze: 07:00 - 16:30, Cs: 07:00 - 16:30, P: 07:00 - 16:30, Szo: 07:00 - 16:30, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Édességáru | Egyéb élelmiszer | Kreatív-hobbi és dekorációs termék||2026.06.24||||||||Alkoholmentes italokra specializálódott vendéglátóhely (kávézó) – 56.30 Italszolgáltatás": {
+    "nev_cim": "Lorina Coffee Kft. | 1196 Budapest Kossuth Lajos utca 171. fszt.4. | Lorina Coffee | 1191 Budapest Vak Bottyán utca 72. fszt.4.",
+    "datum": "2026.06.24",
+    "kerulet": "Budapest XIX. (Kispest)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XIX. (Kispest)::4716|11760/2025|SIBBA TEAM HUNGARY Kft.|1153 Budapest Beller Imre utca 165/B. 1.a.|01-09-455487|27103876-5611-113-01|Uszoda Büfé|1191 Budapest Simonyi Zsigmond utca 31.|10|30|H: 07:30 - 18:00, K: 07:30 - 18:00, Sze: 07:30 - 18:00, Cs: 07:30 - 18:00, P: 07:30 - 18:00, Szo: 10:00 - 18:00, V: 10:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Köztes alkoholtermék | Alkoholtermék | Egyéb csendes és habzó erjesztett ital|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer|2026.06.24|2025.06.18|2026.06.16|||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "SIBBA TEAM HUNGARY Kft. | 1153 Budapest Beller Imre utca 165/B. 1.a. | Uszoda Büfé | 1191 Budapest Simonyi Zsigmond utca 31.",
+    "datum": "2026.06.24",
+    "kerulet": "Budapest XIX. (Kispest)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2709|600591/2025|SÁRKÁNY MARCELL CSABA|1237 Budapest Kiskócsag utca 5. A. épület|59972828|90662234-4791-231-01|Csomagküldő|1237 Budapest Kiskócsag utca 5. A. épület|||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Országos jelleggel.|csomagküldő kereskedelem|kiskereskedelem||||Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Audió- és videóberendezés | Óra- és ékszer | Játékáru | Kreatív-hobbi és dekorációs termék||2025.01.01||||||||": {
+    "nev_cim": "SÁRKÁNY MARCELL CSABA | 1237 Budapest Kiskócsag utca 5. A. épület | Csomagküldő | 1237 Budapest Kiskócsag utca 5. A. épület",
+    "datum": "2025.01.01",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2708|600590/2024|ROT APFEL MARKT Kft.|1068 Budapest Király utca 80. földszint 11. ajtó|01-09-420728|32373697-4631-113-01|Zöldség- és gyümölcs|1239 Budapest Nagykőrösi út 353. (11. épület 23. sz. raktár)|(11. épület 23. sz. raktár)|11. épület 23. sz. raktár|50||H: 04:00 - 19:00, K: 04:00 - 19:00, Sze: 04:00 - 19:00, Cs: 04:00 - 19:00, P: 04:00 - 19:00, Szo: 04:00 - 19:00, V: 04:00 - 19:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|nagykereskedelem||||Zöldség- és gyümölcs||2024.02.05||||||||": {
+    "nev_cim": "ROT APFEL MARKT Kft. | 1068 Budapest Király utca 80. földszint 11. ajtó | Zöldség- és gyümölcs | 1239 Budapest Nagykőrösi út 353. (11. épület 23. sz. raktár)",
+    "datum": "2024.02.05",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2707|600589/2021|KIS IMRE|6900 Makó Nagycsillag utca 44.|53466916|69634525-7721-231-06|Zöldség- és gyümölcs|1239 Budapest Nagykőrösi út 353. (napi árus)||napi árus|2||A Nagybani Piac nyitvatartási ideje szerint|Nem|Nem||vásáron vagy piacon folytatott kereskedelmi tevékenység|nagykereskedelem||||Zöldség- és gyümölcs | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Kenyér- és pékáru, sütőipari termék||2021.02.09||||||||": {
+    "nev_cim": "KIS IMRE | 6900 Makó Nagycsillag utca 44. | Zöldség- és gyümölcs | 1239 Budapest Nagykőrösi út 353. (napi árus)",
+    "datum": "2021.02.09",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2706|310763/2021|Perfekt Sajt Kavalkád Kft.|1237 Budapest Hrivnák Pál utca 14.|01-09-387754|27189465-4729-113-01|-|1237 Budapest Hrivnák Pál utca 14.||||1||Igen|Nem|Üzleten kívüli, csomagküldő kereskedelem Országos jelleggel|mozgóbolt útján folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Textil | Ruházat | Lábbeli- és bőráru | Hangszer | Játékáru | Virág és kertészeti cikk | Kegytárgy, kegyszer, egyházi cikk | Emlék- és ajándéktárgy | Használtcikk | Egyéb||2021.07.20||||||||Mozgó vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Perfekt Sajt Kavalkád Kft. | 1237 Budapest Hrivnák Pál utca 14. | 1237 Budapest Hrivnák Pál utca 14. | Igen",
+    "datum": "2021.07.20",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2705|300671/B/1/2021|London Property Kft.|4400 Nyíregyháza Dózsa György utca 3. 2. em. 13.|15-09-087325|27925872-6820-113-15|Zöldség- és gyümölcs|1239 Budapest Nagykőrösi út 353.|195854/1/A/7|banánérlelő raktár|667||A Nagybani Piac nyitvatartási ideje szerint|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|nagykereskedelem||||Zöldség- és gyümölcs||2021.02.08||||||||": {
+    "nev_cim": "300671/B/1/2021 | London Property Kft. | 4400 Nyíregyháza Dózsa György utca 3. 2. em. 13. | Zöldség- és gyümölcs",
+    "datum": "2021.02.08",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2704|300156/B/1/2021|Huszti Gabriella|1238 Budapest Templom utca 33.|55450797|56761588-9604-231-01|Infrashape Soroksár|1238 Budapest Templom utca 33|185126||28||H: 07:00 - 19:00, K: 07:00 - 19:00, Sze: 07:00 - 19:00, Cs: 07:00 - 19:00, P: 07:00 - 19:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Közérzetjavító és étrend-kiegészítő termék | Illatszer, drogéria||2021.01.08||2021.09.02||||||": {
+    "nev_cim": "300156/B/1/2021 | Huszti Gabriella | 1238 Budapest Templom utca 33. | Infrashape Soroksár",
+    "datum": "2021.01.08",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2703|300075/B/3./2021|Round Investment Kft.|1065 Budapest Nagymező utca 45. 1. emelet 2.|01-09-349008|27093447-4721-113-01|Zöldség- és gyümölcs|1239 Budapest Nagykőrösi út 353. (6. épület V. sz. raktár)||6. épület V. sz. raktár|172,5||A Nagybani Piac nyitvatartási ideje szerint|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|nagykereskedelem||||Zöldség- és gyümölcs||2021.01.11||||||||": {
+    "nev_cim": "300075/B/3./2021 | Round Investment Kft. | 1065 Budapest Nagymező utca 45. 1. emelet 2. | Zöldség- és gyümölcs",
+    "datum": "2021.01.11",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest XXIII/b (Soroksár)::2702|2728/2026|Hurom Hungary Kereskedelmi és Szolgáltató Kft.|1238 Budapest Grassalkovich út 40.|01-09-187256|24878142-4754-113-01|TopJuicers|1238 Budapest Grassalkovich út 40.|||45||H: 09:00 - 16:00, K: 09:00 - 16:00, Sze: 09:00 - 16:00, Cs: 09:00 - 16:00, P: 09:00 - 16:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem||||Közérzetjavító és étrend-kiegészítő termék | Villamos háztartási készülék és villamossági cikk|2026.06.17|2026.06.17||||||||": {
+    "nev_cim": "Hurom Hungary Kereskedelmi és Szolgáltató Kft. | 1238 Budapest Grassalkovich út 40. | TopJuicers | 1238 Budapest Grassalkovich út 40.",
+    "datum": "2026.06.17",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest III.? (Óbuda?)::9649|16741/2026|FULL BEAUTY Kft.|2144 Kerepes Szőlő utca 71/A 1. ép.|13-09-231123|32438741-7499-113-13|FULL BEAUTY ORVOS ESZTÉTIKA SZALON|1135 Budapest Béke utca 13-19 FSZ. U5.|103||Hétfő: 09:00 - 18:00, Kedd: 09:00 - 19:00, Szerda: 09:00 - 18:00, Csütörtök: 09:00 - 18:00, Péntek: 09:00 - 18:00, Szombat: 10:00 - 16:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Közérzetjavító és étrend-kiegészítő termék | Illatszer, drogéria|2026.06.25|2026.06.25||||||||": {
+    "nev_cim": "FULL BEAUTY Kft. | 2144 Kerepes Szőlő utca 71/A 1. ép. | FULL BEAUTY ORVOS ESZTÉTIKA SZALON | 1135 Budapest Béke utca 13-19 FSZ. U5.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest III.? (Óbuda?)::9645|16737/2026|GR&J Kft.|1033 Budapest Szérüskert utca 9. 3. em. 10.|01-09-896064|14262096-4636-113-01|Stühmer Kávézó - Cukrászda|1137 Budapest Pozsonyi út 9.|45||Hétfő: 09:00 - 19:00, Kedd: 09:00 - 19:00, Szerda: 09:00 - 19:00, Csütörtök: 09:00 - 19:00, Péntek: 09:00 - 19:00, Szombat: 09:00 - 19:00, Vasárnap: 10:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Kávéital, alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital|2026.06.22|2026.06.23||||||||": {
+    "nev_cim": "GR&J Kft. | 1033 Budapest Szérüskert utca 9. 3. em. 10. | Stühmer Kávézó - Cukrászda | 1137 Budapest Pozsonyi út 9.",
+    "datum": "2026.06.22",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest III.? (Óbuda?)::9643|16735/2026|Otaku Ramen Kft.|1134 Budapest Kassák Lajos utca 58-60. A. lház. 8. em. 4.|01-09-454993|33023845-5611-113-01|mozgóbolt|PMW-289|||Hétfő: Zárva, Kedd: Zárva, Szerda: Zárva, Csütörtök: Zárva, Péntek: Zárva, Szombat: Zárva, Vasárnap: Zárva,|Nem|Nem|Magyarország (rendezvények alkalmával folytatott kereskedelmi tevékenység)|mozgóbolt útján folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Kávéital, alkoholmentes- és szeszes ital | Édességáru | Emlék- és ajándéktárgy | Meleg-, hideg étel||2026.06.23||||||||Mozgó vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Otaku Ramen Kft. | 1134 Budapest Kassák Lajos utca 58-60. A. lház. 8. em. 4. | mozgóbolt | PMW-289",
+    "datum": "2026.06.23",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest IV.? (Újpest?)::6080|11286/2026|IGUANA RESTAURANT GROUP Kft|1054 Budapest Zoltán utca 16.|01-09-569856|12261415-5611-113-01|Iguana Bar & Grill La cantina de Budapest|1025 Budapest Törökvész út 93.|20|1|H: 11:30 - 21:00, K: 11:30 - 21:00, Sze: 11:30 - 21:00, Cs: 11:30 - 21:00, P: 11:30 - 21:00, Szo: 11:30 - 21:00, V: 11:30 - 21:00,|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék||2026.06.25||||||||Étterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "IGUANA RESTAURANT GROUP Kft | 1054 Budapest Zoltán utca 16. | Iguana Bar & Grill La cantina de Budapest | 1025 Budapest Törökvész út 93.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest IV.? (Újpest?)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest IV.? (Újpest?)::6055|11260/2026|Matkócsik Gábor|1041 Budapest Görgey Artúr út 49/C.|61851953|91764212-4740-231-01|iPro Buda|1026 Budapest Szilágyi Erzsébet fasor 121. F/AK.I|10||H: 10:00 - 19:00, K: 10:00 - 19:00, Sze: 10:00 - 19:00, Cs: 10:00 - 19:00, P: 10:00 - 19:00, Szo: 10:00 - 19:00, V: Zárva,|Nem|Nem||bevásárlóközpontban folytatott kereskedelmi tevékenység|kiskereskedelem||||Számítógépes hardver- és szoftver termék | Használtcikk | Telekommunikációs cikk||2026.04.09||||||||": {
+    "nev_cim": "Matkócsik Gábor | 1041 Budapest Görgey Artúr út 49/C. | iPro Buda | 1026 Budapest Szilágyi Erzsébet fasor 121. F/AK.I",
+    "datum": "2026.04.09",
+    "kerulet": "Budapest IV.? (Újpest?)",
+    "discovered_at": "2026-06-26"
+  },
+  "Budapest IV.? (Újpest?)::167|10460/2022|Manu-vet Kft.|1068 Budapest Király utca 80. Fsz. 11|01-09-396696|27756852-4773-113-01|Budagyöngye Állatpatika|1026 Budapest Szilágyi Erzsébet fasor 121. -1/7/A|15||H: 10:00 - 19:00, K: 10:00 - 19:00, Sze: 10:00 - 19:00, Cs: 10:00 - 19:00, P: 10:00 - 19:00, Szo: 10:00 - 15:00, V: Zárva,|Nem|Nem||bevásárlóközpontban folytatott kereskedelmi tevékenység|kiskereskedelem||||Állateledel, takarmány | Állatgyógyászati termék|2022.10.17|2022.10.19||||||||": {
+    "nev_cim": "Manu-vet Kft. | 1068 Budapest Király utca 80. Fsz. 11 | Budagyöngye Állatpatika | 1026 Budapest Szilágyi Erzsébet fasor 121. -1/7/A",
+    "datum": "2022.10.17",
+    "kerulet": "Budapest IV.? (Újpest?)",
+    "discovered_at": "2026-06-26"
   }
 }

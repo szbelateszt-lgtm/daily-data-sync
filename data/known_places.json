@@ -489,7 +489,13 @@
     "type": "thai_restaurant",
     "discovered_at": null
   },
-  "ChIJ20R4HTfaQUcR59cZJpoSZv8": null,
+  "ChIJ20R4HTfaQUcR59cZJpoSZv8": {
+    "name": "Kozpont Bistro",
+    "address": "Budapest, Szent István tér 1, 1042 Hungary",
+    "phone": "06 20 374 9785",
+    "type": "bistro",
+    "discovered_at": null
+  },
   "ChIJ21umJHHcQUcRtxVAn60uKC0": null,
   "ChIJ22Tr6bLOQUcRIChIuvPTSDI": {
     "name": "Napsugár Étterem",
@@ -1800,7 +1806,13 @@
     "type": "general_store",
     "discovered_at": null
   },
-  "ChIJ9cgUB7PdQUcRuFHkJgUxh68": null,
+  "ChIJ9cgUB7PdQUcRuFHkJgUxh68": {
+    "name": "ProSit Buda Bistro",
+    "address": "Budapest, Budapest Móricz Zsigmond körtér, Gomba, 1.cikkely, 1114 Hungary",
+    "phone": "06 30 261 5178",
+    "type": "bistro",
+    "discovered_at": null
+  },
   "ChIJ9cphfwDRQUcRUR2pUaWMMJM": {
     "name": "a Kávé’S",
     "address": "Dunakeszi, Fő út 105, 2120 Hungary",
@@ -3056,7 +3068,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJGZQINMbeQUcRWBf4yFXf64o": null,
+  "ChIJGZQINMbeQUcRWBf4yFXf64o": {
+    "name": "Bálint Galéria-Kávézó",
+    "address": "Budapest, Házmán u. 5, 1026 Hungary",
+    "phone": "06 20 339 9012",
+    "type": "cafe",
+    "discovered_at": null
+  },
   "ChIJGZpCqbvRQUcRTcKRbCXtsZ0": {
     "name": "HÍD ABC COOP",
     "address": "Dunakeszi, Cserkész u. 26, 2120 Hungary",
@@ -9624,7 +9642,13 @@
     "discovered_at": null
   },
   "ChIJp-ZnirvdQUcRU3W6Wu0Lmz0": null,
-  "ChIJp0BC62LWQUcR3e2YyHlHXUU": null,
+  "ChIJp0BC62LWQUcR3e2YyHlHXUU": {
+    "name": "Skanzen ház",
+    "address": "Szentendre, Dumtsa Jenő u. 7, 2000 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJp372bl7cQUcRGrKwvHNqGVk": {
     "name": "Régi-Jó Kifőzde",
     "address": "Budapest, Vásár u. 4, 1084 Hungary",
@@ -13631,5 +13655,68 @@
     "phone": "06 30 359 2286",
     "type": "restaurant",
     "discovered_at": "2026-06-25"
+  },
+  "ChIJw8_VMK3dQUcRgWjDqzkT2Mw": {
+    "name": "Babi néni konyhája Buda",
+    "address": "Budapest, Budafoki út 16-18, 1111 Hungary",
+    "phone": "(06 1) 599 9999",
+    "type": "restaurant",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJ7S2F26jdQUcRgXSMPYxXPUo": {
+    "name": "Zaytouna Restaurant Budapest",
+    "address": "Budapest, Károly krt. 5, 1075 Hungary",
+    "phone": "06 20 256 2942",
+    "type": "restaurant",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJJWEyMgDbQUcRgSf9fGnGnfo": {
+    "name": "Füredi ABC",
+    "address": "Budapest, Füredi u. 5d, 1144 Hungary",
+    "phone": "",
+    "type": "general_store",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJ-267vSLdQUcRjOpFyCdRsZg": {
+    "name": "An Bistro",
+    "address": "Budapest, Thököly út 63, 1146 Hungary",
+    "phone": "(06 1) 220 2888",
+    "type": "vietnamese_restaurant",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJN3vom8rdQUcRT2ASCeFGQO4": {
+    "name": "Villányi Delikát",
+    "address": "Budapest, Villányi út 30b, 1114 Hungary",
+    "phone": "(06 1) 797 1123",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJr3sMzLfdQUcREqYFgQbTfs4": {
+    "name": "Árpád Csemege",
+    "address": "Budapest, Bartók Béla út 103, 1113 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJV86Kpm_cQUcRGlKEFlRqQdc": {
+    "name": "Bao Nam Phở",
+    "address": "Budapest, Király u. 71-73, 1077 Hungary",
+    "phone": "",
+    "type": "vietnamese_restaurant",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJh_p6sx3cQUcRpq19XzmNSHs": {
+    "name": "Due Fratelli",
+    "address": "Budapest, Erőd u. 9, 1027 Hungary",
+    "phone": "06 20 911 4444",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-26"
+  },
+  "ChIJyxaLP0bVQUcR9XOjHtZEkPc": {
+    "name": "Skanzen pékség",
+    "address": "Szentendre, 2000 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-26"
   }
 }
