@@ -79427,5 +79427,53 @@
     "datum": "2022.10.17",
     "kerulet": "Budapest IV.? (Újpest?)",
     "discovered_at": "2026-06-26"
+  },
+  "Budapest I. (Várnegyed)::4283|4359/2026|KURJANTÓ BISZTRÓ Kft.|6045 Ladánybene Fő utca 63.|03-09-122963|23484562-5610-113-03|Hagyományőrző pünkösdi gasztronómiai kitelepülés|1014 Budapest Budai vár|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Igen|Nem||közterületi értékesítés|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||||2026.04.30||2026.06.01||||||Mozgó vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "KURJANTÓ BISZTRÓ Kft. | 6045 Ladánybene Fő utca 63. | Hagyományőrző pünkösdi gasztronómiai kitelepülés | 1014 Budapest Budai vár",
+    "datum": "2026.04.30",
+    "kerulet": "Budapest I. (Várnegyed)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest I. (Várnegyed)::4281|4357/2026|PLANETSPORT KFT.|1121 Budapest Mártonhegyi út 3. fszt. 1.|01-09-870487|13734608-5611-113-01|Tabán Fesztivál – Május 1. elnevezésű zenés, táncos rendezvényen közterületi értékesítés|1016 Budapest Krisztina körút 1.|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||közterületi értékesítés|kiskereskedelem, vendéglátás|Sör | Köztes alkoholtermék | Alkoholtermék|||||2026.04.28||2026.05.02||||||Alkalmi vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "PLANETSPORT KFT. | 1121 Budapest Mártonhegyi út 3. fszt. 1. | Tabán Fesztivál – Május 1. elnevezésű zenés, táncos rendezvényen közterületi értékesítés | 1016 Budapest Krisztina körút 1.",
+    "datum": "2026.04.28",
+    "kerulet": "Budapest I. (Várnegyed)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest I. (Várnegyed)::4277|4352/2026|Fővárosi Vízművek Zrt.|1138 Budapest Váci út 182.|01-10-042451|10898824-3600-114-01|Víz Világnapja rendezvényen értékesítés|1016 Budapest Hegyalja út Víztározó köz|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||közterületi értékesítés|kiskereskedelem||||Könyv | Emlék- és ajándéktárgy||2026.03.23||2026.03.24||||||": {
+    "nev_cim": "Fővárosi Vízművek Zrt. | 1138 Budapest Váci út 182. | Víz Világnapja rendezvényen értékesítés | 1016 Budapest Hegyalja út Víztározó köz",
+    "datum": "2026.03.23",
+    "kerulet": "Budapest I. (Várnegyed)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest XIV. (Zugló)::7398|6282/3|Blandford-Team Kft.|1052 Budapest Petőfi Sándor utca 11. 4/20.|01-09-177999|24701107-4617-113-01|Vásáron vagy piacon folytatott kereskedelmi tevékenység|1146 Budapest Városliget||2500|H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Igen|Nem||vásáron vagy piacon folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital||2026.05.21||||||||Alkalmi vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Blandford-Team Kft. | 1052 Budapest Petőfi Sándor utca 11. 4/20. | Vásáron vagy piacon folytatott kereskedelmi tevékenység | 1146 Budapest Városliget",
+    "datum": "2026.05.21",
+    "kerulet": "Budapest XIV. (Zugló)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest XXI. (Csepel)::4480|524892/2025|Varga Tímea|1215 Budapest Árpád utca 12. A. ép. 9/221.|60716385|91245887-4775-231-01|csomagküldő kereskedelem||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Magyarország|csomagküldő kereskedelem|kiskereskedelem||||Illatszer, drogéria | Háztartási tisztítószer, vegyi áru||2025.07.31||||||||": {
+    "nev_cim": "Varga Tímea | 1215 Budapest Árpád utca 12. A. ép. 9/221. | csomagküldő kereskedelem | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2025.07.31",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest XXI. (Csepel)::4479|524891/2025|Lebeskó János István|1213 Budapest Tölgyes út 11.|60309910|90952944-4779-231-01|csomagküldő||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Magyarország|csomagküldő kereskedelem|kiskereskedelem||||Személygépjármű és egyéb gépjármű-alkatrész és -tartozék | Egyéb||2025.04.09||||||||": {
+    "nev_cim": "Lebeskó János István | 1213 Budapest Tölgyes út 11. | csomagküldő | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2025.04.09",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest XXI. (Csepel)::4478|53150/2026|Csepp-Burger Kft.|2112 Veresegyház Szent István utca 37.|13-09-241789|32861402-5611-113-13|Simon's Burger|1212 Budapest Vermes Miklós utca 8.|71|30|H: 11:30 - 21:30, K: 11:30 - 21:30, Sze: 11:30 - 21:30, Cs: 11:30 - 21:30, P: 11:30 - 21:30, Szo: 11:30 - 21:30, V: 11:30 - 21:30,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital|2026.06.25|2026.06.26||||||||Gyorsétterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Csepp-Burger Kft. | 2112 Veresegyház Szent István utca 37. | Simon's Burger | 1212 Budapest Vermes Miklós utca 8.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-06-27"
+  },
+  "Budapest XXIII/b (Soroksár)::2665|2689/2/2026|Hiltbrunner Kft.|7094 Koppányszántó Honvéd utca 287.|17-09-009512|24079446-4712-113-17|WILD|1239 Budapest Bevásárló utca 2.|||8||H: 09:00 - 19:00, K: 09:00 - 19:00, Sze: 09:00 - 19:00, Cs: 09:00 - 19:00, P: 09:00 - 19:00, Szo: 09:00 - 19:00, V: 09:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Egyéb|2025.11.17|2025.11.17|2026.06.26|||||||": {
+    "nev_cim": "Hiltbrunner Kft. | 7094 Koppányszántó Honvéd utca 287. | WILD | 1239 Budapest Bevásárló utca 2.",
+    "datum": "2025.11.17",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-06-27"
   }
 }

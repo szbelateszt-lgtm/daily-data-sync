@@ -1662,7 +1662,13 @@
     "discovered_at": null
   },
   "ChIJ8yDQTT3hQUcRVYeZ5SzmMYM": null,
-  "ChIJ8y_nRofdQUcRl7oZ0TXPqUI": null,
+  "ChIJ8y_nRofdQUcRl7oZ0TXPqUI": {
+    "name": "Sweet Hungary Chimney Cake Shop Budapest",
+    "address": "Budapest, Váci u 44, 1056 Hungary",
+    "phone": "",
+    "type": "pastry_shop",
+    "discovered_at": null
+  },
   "ChIJ8z64GGjcQUcRDtjy8jgvJIo": null,
   "ChIJ8zWgrO7dQUcRTU5qzBw7W_w": null,
   "ChIJ91WCR1XdQUcRndWFRPndXLI": {
@@ -2304,7 +2310,13 @@
     "type": "convenience_store",
     "discovered_at": null
   },
-  "ChIJCSfO-hfcQUcR7lj-rNnnM1Q": null,
+  "ChIJCSfO-hfcQUcR7lj-rNnnM1Q": {
+    "name": "Mini ABC",
+    "address": "Budapest, Fő u. 25, 1011 Hungary",
+    "phone": "",
+    "type": "convenience_store",
+    "discovered_at": null
+  },
   "ChIJCWkbpmDcQUcROeFd42ZAQLY": {
     "name": "Budapest Döner Kebab",
     "address": "Budapest, Népszínház u. 15, 1081 Hungary",
@@ -11564,7 +11576,13 @@
   },
   "ChIJzShTRUHDQUcRpau1OAIBap8": null,
   "ChIJzTZMJOnBQUcRvH2oJnx3XQo": null,
-  "ChIJzU3m--3dQUcR2w_Eu1Ekyek": null,
+  "ChIJzU3m--3dQUcR2w_Eu1Ekyek": {
+    "name": "99 Sushi Bar & Restaurant",
+    "address": "Budapest, Váci u 34, 1052 Hungary",
+    "phone": "(06 1) 866 3709",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJzVUjzIbdQUcR-KNFbg_71zE": {
     "name": "SixLetter Coffee Co. - Specialty Coffee Bar & Breakfast, Brunch",
     "address": "Budapest, Alkotmány u 21, 1054 Hungary",
@@ -13718,5 +13736,19 @@
     "phone": "",
     "type": "bakery",
     "discovered_at": "2026-06-26"
+  },
+  "ChIJD5CL9WHnQUcR0BRbBaUPZAg": {
+    "name": "Hétvezér grocery store",
+    "address": "Budapest, Honfoglalás út 67, 1221 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-27"
+  },
+  "ChIJK-5Q8l3cQUcRfhjQL6rRdrg": {
+    "name": "Lam Anh Pho",
+    "address": "Budapest, Stáhly u. 17, 1085 Hungary",
+    "phone": "06 30 647 7721",
+    "type": "restaurant",
+    "discovered_at": "2026-06-27"
   }
 }
