@@ -13750,5 +13750,131 @@
     "phone": "06 30 647 7721",
     "type": "restaurant",
     "discovered_at": "2026-06-27"
+  },
+  "ChIJPwA7SGrcQUcRyVODnL7Dvcg": {
+    "name": "Naspolya Nassolda",
+    "address": "Budapest, Káldy Gyula u. 7, 1061 Hungary",
+    "phone": "06 70 380 8407",
+    "type": "pastry_shop",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJ72ZyduXdQUcRSGAMXkchWaY": {
+    "name": "Cova Budapest",
+    "address": "Budapest, Matild Palace, Váci u 36, 1056 Hungary",
+    "phone": "06 70 407 1600",
+    "type": "cafe",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJwcPrJgDbQUcR_9haI95njNc": {
+    "name": "NT szupermarket",
+    "address": "Budapest, Drégelyvár u. 59, 1158 Hungary",
+    "phone": "",
+    "type": "store",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJO6LEaR_cQUcRL9OZaTPziLY": {
+    "name": "Maison Bistro & Hotel",
+    "address": "Budapest, Országház u. 17, 1014 Hungary",
+    "phone": "(06 1) 405 4980",
+    "type": "restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJAx1VfezbQUcR8T2p8EiP3VY": {
+    "name": "Don Roberto Pizzeria",
+    "address": "Budapest, Róbert Károly körút 40, 1134 Hungary",
+    "phone": "(06 1) 340 2598",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJlU5bie3FQUcReOfZCDN3VDw": {
+    "name": "Norberto Pizza Napoletana",
+    "address": "Budapest, Budapest Rákosi út 142-146 bejárat a János utca felől, Rákosi út 142-146, 1162 Hungary",
+    "phone": "06 20 954 9911",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJ50LqdRzdQUcRB-EPOWwGJsY": {
+    "name": "Ragazze Pizza",
+    "address": "Budapest, Dohány u. 63, 1074 Hungary",
+    "phone": "06 30 398 9808",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJ7xirT83bQUcR3cj2gyBg0as": {
+    "name": "Don Pepe Pizzeria",
+    "address": "Budapest, Váci út 187, 1138 Hungary",
+    "phone": "(06 1) 239 8100",
+    "type": "restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJ_cjpC47ZQUcRRbo97gIXHHw": {
+    "name": "D'Al Michele Pizzeria és Bisztró",
+    "address": "Budapest, Bécsi út 57-61, 1037 Hungary",
+    "phone": "06 30 221 0230",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJWeIleG3cQUcRvamGAK0V_4w": {
+    "name": "The Pointer Pub (Szent István krt.)",
+    "address": "Budapest, Szent István krt. 21, 1055 Hungary",
+    "phone": "06 20 200 1000",
+    "type": "restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJq2ysaWjZQUcR-32gfkovZ-A": {
+    "name": "Döner Kebab express",
+    "address": "Budapest, Vörösvári út 17, 1035 Hungary",
+    "phone": "06 30 195 7199",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJS8Fm-gvcQUcRlYZSB9q9qn4": {
+    "name": "Kínai Büfé(中国快餐)",
+    "address": "Budapest, Visegrádi u. 22, 1132 Hungary",
+    "phone": "06 30 835 7565",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJq2uNItjYqaURdGjwoneHZkk": {
+    "name": "NeerY",
+    "address": "Budaörs, Szabadság út 121, 2040 Hungary",
+    "phone": "06 30 271 1052",
+    "type": "restaurant",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJPWVVmh3eQUcRzVQgachuujE": {
+    "name": "ALDI",
+    "address": "Budaörs, Malomkő u. 3, 2040 Hungary",
+    "phone": "06 80 088 264",
+    "type": "supermarket",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJY5TtCwjgQUcR0xvHSpZbXS4": {
+    "name": "ALDI",
+    "address": "Budaörs, Kandó Kálmán u. 2, 2040 Hungary",
+    "phone": "06 80 088 264",
+    "type": "supermarket",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJYQWjodnhQUcRyK524xYAJkM": {
+    "name": "SPAR szupermarket",
+    "address": "Törökbálint, Feketerét utca 2, 2045 Hungary",
+    "phone": "06 20 823 7448",
+    "type": "supermarket",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJobusr8LdQUcROBwHRseuxlw": {
+    "name": "OMV Spar Express",
+    "address": "Budapest, Budaörsi út 112, 1112 Hungary",
+    "phone": "06 20 279 9185",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-28"
+  },
+  "ChIJX1lPpoLgQUcRtS5n3trM0d4": {
+    "name": "Auchan Gas Station",
+    "address": "Budaörs, Baross u. 89, 2040 Hungary",
+    "phone": "06 80 442 002",
+    "type": "gas_station",
+    "discovered_at": "2026-06-28"
   }
 }
