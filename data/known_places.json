@@ -317,7 +317,13 @@
     "type": "hamburger_restaurant",
     "discovered_at": null
   },
-  "ChIJ0dYrgA7cQUcR4T24-AhC70g": null,
+  "ChIJ0dYrgA7cQUcR4T24-AhC70g": {
+    "name": "Okay Italia Szt. István krt",
+    "address": "Budapest, Szent István krt. 20, 1137 Hungary",
+    "phone": "(06 1) 349 2991",
+    "type": "italian_restaurant",
+    "discovered_at": null
+  },
   "ChIJ0dhcEQDJQUcRl4rjq9LfNYU": {
     "name": "Privát Max",
     "address": "Gödöllő, Kossuth Lajos u. 13, 2100 Hungary",
@@ -6940,7 +6946,13 @@
     "type": "discount_supermarket",
     "discovered_at": null
   },
-  "ChIJazagF0PcQUcRlCaReTIejeY": null,
+  "ChIJazagF0PcQUcRlCaReTIejeY": {
+    "name": "Tesco Expressz Budapest Astoria",
+    "address": "Budapest, Rákóczi út 1-3, 1088 Hungary",
+    "phone": "06 80 222 333",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJazjmPJ3dQUcRRob_lrm1IMk": {
     "name": "Astoria Lángos Bistro",
     "address": "Budapest, Rákóczi út 4, 1072 Hungary",
@@ -7437,7 +7449,13 @@
     "discovered_at": null
   },
   "ChIJdSBxRk7dQUcR4m7Xa0VvUeM": null,
-  "ChIJdSMBHL3dQUcRKekyJwM2aiI": null,
+  "ChIJdSMBHL3dQUcRKekyJwM2aiI": {
+    "name": "De' Finci - Italian Street Food & Coffee",
+    "address": "Budapest, Móricz Zsigmond körtér 8, 1114 Hungary",
+    "phone": "06 70 553 3655",
+    "type": "italian_restaurant",
+    "discovered_at": null
+  },
   "ChIJdSTJaHDdQUcR6BXn08c8QFQ": {
     "name": "Himba Kitchen",
     "address": "Budapest, Nádor u. 34, 1051 Hungary",
@@ -8244,7 +8262,13 @@
     "discovered_at": null
   },
   "ChIJhWK3QgDBQUcRTxu8ughTf28": null,
-  "ChIJhXrI4TbhQUcR6C4x-VQMi7M": null,
+  "ChIJhXrI4TbhQUcR6C4x-VQMi7M": {
+    "name": "Pistacchio olasz étterem és pizzéria",
+    "address": "Diósd, Balatoni út 28, 2049 Hungary",
+    "phone": "06 70 356 1713",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJhYe4orHhQUcRqoePn2LAw24": {
     "name": "Cópé Csemege",
     "address": "Érd, Szövő u. 13, 2030 Hungary",
@@ -11575,7 +11599,13 @@
     "discovered_at": null
   },
   "ChIJzShTRUHDQUcRpau1OAIBap8": null,
-  "ChIJzTZMJOnBQUcRvH2oJnx3XQo": null,
+  "ChIJzTZMJOnBQUcRvH2oJnx3XQo": {
+    "name": "Pampi Drink",
+    "address": "Vecsés, Zrínyi u. 32/A, 2220 Hungary",
+    "phone": "06 20 542 1730",
+    "type": "liquor_store",
+    "discovered_at": null
+  },
   "ChIJzU3m--3dQUcR2w_Eu1Ekyek": {
     "name": "99 Sushi Bar & Restaurant",
     "address": "Budapest, Váci u 34, 1052 Hungary",
@@ -13876,5 +13906,68 @@
     "phone": "06 80 442 002",
     "type": "gas_station",
     "discovered_at": "2026-06-28"
+  },
+  "ChIJUaFbt0XcQUcR7ZfmSjF4f_U": {
+    "name": "WaffaLab/Belgian Waffle Bar",
+    "address": "Budapest, Váci u 51, 1056 Hungary",
+    "phone": "06 30 294 6964",
+    "type": "pastry_shop",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJddMc_FjcQUcR3ePWYDMOF2U": {
+    "name": "Bécsiszelet Vendéglő",
+    "address": "Budapest, Üllői út 16a, 1085 Hungary",
+    "phone": "(06 1) 361 8231",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJuSyr2trbQUcR0RZ_76b3fBU": {
+    "name": "CUPP pizza burger grill",
+    "address": "Budapest, Pap Károly u. 8, 1139 Hungary",
+    "phone": "06 30 016 7518",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJi6gFZQDnQUcRLlQUXbIPCFk": {
+    "name": "EZ.Burger",
+    "address": "Budapest, Erdősor utca 33, 1214 Hungary",
+    "phone": "06 70 884 9259",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJNZtGHorZQUcROBh4PTDSMcw": {
+    "name": "Bamba Marha Burger Bár #KOLOSY",
+    "address": "Budapest, Bécsi út 37, 1036 Hungary",
+    "phone": "",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJu4XLxfHnQUcRCmeskE7rUF4": {
+    "name": "Félegyházi Bakery",
+    "address": "Budapest, Kossuth Lajos u. 95-97, 1211 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJs_hnqbPdQUcR2-iabgttM5c": {
+    "name": "Jiale Kínai Gyorsétterem",
+    "address": "Budapest, Móricz Zsigmond körtér 10, 1114 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJLzopjNbdQUcRpgDfkC3CawU": {
+    "name": "Fermento",
+    "address": "Budapest, Csalogány u. 26, 1015 Hungary",
+    "phone": "06 70 580 1041",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-06-29"
+  },
+  "ChIJ658QJADfQUcRzY8RNyy01WM": {
+    "name": "Röast coffee - kávépörkölő üzem és oktatóstúdió",
+    "address": "Budaörs, Budapesti út 37, 2040 Hungary",
+    "phone": "",
+    "type": "coffee_roastery",
+    "discovered_at": "2026-06-29"
   }
 }
