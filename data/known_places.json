@@ -8654,7 +8654,13 @@
     "type": "convenience_store",
     "discovered_at": null
   },
-  "ChIJjx1d0GLWQUcRpB0L9MKLZ9U": null,
+  "ChIJjx1d0GLWQUcRpB0L9MKLZ9U": {
+    "name": "Korona Étterem",
+    "address": "Szentendre, Péter Pál u. 4, 2000 Hungary",
+    "phone": "06 70 373 5011",
+    "type": "hungarian_restaurant",
+    "discovered_at": null
+  },
   "ChIJjylERhTcQUcRxxpfk7FD6QY": null,
   "ChIJjzh7-w7cQUcRjVvCL1qi18k": {
     "name": "Lecso Hungarian Restaurant",
@@ -10201,7 +10207,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJs0oaP3fWQUcR5HacEwUNosI": null,
+  "ChIJs0oaP3fWQUcR5HacEwUNosI": {
+    "name": "Parola Vendéglő",
+    "address": "Szentendre, Vasvári Pál u. 8/a, 2000 Hungary",
+    "phone": "(06 26) 312 621",
+    "type": "family_restaurant",
+    "discovered_at": null
+  },
   "ChIJs0riHmLWQUcRJ_PV_tIKYrc": null,
   "ChIJs3AGGkTdQUcRhmNsPQrS9I0": {
     "name": "Parasztkonyha Restaurant",
@@ -13969,5 +13981,54 @@
     "phone": "",
     "type": "coffee_roastery",
     "discovered_at": "2026-06-29"
+  },
+  "ChIJcXhJ7ubdQUcRnfuxrprLKsM": {
+    "name": "GALAMB vendéglátás",
+    "address": "Budapest, Henszlmann Imre u. 9, 1053 Hungary",
+    "phone": "06 70 886 3207",
+    "type": "restaurant",
+    "discovered_at": "2026-06-30"
+  },
+  "ChIJH080lgncQUcRlTlEUder6OI": {
+    "name": "Fapuma ABC",
+    "address": "Budapest, Csanády u. 18, 1132 Hungary",
+    "phone": "06 30 822 6005",
+    "type": "general_store",
+    "discovered_at": "2026-06-30"
+  },
+  "ChIJA-a4FOnbQUcRdQikMNphlwk": {
+    "name": "Lars Market",
+    "address": "Budapest, Szent László út, 1135 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-06-30"
+  },
+  "ChIJIdImDDPbQUcRuAIdhMOFRvo": {
+    "name": "Vegyesüzlet",
+    "address": "Budapest, Béke u. 21-29, 1135 Hungary",
+    "phone": "",
+    "type": "store",
+    "discovered_at": "2026-06-30"
+  },
+  "ChIJcT0aY2LdQUcRtf3QiOZQW_w": {
+    "name": "EDO Sushi",
+    "address": "Budapest, Kazinczy u. 3, 1075 Hungary",
+    "phone": "06 70 881 8685",
+    "type": "sushi_restaurant",
+    "discovered_at": "2026-06-30"
+  },
+  "ChIJ2dnQMgDDQUcRVpf9pqZERdA": {
+    "name": "Méta Gyros & Fagyi",
+    "address": "Budapest, Méta u. 33-35, 1194 Hungary",
+    "phone": "06 30 545 5056",
+    "type": "gyro_restaurant",
+    "discovered_at": "2026-06-30"
+  },
+  "ChIJ4dXvKgDXQUcRb3in_SebvWo": {
+    "name": "Manna Ételbár",
+    "address": "Szentendre, Pannónia u. 6/b, 2000 Hungary",
+    "phone": "06 20 327 0710",
+    "type": "restaurant",
+    "discovered_at": "2026-06-30"
   }
 }
