@@ -784,7 +784,13 @@
     "discovered_at": null
   },
   "ChIJ40vavMjdQUcRvvQ3b35bR5s": null,
-  "ChIJ41_txLLdQUcRZLE-e1DRRd0": null,
+  "ChIJ41_txLLdQUcRZLE-e1DRRd0": {
+    "name": "Quán Nón Haris köz",
+    "address": "Budapest, Haris köz 5, 1052 Hungary",
+    "phone": "",
+    "type": "vietnamese_restaurant",
+    "discovered_at": null
+  },
   "ChIJ42aWn-_dQUcR5KIKhc0O4kg": null,
   "ChIJ42k8n_7JQUcRWXd-O6lgIU0": {
     "name": "Vietnam Quan David Étterem",
@@ -14030,5 +14036,54 @@
     "phone": "06 20 327 0710",
     "type": "restaurant",
     "discovered_at": "2026-06-30"
+  },
+  "ChIJjRrEauvdQUcRNP08HiHdIPA": {
+    "name": "FEDŐ - Kifőzde",
+    "address": "Budapest, Villányi út 20, 1113 Hungary",
+    "phone": "",
+    "type": "food",
+    "discovered_at": "2026-07-01"
+  },
+  "ChIJbSanXwDdQUcRFS_IBdoz8VA": {
+    "name": "La Casa Verde Cafe",
+    "address": "Budapest, Károly krt. 5a, 1075 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-01"
+  },
+  "ChIJwVffmwvdQUcRkoSCKsVWUlI": {
+    "name": "Puli & Juhász restaurant",
+    "address": "Budapest, Dob u. 19, 1074 Hungary",
+    "phone": "06 20 779 4380",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-07-01"
+  },
+  "ChIJmVrwGQ7dQUcR8pbkoJt24Dg": {
+    "name": "Berlin Kebab Tantuni",
+    "address": "Budapest, Wesselényi utca 33, 1077 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-07-01"
+  },
+  "ChIJ3yr8g5vdQUcRYxZljcEl2tw": {
+    "name": "MEKAN Kebab & Pasta House",
+    "address": "Budapest, Akácfa u. 65, 1073 Hungary",
+    "phone": "",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-01"
+  },
+  "ChIJoXnoG1DfQUcRXqKpQJMRZ2o": {
+    "name": "Naso Restaurant | Széll Kálmán tér",
+    "address": "Budapest, Szilágyi Erzsébet fasor 13-15, 1026 Hungary",
+    "phone": "(06 1) 787 7888",
+    "type": "asian_restaurant",
+    "discovered_at": "2026-07-01"
+  },
+  "ChIJ2XUKgAzcQUcRMLS3qE7mjGY": {
+    "name": "Hongyunli Kínai Gyorsbüfé",
+    "address": "Budapest, Váci út 16, 1132 Hungary",
+    "phone": "06 30 510 2076",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-01"
   }
 }

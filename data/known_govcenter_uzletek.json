@@ -79577,5 +79577,83 @@
     "datum": "2021.09.14",
     "kerulet": "Budapest IV.? (Újpest?)",
     "discovered_at": "2026-06-30"
+  },
+  "Budapest VII. (Erzsébetváros)::8667|7427/2026|Billog Streetfood Kft.|1033 Budapest Vörösvári út 103.|01-09-865907|13644813-5611-113-01|Billog Rákóczi|1072 Budapest Rákóczi út 8. A. lph. földszint Ü3.|42|30|H: 11:00 - 22:00, K: 11:00 - 22:00, Sze: 11:00 - 22:00, Cs: 11:00 - 22:00, P: 11:00 - 22:00, Szo: 11:00 - 22:00, V: 11:00 - 22:00,|Igen|Igen||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital||2026.06.25||||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Billog Streetfood Kft. | 1033 Budapest Vörösvári út 103. | Billog Rákóczi | 1072 Budapest Rákóczi út 8. A. lph. földszint Ü3.",
+    "datum": "2026.06.25",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest VII. (Erzsébetváros)::8666|7426/2026|Párniczky Ádám e.v.|1145 Budapest Szenttamás utca 25.|52259889|68792095-4771-231-01|EVER AFTER BUDAPEST|1075 Budapest Kazinczy utca 6/A. pinceszint 1.|42||H: 11:00 - 20:00, K: 11:00 - 20:00, Sze: 11:00 - 20:00, Cs: 11:00 - 20:00, P: 11:00 - 20:00, Szo: 11:00 - 20:00, V: 11:00 - 17:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Ruházat | Emlék- és ajándéktárgy|2026.06.16|2026.06.26||||||||": {
+    "nev_cim": "Párniczky Ádám e.v. | 1145 Budapest Szenttamás utca 25. | EVER AFTER BUDAPEST | 1075 Budapest Kazinczy utca 6/A. pinceszint 1.",
+    "datum": "2026.06.16",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XII. (Hegyvidék)::2883|595969/B/1/2026|Sándorné Török Zsófia|1112 Budapest Bod Péter utca 25 fszt. 1.|59270133|90121926-0163-231-01|Svábhegyi Pünkösdi Búcsú|1125 Budapest Diana utca (Diana park)|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||közterületi értékesítés|kiskereskedelem||||||2026.05.15||||||||": {
+    "nev_cim": "595969/B/1/2026 | Sándorné Török Zsófia | 1112 Budapest Bod Péter utca 25 fszt. 1. | Svábhegyi Pünkösdi Búcsú",
+    "datum": "2026.05.15",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XII. (Hegyvidék)::2882|398002/2026|Escakecoffee Kft.|1065 Budapest Podmaniczky utca 14. fszt/2.|01-09-446953|32869620-5611-113-01|Escake Coffee and Brunch|1126 Budapest Németvölgyi út 36-38.|50|20|H: 08:00 - 18:00, K: 08:00 - 18:00, Sze: 08:00 - 18:00, Cs: 08:00 - 18:00, P: 08:00 - 18:00, Szo: 08:00 - 18:00, V: 08:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Zöldség- és gyümölcs | Kenyér- és pékáru, sütőipari termék||2026.06.30||||||||Étterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Escakecoffee Kft. | 1065 Budapest Podmaniczky utca 14. fszt/2. | Escake Coffee and Brunch | 1126 Budapest Németvölgyi út 36-38.",
+    "datum": "2026.06.30",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XVI. (Sashalom)::3580|5377/2026|Mach Márton József|1162 Budapest Temesvári utca 32.|51577371|68321000-9621-231-01|mozgóbolt||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|1162. Budapest Temesvári utca 32. - 2146 Mogyoród Hungaroring ut 10.|mozgóbolt útján folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital||2026.06.30||||||||Mozgó vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Mach Márton József | 1162 Budapest Temesvári utca 32. | mozgóbolt | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2026.06.30",
+    "kerulet": "Budapest XVI. (Sashalom)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XVI. (Sashalom)::3490|5283/2025|Mach Márton József|1162 Budapest Temesvári utca 32.|51577371|68321000-9621-231-01|mozgóbolt||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|1117 Budapest, Magyar Tudósok útja 7.|mozgóbolt útján folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital||2025.09.22||2025.12.30||||||Mozgó vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Mach Márton József | 1162 Budapest Temesvári utca 32. | mozgóbolt | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2025.09.22",
+    "kerulet": "Budapest XVI. (Sashalom)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XXI. (Csepel)::4482|524892/2025|Varga Tímea|1215 Budapest Árpád utca 12. A. ép. 9/221.|60716385|91245887-4775-231-01|csomagküldő kereskedelem||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Magyarország|csomagküldő kereskedelem|kiskereskedelem||||Illatszer, drogéria | Háztartási tisztítószer, vegyi áru||2025.07.31||||||||": {
+    "nev_cim": "Varga Tímea | 1215 Budapest Árpád utca 12. A. ép. 9/221. | csomagküldő kereskedelem | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2025.07.31",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XXI. (Csepel)::4481|524891/2025|Lebeskó János István|1213 Budapest Tölgyes út 11.|60309910|90952944-4779-231-01|csomagküldő||||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Magyarország|csomagküldő kereskedelem|kiskereskedelem||||Személygépjármű és egyéb gépjármű-alkatrész és -tartozék | Egyéb||2025.04.09||||||||": {
+    "nev_cim": "Lebeskó János István | 1213 Budapest Tölgyes út 11. | csomagküldő | H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,",
+    "datum": "2025.04.09",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XXI. (Csepel)::4480|53152/2026|GHIDELBA Kft.|1102 Budapest Állomás utca 20.|01-09-455158|33026594-4771-113-01|ÁZSIA ÁRUHÁZ|1212 Budapest II. Rákóczi Ferenc út 146.|598||H: 09:00 - 19:00, K: 09:00 - 19:00, Sze: 09:00 - 19:00, Cs: 09:00 - 19:00, P: 09:00 - 19:00, Szo: 09:00 - 18:00, V: 09:00 - 17:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Textil | Ruházat | Babatermék | Lábbeli- és bőráru | Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Villamos háztartási készülék és villamossági cikk | Telekommunikációs cikk | Papír- és írószer, művészellátó cikk | Sportszer, sporteszköz | Játékáru | Optikai cikk | Emlék- és ajándéktárgy | Kreatív-hobbi és dekorációs termék|2026.06.30|2026.06.30||||||||": {
+    "nev_cim": "GHIDELBA Kft. | 1102 Budapest Állomás utca 20. | ÁZSIA ÁRUHÁZ | 1212 Budapest II. Rákóczi Ferenc út 146.",
+    "datum": "2026.06.30",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest XXI. (Csepel)::4479|53151/2026|Eyewear Brands International Kft.|1021 Budapest Budakeszi út 51/D. C. ép. fszt. 4.|01-09-185678|24847986-4778-113-01|KAHAN|1211 Budapest II. Rákóczi Ferenc út 154-170.|106,06||H: 10:00 - 20:00, K: 10:00 - 20:00, Sze: 10:00 - 20:00, Cs: 10:00 - 20:00, P: 10:00 - 20:00, Szo: 10:00 - 20:00, V: 10:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Optikai cikk|2026.07.01|2026.06.30||||||||": {
+    "nev_cim": "Eyewear Brands International Kft. | 1021 Budapest Budakeszi út 51/D. C. ép. fszt. 4. | KAHAN | 1211 Budapest II. Rákóczi Ferenc út 154-170.",
+    "datum": "2026.07.01",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest III.? (Óbuda?)::9656|16748/2026|Németh Krisztián|1135 Budapest Hun utca 1. 5. em. 1.|57310367|59292652-4775-231-01|csomagküldő kereskedelem|www.parfumoazis.hu|||Hétfő: Zárva, Kedd: Zárva, Szerda: Zárva, Csütörtök: Zárva, Péntek: Zárva, Szombat: Zárva, Vasárnap: Zárva,|Nem|Nem|Magyarország|csomagküldő kereskedelem|kiskereskedelem||||Textil | Illatszer, drogéria||2026.06.30||||||||": {
+    "nev_cim": "Németh Krisztián | 1135 Budapest Hun utca 1. 5. em. 1. | csomagküldő kereskedelem | www.parfumoazis.hu",
+    "datum": "2026.06.30",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest III.? (Óbuda?)::9655|16747/2026|Zestory Kft.|1137 Budapest Pozsonyi út 38.|01-09-450527|32939558-5611-113-01|Dunapark Kávéház|1137 Budapest Pozsonyi út 38. Ü-1.|902|200|Hétfő: 09:00 - 22:00, Kedd: 09:00 - 22:00, Szerda: 09:00 - 22:00, Csütörtök: 09:00 - 22:00, Péntek: 09:00 - 22:00, Szombat: 09:00 - 22:00, Vasárnap: 09:00 - 22:00,|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék|2026.07.17|2026.06.30||||||||Étterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Zestory Kft. | 1137 Budapest Pozsonyi út 38. | Dunapark Kávéház | 1137 Budapest Pozsonyi út 38. Ü-1.",
+    "datum": "2026.07.17",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-07-01"
+  },
+  "Budapest III.? (Óbuda?)::9654|16746/2026|Suha Károlyné|1138 Budapest Turóc utca 9.|62486699|92165135-4781-231-01|csomagküldő kereskedelem||||Hétfő: Zárva, Kedd: Zárva, Szerda: Zárva, Csütörtök: Zárva, Péntek: Zárva, Szombat: Zárva, Vasárnap: Zárva,|Nem|Nem|Magyarország|csomagküldő kereskedelem|kiskereskedelem||||Személygépjármű||2026.06.30||||||||": {
+    "nev_cim": "Suha Károlyné | 1138 Budapest Turóc utca 9. | csomagküldő kereskedelem | Hétfő: Zárva, Kedd: Zárva, Szerda: Zárva, Csütörtök: Zárva, Péntek: Zárva, Szombat: Zárva, Vasárnap: Zárva,",
+    "datum": "2026.06.30",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-07-01"
   }
 }
