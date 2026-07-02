@@ -3364,7 +3364,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJHzkYtybdQUcRTOR1dluqaEM": null,
+  "ChIJHzkYtybdQUcRTOR1dluqaEM": {
+    "name": "Napoletana Da Carlo",
+    "address": "Budapest, Ferenc krt. 36, 1092 Hungary",
+    "phone": "06 70 776 7177",
+    "type": "italian_restaurant",
+    "discovered_at": null
+  },
   "ChIJI-P9kanRQUcRCcde1eVHQoE": {
     "name": "DESPAR",
     "address": "Dunakeszi, Fő út 2, 2120 Hungary",
@@ -8065,7 +8071,13 @@
     "discovered_at": null
   },
   "ChIJg7O3-ardQUcRNQ5fMiparSI": null,
-  "ChIJg7i-yyfRQUcRxtAq9e7WA6Y": null,
+  "ChIJg7i-yyfRQUcRxtAq9e7WA6Y": {
+    "name": "Dunakeszi Főtér",
+    "address": "Dunakeszi, IV Béla Király tér, 2120 Hungary",
+    "phone": "",
+    "type": "",
+    "discovered_at": null
+  },
   "ChIJg88hOSTeQUcRAK7KHS9iHQY": {
     "name": "Erdélyi Ízek Konyhája",
     "address": "Budaörs, Szabadság út 68, 2040 Hungary",
@@ -14085,5 +14097,47 @@
     "phone": "06 30 510 2076",
     "type": "chinese_restaurant",
     "discovered_at": "2026-07-01"
+  },
+  "ChIJAyHsd9jdQUcR2ZcJWBReLPY": {
+    "name": "SI Restaurant",
+    "address": "Budapest, Petőfi Sándor u 10, 1052 Hungary",
+    "phone": "06 30 998 6353",
+    "type": "restaurant",
+    "discovered_at": "2026-07-02"
+  },
+  "ChIJfbng0OnnQUcRPrMDA_Mpdgc": {
+    "name": "SPAR szupermarket",
+    "address": "Budapest, Kossuth Lajos u. 160-164, 1214 Hungary",
+    "phone": "06 20 823 7108",
+    "type": "supermarket",
+    "discovered_at": "2026-07-02"
+  },
+  "ChIJ4wfQfBPCQUcRN7tCsbjgI5o": {
+    "name": "Király Kifőzde és Söröző",
+    "address": "Budapest, Fogoly u. 18, 1182 Hungary",
+    "phone": "06 30 670 5490",
+    "type": "restaurant",
+    "discovered_at": "2026-07-02"
+  },
+  "ChIJ5b3AJf3dQUcRzpYlQoADaZY": {
+    "name": "In Town Hot Pot",
+    "address": "Budapest, Jegenye u. 26/9, 1107 Hungary",
+    "phone": "06 30 327 5994",
+    "type": "hot_pot_restaurant",
+    "discovered_at": "2026-07-02"
+  },
+  "ChIJ8TcZeq7dQUcR1kHK7vFXCMA": {
+    "name": "Pho36 Bistro",
+    "address": "Budapest, Október huszonharmadika u. 27, 1117 Hungary",
+    "phone": "06 20 372 2020",
+    "type": "vietnamese_restaurant",
+    "discovered_at": "2026-07-02"
+  },
+  "ChIJwyREySzbQUcRIW4IH4g_FII": {
+    "name": "Pho Ha Noi",
+    "address": "Budapest, középen az emelet, Váci út 9, 1134 Hungary",
+    "phone": "",
+    "type": "vietnamese_restaurant",
+    "discovered_at": "2026-07-02"
   }
 }
