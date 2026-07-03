@@ -9604,7 +9604,13 @@
     "discovered_at": null
   },
   "ChIJoYvBvfHnQUcRO08Bym2T5fE": null,
-  "ChIJoZB3XrzeQUcRkJhvQ_-963M": null,
+  "ChIJoZB3XrzeQUcRkJhvQ_-963M": {
+    "name": "Majorka Cafe",
+    "address": "Budapest, Szilágyi Erzsébet fasor 16, 1126 Hungary",
+    "phone": "(06 1) 224 0055",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJo_4vByzBQUcR2D6EUFrJKng": {
     "name": "Epres72 Bistro",
     "address": "Vecsés, Fő út 72, 2220 Hungary",
@@ -14139,5 +14145,40 @@
     "phone": "",
     "type": "vietnamese_restaurant",
     "discovered_at": "2026-07-02"
+  },
+  "ChIJQa3C82_bQUcRwaD5FynGdW0": {
+    "name": "Burger Labor",
+    "address": "Budapest, Rákospalotai határút 12, 1158 Hungary",
+    "phone": "06 20 328 5547",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-07-03"
+  },
+  "ChIJ128eIWfdQUcRLvEcy3GE118": {
+    "name": "Kurtman Gyros and Fast Food",
+    "address": "Budapest, Dob u. 59, 1074 Hungary",
+    "phone": "06 70 568 5311",
+    "type": "restaurant",
+    "discovered_at": "2026-07-03"
+  },
+  "ChIJLb_fPmXdQUcRUFtTMel1HUo": {
+    "name": "Döner Istanbul Kebab",
+    "address": "Budapest, Szondi u. 33, 1067 Hungary",
+    "phone": "06 70 530 2882",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-07-03"
+  },
+  "ChIJVZx63ZLDQUcRwVtuYTxm0T8": {
+    "name": "Havanna Kebab",
+    "address": "Budapest, Bartók Lajos u. 9b, 1181 Hungary",
+    "phone": "06 20 535 7660",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-07-03"
+  },
+  "ChIJZSDt5v_dQUcRCz-TKxjrGnw": {
+    "name": "Frida Budapest",
+    "address": "Budapest, Pozsonyi út 21-23, 1137 Hungary",
+    "phone": "06 70 433 4579",
+    "type": "restaurant",
+    "discovered_at": "2026-07-03"
   }
 }
