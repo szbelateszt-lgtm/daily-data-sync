@@ -979,7 +979,7 @@ def format_place_html(p, is_future=False):
             y = opening.get("year", "")
             m = opening.get("month", "")
             d = opening.get("day", "")
-            extra = f"<div class='meta'>📅 Várható nyitás: {y}-{m:02d}-{d:02d}</div>" if m else ""
+            extra = f"<div class='meta'>📅 Várható nyitás: {y}-{int(m):02d}-{int(d):02d}</div>" if m else ""            
     else:
         badge = '<span class="badge new">ÚJ</span>'
 
