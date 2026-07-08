@@ -7016,7 +7016,13 @@
     "type": "discount_supermarket",
     "discovered_at": null
   },
-  "ChIJaQ5r9qDbQUcRRZQnjqoRHHw": null,
+  "ChIJaQ5r9qDbQUcRRZQnjqoRHHw": {
+    "name": "SPAR express",
+    "address": "Budapest, Kacsóh Pongrác út 131, 1142 Hungary",
+    "phone": "(06 1) 223 5235",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJaRxYsnPhQUcRZboCrkuyVHE": {
     "name": "Aranyalma 2002 Kft.",
     "address": "Érd, Bajcsy-Zsilinszky út 35, 2030 Hungary",
@@ -11327,7 +11333,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJwatW2qjeQUcR432C-CtmvNM": null,
+  "ChIJwatW2qjeQUcR432C-CtmvNM": {
+    "name": "Porcellino Grasso Ristorante",
+    "address": "Budapest, Ady Endre u. 19, 1024 Hungary",
+    "phone": "(06 1) 886 7880",
+    "type": "italian_restaurant",
+    "discovered_at": null
+  },
   "ChIJwb97djPRQUcR0x9qpiLbHyk": {
     "name": "Piac - ABC",
     "address": "Dunakeszi, Barátság útja 14, 2120 Hungary",
@@ -14864,5 +14876,33 @@
     "phone": "06 70 600 3381",
     "type": "ice_cream_shop",
     "discovered_at": "2026-07-07"
+  },
+  "ChIJdXwelgncQUcRLMKN2tZeTSI": {
+    "name": "Biarritz étterem és kávézó",
+    "address": "Budapest, Balassi Bálint u. 2, 1055 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-07-08"
+  },
+  "ChIJK6RQVaXbQUcRXMQwjTHvEoQ": {
+    "name": "VEGYESBOLT",
+    "address": "Budapest, Petneházy u. 37-47, 1139 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-08"
+  },
+  "ChIJnZvgDwDdQUcR3PzFDh78Yps": {
+    "name": "Ling’s - Ramen mester Wesselényi",
+    "address": "Budapest, Wesselényi utca 49, 1077 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-08"
+  },
+  "ChIJId1v_BThQUcRjVv-RnpOgjA": {
+    "name": "Vörös Homár Halbisztró Budaörs",
+    "address": "Budaörs, Sport u. 2-4, 2040 Hungary",
+    "phone": "06 70 656 7006",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-08"
   }
 }
