@@ -8026,7 +8026,13 @@
     "type": "vietnamese_restaurant",
     "discovered_at": null
   },
-  "ChIJedaDNGjJQUcRXvIHztcQ8Fw": null,
+  "ChIJedaDNGjJQUcRXvIHztcQ8Fw": {
+    "name": "kisbolt",
+    "address": "Gödöllő, Szent János u. 5, 2100 Hungary",
+    "phone": "",
+    "type": "convenience_store",
+    "discovered_at": null
+  },
   "ChIJedd8GyjdQUcR4BBSrpqgM6E": {
     "name": "Pizza Me",
     "address": "Budapest, Baross tér 16, 1077 Hungary",
@@ -14904,5 +14910,33 @@
     "phone": "06 70 656 7006",
     "type": "fast_food_restaurant",
     "discovered_at": "2026-07-08"
+  },
+  "ChIJswg7B83dQUcRj7kb6AiRl3Q": {
+    "name": "Bageri",
+    "address": "Budapest, Ráday u. 9, 1092 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-07-09"
+  },
+  "ChIJ26kbXKzdQUcRLEI7J8wVnBo": {
+    "name": "42 Coffee Shop",
+    "address": "Budapest, Dohány u. 5, 1074 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-09"
+  },
+  "ChIJsU5p6zHaQUcROMiu-NeTNSU": {
+    "name": "Öreghalász Étterem",
+    "address": "Budapest, Árpád út 20-22, 1042 Hungary",
+    "phone": "(06 1) 231 0800",
+    "type": "restaurant",
+    "discovered_at": "2026-07-09"
+  },
+  "ChIJbVoHwyTJQUcRIw8gXTwRnOc": {
+    "name": "Városi piac",
+    "address": "Gödöllő, Szabadság tér 5, 2100 Hungary",
+    "phone": "(06 28) 422 019",
+    "type": "market",
+    "discovered_at": "2026-07-09"
   }
 }
