@@ -14938,5 +14938,26 @@
     "phone": "(06 28) 422 019",
     "type": "market",
     "discovered_at": "2026-07-09"
+  },
+  "ChIJTxUrNwDdQUcRiQlR0TjQlU0": {
+    "name": "İstanbul Etterem",
+    "address": "Budapest, Október 6. u. 19, 1051 Hungary",
+    "phone": "",
+    "type": "family_restaurant",
+    "discovered_at": "2026-07-10"
+  },
+  "ChIJPZSfdBvdQUcRXsXHZz9ZrWs": {
+    "name": "Piros Paprika",
+    "address": "Budapest, Dohány u. 50, 1074 Hungary",
+    "phone": "06 20 433 8984",
+    "type": "restaurant",
+    "discovered_at": "2026-07-10"
+  },
+  "ChIJ8bX3LwDdQUcRs9cW83ccz74": {
+    "name": "Chin Chin Izakaya",
+    "address": "Budapest, Király u. 13, 1075 Hungary",
+    "phone": "06 30 206 5834",
+    "type": "japanese_izakaya_restaurant",
+    "discovered_at": "2026-07-10"
   }
 }
