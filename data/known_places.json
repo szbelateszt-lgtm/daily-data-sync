@@ -5369,7 +5369,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJSREqBoHbQUcRP8hfkBbpgYU": null,
+  "ChIJSREqBoHbQUcRP8hfkBbpgYU": {
+    "name": "Pántlika Bistro",
+    "address": "Budapest, Hermina út, 1146 Hungary",
+    "phone": "06 70 376 9910",
+    "type": "bistro",
+    "discovered_at": null
+  },
   "ChIJSSagejbcQUcRabTDcWzFEmA": {
     "name": "Pipacs Pékség | Organic Artisan Bakery in Budapest",
     "address": "Budapest, Szirtes út 19, 1016 Hungary",
@@ -14959,5 +14965,61 @@
     "phone": "06 30 206 5834",
     "type": "japanese_izakaya_restaurant",
     "discovered_at": "2026-07-10"
+  },
+  "ChIJp5Wdn0DcQUcRw6i1bVAt44A": {
+    "name": "Spoon The Boat",
+    "address": "Budapest, Vigadó tér 3, 1052 Hungary",
+    "phone": "06 30 493 3949",
+    "type": "restaurant",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJOeFRJPzhQUcRrypaLvEV7-Y": {
+    "name": "Séf Neked",
+    "address": "Érd, Napvirág u. 3, 2030 Hungary",
+    "phone": "06 30 999 5409",
+    "type": "meal_delivery",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJBSJMLRnhQUcR6EW0_lP8IPs": {
+    "name": "Szidi Étkezde",
+    "address": "Érd, Diósdi út 8, 2030 Hungary",
+    "phone": "06 30 639 8880",
+    "type": "restaurant",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJ0Z77LWThQUcReyTS1hfuzHY": {
+    "name": "MéG+ENNéM",
+    "address": "Érd, Diósdi út 51, 2030 Hungary",
+    "phone": "06 70 302 1012",
+    "type": "food",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJoZiYoCLhQUcRlbFtbUsZVoo": {
+    "name": "SéfÉrd",
+    "address": "Érd, Szegfű u. 24, 2030 Hungary",
+    "phone": "06 70 618 0063",
+    "type": "meal_delivery",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJnbwj-pTjQUcRA8E8kjl4TBg": {
+    "name": "Didó Grill: Grillcsirke Érd",
+    "address": "Érd, Széles u. 1, 2030 Hungary",
+    "phone": "06 30 692 9856",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJB4rjaOrBQUcRoVtVZMF7Sm8": {
+    "name": "Maci Laci Büfé",
+    "address": "Budapest, Üllői út 806, 1185 Hungary",
+    "phone": "06 20 932 9304",
+    "type": "restaurant",
+    "discovered_at": "2026-07-11"
+  },
+  "ChIJ2yqJFADRQUcRcQQhcEDNdgo": {
+    "name": "Frisshalpiac",
+    "address": "Dunakeszi, Trianon tér, 2120 Hungary",
+    "phone": "",
+    "type": "barbecue_restaurant",
+    "discovered_at": "2026-07-11"
   }
 }
