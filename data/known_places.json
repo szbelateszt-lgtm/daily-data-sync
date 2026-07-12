@@ -15021,5 +15021,47 @@
     "phone": "",
     "type": "barbecue_restaurant",
     "discovered_at": "2026-07-11"
+  },
+  "ChIJ50457J_dQUcRBb0FN9r3lgw": {
+    "name": "Crunchy Astoria",
+    "address": "Budapest, Károly krt. 1, 1075 Hungary",
+    "phone": "",
+    "type": "chicken_restaurant",
+    "discovered_at": "2026-07-12"
+  },
+  "ChIJ2cimfq7dQUcR7cyaFlihky8": {
+    "name": "Family Shop",
+    "address": "Budapest, Október huszonharmadika u. 33, 1117 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-12"
+  },
+  "ChIJK5gA3wTDQUcRLrBlesLV4tg": {
+    "name": "Császár Lángos",
+    "address": "Budapest, Margó Tivadar u. 83, 1182 Hungary",
+    "phone": "06 30 240 6845",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-12"
+  },
+  "ChIJrb49kVTdQUcRuxK3oT5a9U8": {
+    "name": "PENNY. Szent István krt.",
+    "address": "Budapest, Szent István krt. 30, 1137 Hungary",
+    "phone": "(06 29) 339 345",
+    "type": "discount_supermarket",
+    "discovered_at": "2026-07-12"
+  },
+  "ChIJzfLmJ_fpQUcRvoy3r4APmas": {
+    "name": "Ikea kávézó",
+    "address": "Budapest, Vecsés út, 1239 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-12"
+  },
+  "ChIJ5Q13JC3RQUcRV0nKhm6XUvA": {
+    "name": "Buddha Original Dunakeszi",
+    "address": "Dunakeszi, Nádas utca 6, 2120 Hungary",
+    "phone": "06 70 770 0337",
+    "type": "thai_restaurant",
+    "discovered_at": "2026-07-12"
   }
 }
