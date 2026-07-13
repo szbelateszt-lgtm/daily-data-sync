@@ -1456,7 +1456,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJ7T5WnDrJQUcRKErQOKkSdTQ": null,
+  "ChIJ7T5WnDrJQUcRKErQOKkSdTQ": {
+    "name": "Miradza cukrászda & brunch",
+    "address": "Gödöllő, Bajcsy-Zsilinszky u. 27, 2100 Hungary",
+    "phone": "06 20 611 8172",
+    "type": "pastry_shop",
+    "discovered_at": null
+  },
   "ChIJ7T8dSmDbQUcRHHk7wfZiKKg": {
     "name": "DÓZIS Fine Pastries & Specialty Coffee",
     "address": "Budapest, Taksony u. 7, 1134 Hungary",
@@ -8594,7 +8600,13 @@
     "type": "pizza_restaurant",
     "discovered_at": null
   },
-  "ChIJhzNeW4jbQUcRDpNeQSc81aA": null,
+  "ChIJhzNeW4jbQUcRDpNeQSc81aA": {
+    "name": "Gundel Cafe Patisserie Restaurant",
+    "address": "Budapest, Gundel Károly út 4, 1146 Hungary",
+    "phone": "06 30 603 2480",
+    "type": "hungarian_restaurant",
+    "discovered_at": null
+  },
   "ChIJhzTfxCTAQUcRDLC02XaRh38": null,
   "ChIJi-TmtKTdQUcRLkPlNY3EK9I": {
     "name": "Pick Bistro & Lángos",
@@ -15063,5 +15075,47 @@
     "phone": "06 70 770 0337",
     "type": "thai_restaurant",
     "discovered_at": "2026-07-12"
+  },
+  "ChIJE8nwZGfbQUcRvy8JlEyYagg": {
+    "name": "Coop Szuper",
+    "address": "Budapest, Nagy Lajos király útja 100, 1148 Hungary",
+    "phone": "06 30 171 8849",
+    "type": "general_store",
+    "discovered_at": "2026-07-13"
+  },
+  "ChIJB5-KuCrdQUcRtBE6Fw0Mgsc": {
+    "name": "SIMON'S BURGER DEÁK SQUARE",
+    "address": "Budapest, Fehér Hajó u. 8-10, 1052 Hungary",
+    "phone": "",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-07-13"
+  },
+  "ChIJF9MU_Y3bQUcRADh0oLVhkAs": {
+    "name": "Yun Lai Xiang Kínai Büfé",
+    "address": "Budapest, Mohács u. 16b, 1135 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-13"
+  },
+  "ChIJB40yJfLbQUcRbvllHOCuuOc": {
+    "name": "Super Wok kínai étterem",
+    "address": "Budapest, Váci út 78a, 1133 Hungary",
+    "phone": "(06 1) 704 8848",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-13"
+  },
+  "ChIJ9TnYilzcQUcR3gZzTmF696M": {
+    "name": "Kínai büfé",
+    "address": "Budapest, Szentkirályi u. 20, 1088 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-13"
+  },
+  "ChIJf4GpW8zcQUcR_sgzubvD16M": {
+    "name": "Shandong Kínai Étterem/Shandong Restaurant/山东饭店",
+    "address": "Budapest, Szállás u. 13, 1107 Hungary",
+    "phone": "06 30 319 9866",
+    "type": "restaurant",
+    "discovered_at": "2026-07-13"
   }
 }
