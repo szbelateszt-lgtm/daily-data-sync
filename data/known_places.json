@@ -8470,7 +8470,13 @@
     "discovered_at": null
   },
   "ChIJh3cUZ87RQUcRP4jwwoDcjMs": null,
-  "ChIJh40IHG_cQUcRX2ONZAhcvwM": null,
+  "ChIJh40IHG_cQUcRX2ONZAhcvwM": {
+    "name": "KFC",
+    "address": "Budapest, Thököly út 6, 1076 Hungary",
+    "phone": "06 70 478 7410",
+    "type": "fast_food_restaurant",
+    "discovered_at": null
+  },
   "ChIJh5zD82LWQUcRIY5mkxmi8Sw": {
     "name": "Platni Bistro",
     "address": "Szentendre, Kucsera Ferenc u. 11, 2000 Hungary",
@@ -10891,7 +10897,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJuQiRfzncQUcRnAhFK34iWDQ": null,
+  "ChIJuQiRfzncQUcRnAhFK34iWDQ": {
+    "name": "Taban ABC",
+    "address": "Budapest, Attila út 25, 1013 Hungary",
+    "phone": "(06 1) 213 9759",
+    "type": "general_store",
+    "discovered_at": null
+  },
   "ChIJuRqFJarcQUcRRGFFej6RUo4": {
     "name": "INTERSPAR Hipermarket",
     "address": "Budapest, Kerepesi út 61, 1106 Hungary",
@@ -15117,5 +15129,33 @@
     "phone": "06 30 319 9866",
     "type": "restaurant",
     "discovered_at": "2026-07-13"
+  },
+  "ChIJ6ZwTshPbQUcRKilffkbGljM": {
+    "name": "Real food",
+    "address": "Budapest, Zsolnay Vilmos u. 1, 1147 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-14"
+  },
+  "ChIJGbRJ92zcQUcRiEYl86M1PhE": {
+    "name": "SPAR market",
+    "address": "Budapest, Nagymező u. 25, 1065 Hungary",
+    "phone": "06 20 823 8746",
+    "type": "supermarket",
+    "discovered_at": "2026-07-14"
+  },
+  "ChIJ1fqI6t3dQUcRMjiN1J_8X94": {
+    "name": "SmashVille Budapest",
+    "address": "Budapest, Király u. 88, 1068 Hungary",
+    "phone": "06 20 434 5324",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-14"
+  },
+  "ChIJQejdahLhQUcRs9O8ul7Cgck": {
+    "name": "MesiCake, Nyersvegán, mentes torták rendelésre",
+    "address": "Budaörs, Kézi autómosó mögötti sárga irodaépület, földszint, Sport u. 6, 2040 Hungary",
+    "phone": "06 30 456 5723",
+    "type": "pastry_shop",
+    "discovered_at": "2026-07-14"
   }
 }
