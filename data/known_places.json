@@ -15157,5 +15157,75 @@
     "phone": "06 30 456 5723",
     "type": "pastry_shop",
     "discovered_at": "2026-07-14"
+  },
+  "ChIJi6hzd9zdQUcRw4V9eBIEoZI": {
+    "name": "The Pub-Aaron's Pub - Hungarian traditional Beer & Streetfood",
+    "address": "Budapest, Király u. 50, 1061 Hungary",
+    "phone": "06 30 422 4820",
+    "type": "bar",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJe_CE9sLdQUcR52nEpc4KXwM": {
+    "name": "Elefánt Budapest",
+    "address": "Budapest, Fővám tér 11-12, 1096 Hungary",
+    "phone": "06 30 101 4272",
+    "type": "restaurant",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJsX0iXCzcQUcRTDT7tw5KCss": {
+    "name": "8&8 Delikát",
+    "address": "Budapest, Fürj u. 2, 1124 Hungary",
+    "phone": "06 30 400 3888",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJ87JHHkPcQUcR9IxefaW4IW4": {
+    "name": "Roni ABC",
+    "address": "Budapest, Rákóczi út 6, 1072 Hungary",
+    "phone": "06 70 375 9234",
+    "type": "general_store",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJQ9XjYILnQUcR8RAGTAD85DI": {
+    "name": "Friss Pékség",
+    "address": "Budapest, Leányka u. 13, 1221 Hungary",
+    "phone": "06 20 967 0094",
+    "type": "bakery",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJpWvWI7LdQUcRwawolpHQtl0": {
+    "name": "Naná, Hogy Finom",
+    "address": "Budapest, Kőrösy József u. 7-9, 1117 Hungary",
+    "phone": "06 20 464 6196",
+    "type": "restaurant",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJ3QfzC1fdQUcR29zJ12VGXjc": {
+    "name": "Nicaragua Cafe Brunch Bar Budapest",
+    "address": "Budapest, Bartók Béla út 21, 1114 Hungary",
+    "phone": "06 70 604 3968",
+    "type": "brunch_restaurant",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJdww52cbdQUcRQHalYQ1h35U": {
+    "name": "Brácsa Bistro & Brunch",
+    "address": "Budapest, Dohány u. 84, 1074 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJs9Q8wjrJQUcRI2lcQdtLKCU": {
+    "name": "Kodex Ticket Office",
+    "address": "Gödöllő, Petőfi Sándor tér 14, 2100 Hungary",
+    "phone": "",
+    "type": "store",
+    "discovered_at": "2026-07-15"
+  },
+  "ChIJmVKcrMrRQUcR5SJX_qgMJY4": {
+    "name": "Csibefaló étterem",
+    "address": "Dunakeszi, Nádas u. 6, 2120 Hungary",
+    "phone": "",
+    "type": "buffet_restaurant",
+    "discovered_at": "2026-07-15"
   }
 }
