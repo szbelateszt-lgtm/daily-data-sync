@@ -6608,7 +6608,13 @@
   },
   "ChIJY_G0fzvRQUcRhyLbIycyOpc": null,
   "ChIJYbJfSNXdQUcRESC9UzHRRig": null,
-  "ChIJYbKsW23cQUcRq17o5SVOD7U": null,
+  "ChIJYbKsW23cQUcRq17o5SVOD7U": {
+    "name": "Brew Brothers",
+    "address": "Budapest, Nagymező u. 51, 1065 Hungary",
+    "phone": "06 30 073 5325",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJYd0Pmx7cQUcR38zQek5d27Y": {
     "name": "Pékműhely Bartók",
     "address": "Budapest, Bartók Béla út 15/b, 1114 Hungary",
@@ -10530,7 +10536,13 @@
     "type": "gyro_restaurant",
     "discovered_at": null
   },
-  "ChIJs42HQcjdQUcRCIPQ1Crcres": null,
+  "ChIJs42HQcjdQUcRCIPQ1Crcres": {
+    "name": "BistroDash Cafe",
+    "address": "Budapest, Vámház krt. 10, 1053 Hungary",
+    "phone": "06 70 419 2770",
+    "type": "turkish_restaurant",
+    "discovered_at": null
+  },
   "ChIJs4A-42_bQUcR15cpAGS5L8s": {
     "name": "Nyuszi Kínai Büfé",
     "address": "Budapest, Nagy Lajos király útja 143, 1149 Hungary",
@@ -15227,5 +15239,75 @@
     "phone": "",
     "type": "buffet_restaurant",
     "discovered_at": "2026-07-15"
+  },
+  "ChIJxROjQgDdQUcR4fu4jKMrBhc": {
+    "name": "Original Dobos Torte 1885 Budapest",
+    "address": "Budapest, Haris köz 3, 1052 Hungary",
+    "phone": "06 70 459 0812",
+    "type": "cake_shop",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJyUSzTG_cQUcR0p7vK703kjY": {
+    "name": "CHESS RESTAURANT - BUDAPEST",
+    "address": "Budapest, Dob u. 63, 1074 Hungary",
+    "phone": "(06 1) 882 3080",
+    "type": "bistro",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJPaHeerLeQUcRf9_2DQ8Rns4": {
+    "name": "Vadrózsa Étterem",
+    "address": "Budapest, Pentelei Molnár u. 15, 1025 Hungary",
+    "phone": "(06 1) 326 5809",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJdyXSNnfZQUcRRjMKW3wdh70": {
+    "name": "SPAR szupermarket",
+    "address": "Budapest, Szérűskert u. 018910/23. hrsz, 1033 Hungary",
+    "phone": "06 20 823 7770",
+    "type": "supermarket",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJXeKxqtHbQUcR_PFH2YjDKHQ": {
+    "name": "Melba Étterem",
+    "address": "Budapest, Meder u. 9, 1138 Hungary",
+    "phone": "06 30 747 9795",
+    "type": "restaurant",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJQYaFeZPdQUcRqNuZwg-EhRE": {
+    "name": "TREATS AND \"Stuff\" - The Brownie Café",
+    "address": "Budapest, Street Entrance, II. János Pál pápa tér 2, 1081 Hungary",
+    "phone": "06 20 661 2573",
+    "type": "cafe",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJkQe7UP3fQUcRihWmqn8ZNoo": {
+    "name": "101 BISTRO Restaurant & Bar",
+    "address": "Budapest, Széll Kálmán tér 5, 1024 Hungary",
+    "phone": "06 70 610 8101",
+    "type": "restaurant",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJvQi00iHdQUcROMpFoHdqkn0": {
+    "name": "ARZ Lebanese Restaurant",
+    "address": "Budapest, InterContinental Budapest, Apáczai Csere János u. 12-14, 1052 Hungary",
+    "phone": "(06 1) 327 6392",
+    "type": "lebanese_restaurant",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJgyrGw2vcQUcRjUudSahnTZ0": {
+    "name": "Vegazzi Specialty Pizzeria",
+    "address": "Budapest, Jókai u. 7, 1066 Hungary",
+    "phone": "06 30 665 2110",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-07-16"
+  },
+  "ChIJlZggFYDJQUcRHekRceSKLGo": {
+    "name": "Napolizza",
+    "address": "Gödöllő, Táncsics Mihály út 3, 2100 Hungary",
+    "phone": "06 30 217 3134",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-07-16"
   }
 }
