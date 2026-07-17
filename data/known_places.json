@@ -7263,7 +7263,13 @@
   },
   "ChIJb6WSiO3dQUcR3BXMVVJmCPM": null,
   "ChIJb6tT4dzdQUcRlT8UUJDNdCs": null,
-  "ChIJb70TWSPcQUcR8BMZhpyocz0": null,
+  "ChIJb70TWSPcQUcR8BMZhpyocz0": {
+    "name": "Kicsi Csángó",
+    "address": "Budapest, Alagút u. 1, 1013 Hungary",
+    "phone": "06 30 724 3676",
+    "type": "restaurant",
+    "discovered_at": null
+  },
   "ChIJb7w2nerDQUcRDjdJBQWFTCs": null,
   "ChIJb8BSZADZQUcR8PpiUsS0gM8": {
     "name": "Viet Sky Restaurant",
@@ -7403,7 +7409,13 @@
     "discovered_at": null
   },
   "ChIJc-8TyhPdQUcR20uA6Ysx7U8": null,
-  "ChIJc-NBUtzRQUcRqrgtb3z-_ng": null,
+  "ChIJc-NBUtzRQUcRqrgtb3z-_ng": {
+    "name": "Netpresso Kft - iroda, ügyfélszolgálat, átvételi pont",
+    "address": "Dunakeszi, Fő út 166, 2120 Hungary",
+    "phone": "06 20 340 0280",
+    "type": "food_store",
+    "discovered_at": null
+  },
   "ChIJc-gijo7cQUcRoM9Xw8S9d1M": {
     "name": "Buddha Original WOK BAR",
     "address": "Budapest, Kerepesi út 9, 1087 Hungary",
@@ -15309,5 +15321,75 @@
     "phone": "06 30 217 3134",
     "type": "pizza_restaurant",
     "discovered_at": "2026-07-16"
+  },
+  "ChIJZS7hOgDdQUcRHHMHJ3lHOQg": {
+    "name": "Babylon Restaurant",
+    "address": "Budapest, Tompa u. 14, 1094 Hungary",
+    "phone": "06 70 322 0628",
+    "type": "north_indian_restaurant",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJLftPIQDdQUcRD1E66tmiiBk": {
+    "name": "Sarita Taco Shop",
+    "address": "Budapest, Hegedűs Gyula u. 32, 1136 Hungary",
+    "phone": "06 30 488 6730",
+    "type": "mexican_restaurant",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJh6o_y9_dQUcRCWbX2WsFb7U": {
+    "name": "Brewmi - Vietnamese Street Food, Coffee & Bubble tea",
+    "address": "Budapest, Teréz krt. 9-Fszt/4, 1067 Hungary",
+    "phone": "",
+    "type": "cafe",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJ4fKpSbvdQUcRZTm9gdkdtmk": {
+    "name": "Mr. KEBAB",
+    "address": "Budapest, Pillangó u. 15, 1149 Hungary",
+    "phone": "",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJUzP1an_dQUcRt-quMgRjN30": {
+    "name": "Proper Burgers",
+    "address": "Budapest, Kertész u. 42 - 44, 1073 Hungary",
+    "phone": "",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJ4Vq4AYfZQUcRJ_eEzPR1qdQ": {
+    "name": "Libretto Pizzéria",
+    "address": "Budapest, Folyamőr u. 5, 1033 Hungary",
+    "phone": "06 30 933 9020",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJ0QlqNBrdQUcR5DeAyNVZOuA": {
+    "name": "Tesco Hipermarket Budapest Soroksári úti",
+    "address": "Budapest, Koppány u. 2-4, 1097 Hungary",
+    "phone": "06 80 222 333",
+    "type": "supermarket",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJy91mZhPdQUcRmnXg9KK1o_E": {
+    "name": "JUNE Budapest (MOM Park)",
+    "address": "Budapest, Alkotás u. 53, 1123 Hungary",
+    "phone": "(06 1) 800 9218",
+    "type": "restaurant",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJtc3zPcvdQUcRVZzYwDILJjc": {
+    "name": "Ide Süss Manufaktúra",
+    "address": "Budapest, Medve u. 20, 1027 Hungary",
+    "phone": "06 30 606 3663",
+    "type": "bakery",
+    "discovered_at": "2026-07-17"
+  },
+  "ChIJj4zLAADdQUcRs7OmWZjxHzA": {
+    "name": "Salve Pizza Napoletana Budapart",
+    "address": "Budapest, Völgycsillag u 4, 1117 Hungary",
+    "phone": "06 30 461 4504",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-07-17"
   }
 }
