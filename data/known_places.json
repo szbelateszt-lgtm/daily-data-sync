@@ -8841,7 +8841,13 @@
     "discovered_at": null
   },
   "ChIJj74DMSTeQUcRKlUWxE5RTM0": null,
-  "ChIJj9nELwDdQUcRiKyUAefsq0o": null,
+  "ChIJj9nELwDdQUcRiKyUAefsq0o": {
+    "name": "Soroksári Buci Pékség",
+    "address": "Budapest, Garay tér 20, 1076 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJjQrJ7afeQUcRDfEfcyA3FKs": {
     "name": "Kisbödön Ételbár",
     "address": "Budapest, Keleti Károly u. 9, 1024 Hungary",
@@ -15391,5 +15397,26 @@
     "phone": "06 30 461 4504",
     "type": "pizza_restaurant",
     "discovered_at": "2026-07-17"
+  },
+  "ChIJtQiMX2rcQUcR1izzxK85aMY": {
+    "name": "Hachapuri",
+    "address": "Budapest, Bajcsy-Zsilinszky út 17, 1065 Hungary",
+    "phone": "06 30 822 0365",
+    "type": "eastern_european_restaurant",
+    "discovered_at": "2026-07-18"
+  },
+  "ChIJGSHJSWjDQUcRl0K5GO7Nz1A": {
+    "name": "Food Forest kft",
+    "address": "Budapest, Tárna u. 4, 1106 Hungary",
+    "phone": "06 30 281 7292",
+    "type": "restaurant",
+    "discovered_at": "2026-07-18"
+  },
+  "ChIJEfYAD7TdQUcRw6OC-QvL8CA": {
+    "name": "West Side Bistro",
+    "address": "Budapest, Teréz krt. 55-57, 1062 Hungary",
+    "phone": "06 30 434 6101",
+    "type": "restaurant",
+    "discovered_at": "2026-07-18"
   }
 }
