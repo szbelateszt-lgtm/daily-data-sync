@@ -96155,5 +96155,41 @@
     "datum": "2026.07.15",
     "kerulet": "Budapest III.? (Óbuda?)",
     "discovered_at": "2026-07-18"
+  },
+  "Budapest VII. (Erzsébetváros)::8681|7441/2026|Zoltán és András Kft.|1078 Budapest István utca 10|01-09-454249|33010630-4721-113-01|A Zöld Sárga|1078 Budapest István utca 10 pinceszint U-4.|143||H: 07:00 - 16:00, K: 07:00 - 16:00, Sze: 07:00 - 16:00, Cs: 07:00 - 16:00, P: 07:00 - 16:00, Szo: 07:00 - 16:00, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, nagykereskedelem||||Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Zöldség- és gyümölcs | Egyéb élelmiszer | Kenyér- és pékáru, sütőipari termék | Tej, tejtermék | Cukrászati készítmény, édesipari termék | Közérzetjavító és étrend-kiegészítő termék | Édességáru||2026.07.14||||||||": {
+    "nev_cim": "Zoltán és András Kft. | 1078 Budapest István utca 10 | A Zöld Sárga | 1078 Budapest István utca 10 pinceszint U-4.",
+    "datum": "2026.07.14",
+    "kerulet": "Budapest VII. (Erzsébetváros)",
+    "discovered_at": "2026-07-19"
+  },
+  "Budapest XII. (Hegyvidék)::2842|394585/B/2/2026|SOPHIE'S DELIGHT LTD Fióktelep|1054 Budapest Alkotmány utca 4 2/8B|01-17-001684|32834721-1089-226-01|Sophie’s Delight|1121 Budapest Költő utca 8|34|1|H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: 12:00 - 14:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kávéital, alkoholmentes- és szeszes ital|2026.05.08|2026.05.14|2026.06.19|||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "394585/B/2/2026 | SOPHIE'S DELIGHT LTD Fióktelep | 1054 Budapest Alkotmány utca 4 2/8B | Sophie’s Delight",
+    "datum": "2026.05.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-19"
+  },
+  "Budapest XVI. (Sashalom)::3585|5382/2026|TRE FONDI Kft.|6400 Kiskunhalas Külterület HRSZ. 05/3.|03-09-117665|14661684-3312-113-03|Budapest Padel|1163 Budapest Kövirózsa utca|19,8|10|H: 08:00 - 23:00, K: 08:00 - 23:00, Sze: 08:00 - 23:00, Cs: 08:00 - 23:00, P: 08:00 - 23:00, Szo: 08:00 - 23:00, V: 08:00 - 23:00,|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Ruházat | Egyéb élelmiszer | Közérzetjavító és étrend-kiegészítő termék | Lábbeli- és bőráru | Sportszer, sporteszköz||2026.07.16||||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "TRE FONDI Kft. | 6400 Kiskunhalas Külterület HRSZ. 05/3. | Budapest Padel | 1163 Budapest Kövirózsa utca",
+    "datum": "2026.07.16",
+    "kerulet": "Budapest XVI. (Sashalom)",
+    "discovered_at": "2026-07-19"
+  },
+  "Budapest XVI. (Sashalom)::200|3425/2014|Szabó András Imréné|1165 Budapest Bökényföldi út 87.|9128132|64262053-4712-231-01|Budapesti Méhészeti és Üveg Centrum|1165 Budapest Bökényföldi út 87.|20||H: 09:00 - 17:00, K: 09:00 - 17:00, Sze: 09:00 - 17:00, Cs: 09:00 - 17:00, P: 09:00 - 17:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Állateledel, takarmány | Állatgyógyászati termék | Egyéb élelmiszer||2014.02.25|2018.11.08|||||||": {
+    "nev_cim": "Szabó András Imréné | 1165 Budapest Bökényföldi út 87. | Budapesti Méhészeti és Üveg Centrum | 1165 Budapest Bökényföldi út 87.",
+    "datum": "2014.02.25",
+    "kerulet": "Budapest XVI. (Sashalom)",
+    "discovered_at": "2026-07-19"
+  },
+  "Budapest XXII. (Budafok-Tétény)::48|1016/2001|ÉVALU KFT.|1225 Budapest Nagytétényi út 410.|01-09-068864|10386749-4752-113-01|ÉVALU Vastelep|1225 Budapest Nagytétényi út 410.|30||H-V:8-16|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||Az egyes festékek, lakkok és járművek javító fényezésére szolgáló termékek szerves oldószer tartalmának szabályozásáról szóló kormányrendelet hatálya alá tartozó termékek|Villamos háztartási készülék és villamossági cikk | Szaniteráru | Bútor, lakberendezés, háztartási felszerelés, világítástechnikai cikk | Festék, lakk | Vasáru, barkács, és építési anyag||2001.01.01||2026.07.15||||||": {
+    "nev_cim": "ÉVALU KFT. | 1225 Budapest Nagytétényi út 410. | ÉVALU Vastelep | 1225 Budapest Nagytétényi út 410.",
+    "datum": "2001.01.01",
+    "kerulet": "Budapest XXII. (Budafok-Tétény)",
+    "discovered_at": "2026-07-19"
+  },
+  "Budapest XXIII/b (Soroksár)::2709|600589/2021|KIS IMRE|6900 Makó Nagycsillag utca 44.|53466916|69634525-7721-231-06|Zöldség- és gyümölcs|1239 Budapest Nagykőrösi út 353. (napi árus)||napi árus|2||A Nagybani Piac nyitvatartási ideje szerint|Nem|Nem||vásáron vagy piacon folytatott kereskedelmi tevékenység|nagykereskedelem||||Zöldség- és gyümölcs | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Kenyér- és pékáru, sütőipari termék||2021.02.09||||||||": {
+    "nev_cim": "KIS IMRE | 6900 Makó Nagycsillag utca 44. | Zöldség- és gyümölcs | 1239 Budapest Nagykőrösi út 353. (napi árus)",
+    "datum": "2021.02.09",
+    "kerulet": "Budapest XXIII/b (Soroksár)",
+    "discovered_at": "2026-07-19"
   }
 }

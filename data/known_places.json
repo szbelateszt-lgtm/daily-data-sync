@@ -11384,7 +11384,13 @@
     "type": "supermarket",
     "discovered_at": null
   },
-  "ChIJw_Wio-fdQUcR0SistfzUSeM": null,
+  "ChIJw_Wio-fdQUcR0SistfzUSeM": {
+    "name": "Etele Bisztró",
+    "address": "Budapest, Etele út 71, 1119 Hungary",
+    "phone": "06 30 485 7595",
+    "type": "bistro",
+    "discovered_at": null
+  },
   "ChIJw_e_n6PhQUcRr1GJAVikjl0": {
     "name": "Príma",
     "address": "Érd, Bajcsy-Zsilinszky út 125-127, 2030 Hungary",
@@ -15418,5 +15424,33 @@
     "phone": "06 30 434 6101",
     "type": "restaurant",
     "discovered_at": "2026-07-18"
+  },
+  "ChIJ4Qde9T_cQUcRFAFeJjckP1s": {
+    "name": "Patmos Café",
+    "address": "Budapest, József nádor tér 9, 1051 Hungary",
+    "phone": "06 30 947 7323",
+    "type": "breakfast_restaurant",
+    "discovered_at": "2026-07-19"
+  },
+  "ChIJh3N1203cQUcR30-sxdWtWq8": {
+    "name": "Bartók Delikát",
+    "address": "Budapest, Bartók Béla út 1, 1114 Hungary",
+    "phone": "",
+    "type": "store",
+    "discovered_at": "2026-07-19"
+  },
+  "ChIJ1eFGJuzcQUcRgNMaV-cgR2Y": {
+    "name": "Friss Finom Pékség",
+    "address": "Budapest, Kőris u. 37, 1089 Hungary",
+    "phone": "06 30 308 0961",
+    "type": "bakery",
+    "discovered_at": "2026-07-19"
+  },
+  "ChIJAZpZlALRQUcR3Hm1egphMRg": {
+    "name": "Pék-Tabak Bt.",
+    "address": "Dunakeszi, Pejachevich Albert u. 16, 2120 Hungary",
+    "phone": "06 30 932 8268",
+    "type": "store",
+    "discovered_at": "2026-07-19"
   }
 }
