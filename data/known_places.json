@@ -15452,5 +15452,26 @@
     "phone": "06 30 932 8268",
     "type": "store",
     "discovered_at": "2026-07-19"
+  },
+  "ChIJrZpQ5zXcQUcR0dwjDrghNeg": {
+    "name": "Búsuló Juhász",
+    "address": "Budapest, Kelenhegyi út 58, 1118 Hungary",
+    "phone": "(06 1) 209 1649",
+    "type": "restaurant",
+    "discovered_at": "2026-07-20"
+  },
+  "ChIJL18mzebdQUcRiYFv_s7hbcc": {
+    "name": "Bilanx",
+    "address": "Budapest, Mérleg u. 10, 1051 Hungary",
+    "phone": "06 70 701 0462",
+    "type": "restaurant",
+    "discovered_at": "2026-07-20"
+  },
+  "ChIJNQ_q2dnZQUcRoph66Fyxd94": {
+    "name": "Zaza Grill House & Bar",
+    "address": "Budapest, Mókus u. 1-3, 1036 Hungary",
+    "phone": "06 20 275 7416",
+    "type": "restaurant",
+    "discovered_at": "2026-07-20"
   }
 }
