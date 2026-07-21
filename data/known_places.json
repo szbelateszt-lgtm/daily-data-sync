@@ -6149,7 +6149,13 @@
     "type": "thai_restaurant",
     "discovered_at": null
   },
-  "ChIJWb1WQlzcQUcRfjn7xZXq7Ck": null,
+  "ChIJWb1WQlzcQUcRfjn7xZXq7Ck": {
+    "name": "Apricot Coffee",
+    "address": "Budapest, Bródy Sándor u. 17, 1088 Hungary",
+    "phone": "06 20 276 6292",
+    "type": "coffee_shop",
+    "discovered_at": null
+  },
   "ChIJWbFAVCbRQUcRgXEDVHTG-hw": {
     "name": "Galuska & Greco's",
     "address": "Dunakeszi, IV Béla Király tér 1, 2120 Hungary",
@@ -15473,5 +15479,19 @@
     "phone": "06 20 275 7416",
     "type": "restaurant",
     "discovered_at": "2026-07-20"
+  },
+  "ChIJsWozKwDdQUcRXEhZUPqvZGA": {
+    "name": "FOURGUYS®",
+    "address": "Budapest, Dob u. 31, 1074 Hungary",
+    "phone": "(06 1) 287 6586",
+    "type": "hot_dog_restaurant",
+    "discovered_at": "2026-07-21"
+  },
+  "ChIJ21zoAFnbQUcRFf-dMHwBECk": {
+    "name": "DEXA Élelmiszer Diszkont / Grocery-Discont",
+    "address": "Budapest, Lehel u 12, 1134 Hungary",
+    "phone": "06 20 266 6475",
+    "type": "discount_supermarket",
+    "discovered_at": "2026-07-21"
   }
 }
