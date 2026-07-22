@@ -15493,5 +15493,33 @@
     "phone": "06 20 266 6475",
     "type": "discount_supermarket",
     "discovered_at": "2026-07-21"
+  },
+  "ChIJrfWWoxXcQUcRcqREbXaajdI": {
+    "name": "Costes Downtown",
+    "address": "Budapest, Vigyázó Ferenc u. 5, 1051 Hungary",
+    "phone": "06 70 463 4654",
+    "type": "restaurant",
+    "discovered_at": "2026-07-22"
+  },
+  "ChIJldElJwLcQUcRh965wjSmVOc": {
+    "name": "Nagyi Kifőzdéje",
+    "address": "Budapest, Frankel Leó út 36, 1023 Hungary",
+    "phone": "(06 1) 326 2066",
+    "type": "restaurant",
+    "discovered_at": "2026-07-22"
+  },
+  "ChIJY1qUHlbcQUcRKHazqCbpUng": {
+    "name": "JinManLou Kínai Gyorsétterem",
+    "address": "Budapest, Mester u. 4, 1094 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-22"
+  },
+  "ChIJZ22N0GLWQUcRh16xWBAcWxs": {
+    "name": "Elisabeth Étterem",
+    "address": "Szentendre, Fő tér 17, 2000 Hungary",
+    "phone": "06 30 285 0758",
+    "type": "restaurant",
+    "discovered_at": "2026-07-22"
   }
 }
