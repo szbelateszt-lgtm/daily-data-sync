@@ -7494,7 +7494,13 @@
     "type": "thai_restaurant",
     "discovered_at": null
   },
-  "ChIJcSfnUQ3cQUcRXwTP0N4UOkY": null,
+  "ChIJcSfnUQ3cQUcRXwTP0N4UOkY": {
+    "name": "Arbat Delicates",
+    "address": "Budapest, Podmaniczky u. 20, 1065 Hungary",
+    "phone": "06 30 883 8628",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJcUHpnwLdQUcRRY5efnXkFOc": null,
   "ChIJcUUrNdXbQUcRwayqcK_pmew": {
     "name": "Deák Kebab Török Étterem",
@@ -15521,5 +15527,19 @@
     "phone": "06 30 285 0758",
     "type": "restaurant",
     "discovered_at": "2026-07-22"
+  },
+  "ChIJXyGCoBHdQUcRJvSSIOpPqME": {
+    "name": "Flatty Coffee Shop - Basilica",
+    "address": "Budapest, Sas u 11, 1051 Hungary",
+    "phone": "06 30 130 2223",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-23"
+  },
+  "ChIJSXlGF2_dQUcRnFdfLhv3Wpc": {
+    "name": "Pita Budapest",
+    "address": "Budapest, Október 6. u. 10, 1051 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-07-23"
   }
 }
