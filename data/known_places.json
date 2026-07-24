@@ -10005,7 +10005,13 @@
     "discovered_at": null
   },
   "ChIJowpUHRrDQUcRRRwZ_a1YkHk": null,
-  "ChIJoxY4nGLbQUcRkSOrHHyiYbY": null,
+  "ChIJoxY4nGLbQUcRkSOrHHyiYbY": {
+    "name": "Tesco Expressz Budapest Erzsébet Királyné útja",
+    "address": "Budapest, Erzsébet királyné útja 125, 1142 Hungary",
+    "phone": "06 80 222 333",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJozVaTlPdQUcR1fr59NeCfio": {
     "name": "Aranybástya",
     "address": "Budapest, Buda Castle, Csónak u. 1, 1015 Hungary",
@@ -15541,5 +15547,54 @@
     "phone": "",
     "type": "restaurant",
     "discovered_at": "2026-07-23"
+  },
+  "ChIJT8Sf8vPdQUcRDHCfRYr40Q4": {
+    "name": "Lalibela Food & Café",
+    "address": "Budapest, Arany János u. 15, 1051 Hungary",
+    "phone": "06 70 239 9806",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-24"
+  },
+  "ChIJgbu0YqndQUcRCvWnHC-xKwY": {
+    "name": "Pelmenyizde & Factory | Nagymező",
+    "address": "Budapest, Nagymező u. 36, 1065 Hungary",
+    "phone": "06 70 858 6555",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-24"
+  },
+  "ChIJ0agB-pjdQUcRd5bb7mx18gM": {
+    "name": "Roth Bar & Kitchen",
+    "address": "Budapest, Nagymező u. 23, 1065 Hungary",
+    "phone": "06 30 071 2111",
+    "type": "restaurant",
+    "discovered_at": "2026-07-24"
+  },
+  "ChIJ8XoubVbZQUcRuGXjmsCFkpk": {
+    "name": "Koreai Japán Élelmiszer(Duna Party bolt Asian foods and more)",
+    "address": "Budapest, Szépvölgyi út 2, 1025 Hungary",
+    "phone": "(06 1) 630 8231",
+    "type": "asian_grocery_store",
+    "discovered_at": "2026-07-24"
+  },
+  "ChIJ9bunZ5jdQUcRJAlMTctwaOI": {
+    "name": "Szatócska Csomagolásmentes Bolt",
+    "address": "Budapest, Kresz Géza u 21, 1132 Hungary",
+    "phone": "06 30 407 7233",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-24"
+  },
+  "ChIJ0R6SDsTZQUcR749W3_GnzNY": {
+    "name": "Köz_hely",
+    "address": "Budapest, Kolosy tér 3, 1036 Hungary",
+    "phone": "06 20 338 5392",
+    "type": "restaurant",
+    "discovered_at": "2026-07-24"
+  },
+  "ChIJrS4I8YjdQUcR9VXDW5oePl0": {
+    "name": "LAYERS.coffee Budapest",
+    "address": "Budapest, Huszár u. 5, 1074 Hungary",
+    "phone": "06 70 421 1513",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-24"
   }
 }
