@@ -15596,5 +15596,47 @@
     "phone": "06 70 421 1513",
     "type": "coffee_shop",
     "discovered_at": "2026-07-24"
+  },
+  "ChIJq47T5yPdQUcRbz-C_tETahA": {
+    "name": "Kiskovász Pékség és kávézó",
+    "address": "Budapest, Nagymező u. 36, 1065 Hungary",
+    "phone": "(06 1) 208 6831",
+    "type": "bakery",
+    "discovered_at": "2026-07-25"
+  },
+  "ChIJo1ZKc6bdQUcRV8RnYWp6rKY": {
+    "name": "Lángosom Sütő utca",
+    "address": "Budapest, Sütő u. 2, 1052 Hungary",
+    "phone": "06 20 211 4807",
+    "type": "restaurant",
+    "discovered_at": "2026-07-25"
+  },
+  "ChIJo5qCNNDdQUcRX1wIOU_V3LY": {
+    "name": "Café lune",
+    "address": "Budapest, Dohány u. 30a, 1074 Hungary",
+    "phone": "06 70 414 2215",
+    "type": "restaurant",
+    "discovered_at": "2026-07-25"
+  },
+  "ChIJDRDv_lrcQUcROqJkwN_2qLo": {
+    "name": "DON DOKO DON Japan Bistro",
+    "address": "Budapest, Üllői út 2-4, 1085 Hungary",
+    "phone": "06 30 670 8846",
+    "type": "restaurant",
+    "discovered_at": "2026-07-25"
+  },
+  "ChIJAzNwePrdQUcRSSTZKdA89dk": {
+    "name": "Chef Kebab Margit",
+    "address": "Budapest, Margit körút 5a, 1024 Hungary",
+    "phone": "06 30 534 7357",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-07-25"
+  },
+  "ChIJv6YjlyvXQUcReNJmMumfbbg": {
+    "name": "88 Bistro (Bükkös Hotel)",
+    "address": "Szentendre, Bükkös part 16, 2000 Hungary",
+    "phone": "(06 26) 501 360",
+    "type": "restaurant",
+    "discovered_at": "2026-07-25"
   }
 }

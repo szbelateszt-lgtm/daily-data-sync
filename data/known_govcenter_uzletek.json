@@ -99803,5 +99803,89 @@
     "datum": "2026.04.01",
     "kerulet": "Budapest IV.? (Újpest?)",
     "discovered_at": "2026-07-24"
+  },
+  "Budapest V. (Belváros)::12551|14658/2026|JEDA Cafe Corso Kft.|1062 Budapest Andrássy út 95. 2. em. 5.|01-09-455095|33025696-5611-113-01|Sisi|1051 Budapest Vigadó tér 3. 3. lh. fszt.|118|6|H: Zárva, K: Zárva, Sze: 12:00 - 16:00, Cs: Zárva, P: 10:00 - 22:00, Szo: 10:00 - 22:00, V: 10:00 - 22:00,|Igen|Igen||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Kenyér- és pékáru, sütőipari termék|2026.07.17|2026.07.24||||||||Alkoholmentes italokra specializálódott vendéglátóhely (kávézó) – 56.30 Italszolgáltatás": {
+    "nev_cim": "JEDA Cafe Corso Kft. | 1062 Budapest Andrássy út 95. 2. em. 5. | Sisi | 1051 Budapest Vigadó tér 3. 3. lh. fszt.",
+    "datum": "2026.07.17",
+    "kerulet": "Budapest V. (Belváros)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2857|395909/B/1/2026|KerekEgészEmber Alapítvány|3379 Egerfarmos Rákóczi út 82|10-01-0001204|19249650-9499-569-10|MENŐPAUZA KLUB Pub|1123 Budapest Greguss utca 3 1|102|30|H: 14:00 - 24:00, K: 14:00 - 24:00, Sze: 14:00 - 24:00, Cs: 14:00 - 24:00, P: 14:00 - 02:00, Szo: 14:00 - 02:00, V: 14:00 - 20:00,|Igen|Igen||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Közérzetjavító és étrend-kiegészítő termék | Ruházat | Könyv | Használtcikk|2026.05.13|2026.05.14||||||||Alkoholos italokra specializálódott vendéglátóhely (bár, kocsma, borozó) – 56.30 Italszolgáltatás": {
+    "nev_cim": "395909/B/1/2026 | KerekEgészEmber Alapítvány | 3379 Egerfarmos Rákóczi út 82 | MENŐPAUZA KLUB Pub",
+    "datum": "2026.05.13",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2854|395801/B/1./2026|Béky Fivérek Kft.|1044 Budapest Fadrusz János utca 27.|01-09-441146|32759693-4685-113-01|Svábhegyi Pünkösdi Búcsú|1125 Budapest Diana utca 4.|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||közterületi értékesítés|kiskereskedelem||||Illatszer, drogéria||2026.05.12||||||||": {
+    "nev_cim": "395801/B/1./2026 | Béky Fivérek Kft. | 1044 Budapest Fadrusz János utca 27. | Svábhegyi Pünkösdi Búcsú",
+    "datum": "2026.05.12",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2855|395801/B/2/2026|Horváth Zoltán|3011 Heréd Petőfi Sándor utca 25.|AA6633042|32759693-4685-113-01|Svábhegyi Pünkösdi Búcsú|1125 Budapest Diana utca Budapest XII. kerület, Diana-park|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem|Budapest XII. kerület, Diana-park|közterületi értékesítés|kiskereskedelem||||Egyéb élelmiszer||2026.05.13||||||||": {
+    "nev_cim": "395801/B/2/2026 | Horváth Zoltán | 3011 Heréd Petőfi Sándor utca 25. | AA6633042",
+    "datum": "2026.05.13",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2853|395790/B/1/2026|VAU Bakery Kft.|2030 Érd Emma utca 1 a|13-09-239635|32782174-1092-113-13|Hegyvidéki Tavaszi Fesztivál – Kutyás Nap|1124 Budapest Jagelló út 5.|||H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Nem|Nem||közterületi értékesítés|kiskereskedelem||||Állateledel, takarmány||2026.05.12||||||||": {
+    "nev_cim": "395790/B/1/2026 | VAU Bakery Kft. | 2030 Érd Emma utca 1 a | Hegyvidéki Tavaszi Fesztivál – Kutyás Nap",
+    "datum": "2026.05.12",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2739|388847/B/3./2026|Magyar Szalon Kft.|1132 Budapest Váci út 28. III. em. 1/A.|01-09-344731|26785824-5611-113-01|PÉNZMÚZEUM BÜFÉ|1122 Budapest Krisztina körút 6.|168|50|H: 08:00 - 17:00, K: Zárva, Sze: 08:00 - 17:00, Cs: 08:00 - 19:00, P: 10:00 - 17:00, Szo: 10:00 - 18:00, V: 10:00 - 18:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru | Könyv | Újság, napilap, folyóirat, periodikus kiadvány | Játékáru | Emlék- és ajándéktárgy | Numizmatikai termék | Kreatív-hobbi és dekorációs termék||2026.01.08|2026.03.04|||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "388847/B/3./2026 | Magyar Szalon Kft. | 1132 Budapest Váci út 28. III. em. 1/A. | PÉNZMÚZEUM BÜFÉ",
+    "datum": "2026.01.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2740|388847/B/8./2026|Magyar Szalon Kft.|1132 Budapest Váci út 28. III. em. 1/A.|01-09-344731|26785824-5611-113-01|Bux Index Kitchen & Bar|1122 Budapest Krisztina körút 6-8|75|100|H: 09:00 - 24:00, K: 09:00 - 24:00, Sze: 09:00 - 24:00, Cs: 09:00 - 24:00, P: 09:00 - 24:00, Szo: 09:00 - 24:00, V: 09:00 - 24:00,|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Édességáru||2026.03.23||||||||Étterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "388847/B/8./2026 | Magyar Szalon Kft. | 1132 Budapest Váci út 28. III. em. 1/A. | Bux Index Kitchen & Bar",
+    "datum": "2026.03.23",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2741|388847/B/4./2026|Magyar Szalon Kft.|1132 Budapest Váci út 28. III. em. 1/A.|01-09-344731|26785824-5611-113-01|BANKERS’ CORNER|1122 Budapest Krisztina körút 6-8.|94|100|H: 11:00 - 14:00, K: 11:00 - 14:00, Sze: 11:00 - 14:00, Cs: 11:00 - 14:00, P: 11:00 - 14:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru||2026.01.08||||||||Munkahelyi/közétkeztetést végző vendéglátóhely – 56.22 Szerződéses étkeztetés és egyéb vendéglátás": {
+    "nev_cim": "388847/B/4./2026 | Magyar Szalon Kft. | 1132 Budapest Váci út 28. III. em. 1/A. | BANKERS’ CORNER",
+    "datum": "2026.01.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::2742|388847/B/5/2026|Magyar Szalon Kft.|1132 Budapest Váci út 28. III. em. 1/A.|01-09-344731|26785824-5611-113-01|BANKERS’ CORNER BÜFÉ|1122 Budapest Krisztina körút 6-8.|15|20|H: 08:00 - 16:00, K: 08:00 - 16:00, Sze: 08:00 - 16:00, Cs: 08:00 - 16:00, P: 08:00 - 16:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru||2026.01.08||||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "388847/B/5/2026 | Magyar Szalon Kft. | 1132 Budapest Váci út 28. III. em. 1/A. | BANKERS’ CORNER BÜFÉ",
+    "datum": "2026.01.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XII. (Hegyvidék)::136|100601/B/6/2026|BUDACONSUM Kft.|1025 Budapest Csatárka út 58|Cg. 0109064132|10274019-4711-113-01|Hegyalja Csemege|1124 Budapest Hegyalja út 93. B.|255||H: 06:00 - 21:00, K: 06:00 - 21:00, Sze: 06:00 - 21:00, Cs: 06:00 - 21:00, P: 06:00 - 21:00, Szo: 07:00 - 19:00, V: 08:00 - 19:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem|||A kémiai biztonságról szóló törvény szerinti veszélyes anyagok és keverékek, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag | Az Országos Tűzvédelmi Szabályzat szerint fokozottan tűz- vagy robbanásveszélyes osztályba tartozó anyag, kivéve a jövedéki adóról szóló törvény szerinti tüzelő-, fűtőanyag célú gázolaj, LPG és az üzemanyag|||2026.05.27||||||||": {
+    "nev_cim": "100601/B/6/2026 | BUDACONSUM Kft. | 1025 Budapest Csatárka út 58 | Cg. 0109064132",
+    "datum": "2026.05.27",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XVI. (Sashalom)::3578|5374/2026|ES Optics Kft.|1164 Budapest Ostoros út 63.|01-09-435107|32644159-4778-113-01|ES Optics Kft.|1164 Budapest Ostoros út 63.|25||H: 12:00 - 19:00, K: 12:00 - 19:00, Sze: 12:00 - 19:00, Cs: 12:00 - 19:00, P: 12:00 - 19:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem||||Fotócikk||2026.06.23||2026.07.24||||||": {
+    "nev_cim": "ES Optics Kft. | 1164 Budapest Ostoros út 63. | ES Optics Kft. | 1164 Budapest Ostoros út 63.",
+    "datum": "2026.06.23",
+    "kerulet": "Budapest XVI. (Sashalom)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XXI. (Csepel)::4403|53075/2025|Gogolák József Gábor|2371 Dabas Szent János út 238.|60751544|58691144-5611-231-13|Hazai Ízek Büfé|1211 Budapest Weiss Manfréd út 5-7. A14. épület|29,58|2|H: 06:00 - 14:00, K: 06:00 - 14:00, Sze: 06:00 - 14:00, Cs: 06:00 - 14:00, P: 06:00 - 14:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Kenyér- és pékáru, sütőipari termék|2025.09.30|2025.10.14||2026.07.24||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "Gogolák József Gábor | 2371 Dabas Szent János út 238. | Hazai Ízek Büfé | 1211 Budapest Weiss Manfréd út 5-7. A14. épület",
+    "datum": "2025.09.30",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest XXI. (Csepel)::4321|52990/2024|A1 Modul PLUSZ Kft.|2377 Örkény Fő utca 20.|13-09-209428|28960876-4724-113-13|EZBURGER|1214 Budapest Erdősor utca 33/A.|196|15|H: Zárva, K: 11:00 - 20:00, Sze: 11:00 - 20:00, Cs: 11:00 - 20:00, P: 11:00 - 20:00, Szo: 11:00 - 20:00, V: 11:00 - 20:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel|2024.12.02|2024.12.03||2026.07.24||||||Gyorsétterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "A1 Modul PLUSZ Kft. | 2377 Örkény Fő utca 20. | EZBURGER | 1214 Budapest Erdősor utca 33/A.",
+    "datum": "2024.12.02",
+    "kerulet": "Budapest XXI. (Csepel)",
+    "discovered_at": "2026-07-25"
+  },
+  "Budapest III.? (Óbuda?)::9519|16610/2/2026|Rawolution Kft.|1131 Budapest Kucsma utca 11. 2. em. 25.|01-09-391231|27469444-4638-113-01|ARANYOM kávézó és deli|1136 Budapest Pannónia utca 13. fszt. 4.|44|8|Hétfő: 07:00 - 18:00, Kedd: 07:00 - 18:00, Szerda: 07:00 - 18:00, Csütörtök: 07:00 - 18:00, Péntek: 07:00 - 18:00, Szombat: 07:00 - 16:00,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Hús-és hentesáru | Kenyér- és pékáru, sütőipari termék | Édességáru | Tej, tejtermék | Egyéb élelmiszer | Közérzetjavító és étrend-kiegészítő termék|2026.04.01|2026.03.23|2026.07.24|||||||Alkoholmentes italokra specializálódott vendéglátóhely (kávézó) – 56.30 Italszolgáltatás": {
+    "nev_cim": "Rawolution Kft. | 1131 Budapest Kucsma utca 11. 2. em. 25. | ARANYOM kávézó és deli | 1136 Budapest Pannónia utca 13. fszt. 4.",
+    "datum": "2026.04.01",
+    "kerulet": "Budapest III.? (Óbuda?)",
+    "discovered_at": "2026-07-25"
   }
 }
