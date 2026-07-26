@@ -4952,7 +4952,13 @@
     "discovered_at": null
   },
   "ChIJQVoDYSLcQUcRU2HQEGAr2bc": null,
-  "ChIJQVwLbgDdQUcRraejIW0qHGY": null,
+  "ChIJQVwLbgDdQUcRraejIW0qHGY": {
+    "name": "KKODARI - Korean Roll & Rice",
+    "address": "Budapest, Krúdy u 4, 1088 Hungary",
+    "phone": "",
+    "type": "korean_restaurant",
+    "discovered_at": null
+  },
   "ChIJQW-l3_rdQUcRVBYOwTfnEek": {
     "name": "Asian Street Food Budapest",
     "address": "Budapest, Thököly út 18, 1076 Hungary",
@@ -10490,7 +10496,13 @@
     "type": "vietnamese_restaurant",
     "discovered_at": null
   },
-  "ChIJr_zkJLnRQUcRmyhRvpjF6lY": null,
+  "ChIJr_zkJLnRQUcRmyhRvpjF6lY": {
+    "name": "Gyros Ellátó Dunakeszi",
+    "address": "Dunakeszi, Szent István u. 25, 2120 Hungary",
+    "phone": "06 30 832 0405",
+    "type": "fast_food_restaurant",
+    "discovered_at": null
+  },
   "ChIJradniwjcQUcRwFCSgp_M7Ks": null,
   "ChIJraizLL7rQUcRgvJAKmR-iPs": null,
   "ChIJrayxbxPcQUcR7JUPOL2UbPw": {
@@ -15638,5 +15650,54 @@
     "phone": "(06 26) 501 360",
     "type": "restaurant",
     "discovered_at": "2026-07-25"
+  },
+  "ChIJWc7UFj3dQUcRAuK3NgtE54w": {
+    "name": "UpTown Kosher bakery - מאפייה כשרה",
+    "address": "Budapest, Nagy Diófa u. 4, 1072 Hungary",
+    "phone": "06 30 485 8873",
+    "type": "bakery",
+    "discovered_at": "2026-07-26"
+  },
+  "ChIJt57CpVDcQUcRsXWXvzlaHnU": {
+    "name": "Shiraz Lounge & Restaurant",
+    "address": "Budapest, Ráday u. 21, 1092 Hungary",
+    "phone": "(06 1) 218 0881",
+    "type": "restaurant",
+    "discovered_at": "2026-07-26"
+  },
+  "ChIJ79VLFgDdQUcR1b1yVNzKfP8": {
+    "name": "Việt Phở",
+    "address": "Budapest, Teréz krt. 20, 1066 Hungary",
+    "phone": "06 30 625 7235",
+    "type": "asian_restaurant",
+    "discovered_at": "2026-07-26"
+  },
+  "ChIJo4YH--LbQUcRtyLg13SwOXc": {
+    "name": "HAN’EI SUSHI | Fresh Sushi & Asian Kitchen",
+    "address": "Budapest, Nyírpalota út 4, 1156 Hungary",
+    "phone": "06 30 206 5466",
+    "type": "sushi_restaurant",
+    "discovered_at": "2026-07-26"
+  },
+  "ChIJ8f02HgDnQUcRJox0KJNkUzc": {
+    "name": "Boróka ABC",
+    "address": "Budapest, Háros u. 177, 1222 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-26"
+  },
+  "ChIJUYSPXlrdQUcRvIFLCf7EJ8k": {
+    "name": "Billog Burger Astoria",
+    "address": "Budapest, Rákóczi út 8, 1072 Hungary",
+    "phone": "06 20 507 0770",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-07-26"
+  },
+  "ChIJ9zBjlazXQUcRRK9VhDAKiKk": {
+    "name": "Wave Box",
+    "address": "Dunakeszi, Duna sor 3, 2120 Hungary",
+    "phone": "06 70 411 3333",
+    "type": "bar_and_grill",
+    "discovered_at": "2026-07-26"
   }
 }
