@@ -15699,5 +15699,26 @@
     "phone": "06 70 411 3333",
     "type": "bar_and_grill",
     "discovered_at": "2026-07-26"
+  },
+  "ChIJOzSkctLdQUcRHbvwty187SA": {
+    "name": "Remma's Bistro",
+    "address": "Budapest, Rumbach Sebestyén u. 7, 1075 Hungary",
+    "phone": "06 30 544 4907",
+    "type": "bistro",
+    "discovered_at": "2026-07-27"
+  },
+  "ChIJ4bHC-VzZQUcR-UQEqOeE33k": {
+    "name": "CBA Kiscelli",
+    "address": "Budapest, Kiscelli u. 14, 1032 Hungary",
+    "phone": "(06 1) 437 0463",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-27"
+  },
+  "ChIJHdtoE7PdQUcR01w1mr3vwx4": {
+    "name": "G'Roby MÓRICZ Szupermarket",
+    "address": "Budapest, Villányi út 1, 1119 Hungary",
+    "phone": "(06 1) 209 9250",
+    "type": "grocery_store",
+    "discovered_at": "2026-07-27"
   }
 }
