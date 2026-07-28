@@ -15720,5 +15720,26 @@
     "phone": "(06 1) 209 9250",
     "type": "grocery_store",
     "discovered_at": "2026-07-27"
+  },
+  "ChIJLRpxfwDbQUcRARWf105-QvI": {
+    "name": "Madarász Csemege",
+    "address": "Budapest, Flesch Ármin köz 2011, 1131 Hungary",
+    "phone": "06 20 206 8105",
+    "type": "butcher_shop",
+    "discovered_at": "2026-07-28"
+  },
+  "ChIJpzuDJmvbQUcR1-Q8-vR_Das": {
+    "name": "ELPHY | Burger & Döner",
+    "address": "Budapest, Cserhalom u. 6 A, 1138 Hungary",
+    "phone": "06 20 362 4017",
+    "type": "restaurant",
+    "discovered_at": "2026-07-28"
+  },
+  "ChIJo1b5w0ndQUcRBjm1xwjHDGk": {
+    "name": "Vikozy Coffee & Bar",
+    "address": "Budapest, Teréz krt. 37, 1067 Hungary",
+    "phone": "06 30 680 2742",
+    "type": "coffee_shop",
+    "discovered_at": "2026-07-28"
   }
 }
