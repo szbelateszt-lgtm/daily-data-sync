@@ -11680,7 +11680,13 @@
     "type": "food",
     "discovered_at": null
   },
-  "ChIJxzv3ba3gQUcRYMrXQ5eZZEQ": null,
+  "ChIJxzv3ba3gQUcRYMrXQ5eZZEQ": {
+    "name": "Maksai Market",
+    "address": "Budaörs, Kamaraerdei út 31, 2040 Hungary",
+    "phone": "(06 23) 431 525",
+    "type": "convenience_store",
+    "discovered_at": null
+  },
   "ChIJy0MOXUPcQUcR19CQWpUGor4": null,
   "ChIJy0Uh6gvdQUcR3xIiP8YbYpI": {
     "name": "Friss pékség",
@@ -15741,5 +15747,33 @@
     "phone": "06 30 680 2742",
     "type": "coffee_shop",
     "discovered_at": "2026-07-28"
+  },
+  "ChIJ3fgJ4gHdQUcRb9Al5c4pW8o": {
+    "name": "Kínai étterem",
+    "address": "Budapest, Haller u. 4, 1096 Hungary",
+    "phone": "",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-07-29"
+  },
+  "ChIJA-9JgNrdQUcRKOZsEoKfV_0": {
+    "name": "Pizza Manufaktura",
+    "address": "Budapest, Víg u. 28, 1084 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-07-29"
+  },
+  "ChIJFfLgkObdQUcRBjOxUBQmENk": {
+    "name": "Tosti Budapest",
+    "address": "Budapest, Bajcsy-Zsilinszky út 76, 1055 Hungary",
+    "phone": "06 30 786 0944",
+    "type": "sandwich_shop",
+    "discovered_at": "2026-07-29"
+  },
+  "ChIJpZKqOvzdQUcRZiXjtKe18ew": {
+    "name": "Wok n' Go",
+    "address": "Budapest, Batthyány tér 6, 1011 Hungary",
+    "phone": "06 70 885 7799",
+    "type": "restaurant",
+    "discovered_at": "2026-07-29"
   }
 }
