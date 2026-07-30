@@ -5070,7 +5070,13 @@
     "type": "coffee_shop",
     "discovered_at": null
   },
-  "ChIJR30OQwDdQUcRgUYXpzl_spE": null,
+  "ChIJR30OQwDdQUcRgUYXpzl_spE": {
+    "name": "Passata 2.0",
+    "address": "Budapest, Váci u 57, 1056 Hungary",
+    "phone": "06 30 253 5428",
+    "type": "pizza_restaurant",
+    "discovered_at": null
+  },
   "ChIJR3OlC7PdQUcRqw6glPM-kHs": {
     "name": "SPAR Market",
     "address": "Budapest, Bartók Béla út 51, 1114 Hungary",
@@ -15775,5 +15781,19 @@
     "phone": "06 70 885 7799",
     "type": "restaurant",
     "discovered_at": "2026-07-29"
+  },
+  "ChIJk3LkOXvbQUcR-qi7gkwWuIQ": {
+    "name": "Royal Döner kebab",
+    "address": "Budapest, Thököly út 141, 1146 Hungary",
+    "phone": "06 20 483 9809",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-07-30"
+  },
+  "ChIJF5o6393BQUcRaRxzQHi15RU": {
+    "name": "Olasz Csemege Deli&Grill",
+    "address": "Vecsés, Miklós u. 8, 2220 Hungary",
+    "phone": "06 20 985 7970",
+    "type": "brunch_restaurant",
+    "discovered_at": "2026-07-30"
   }
 }
