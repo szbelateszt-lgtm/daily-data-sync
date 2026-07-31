@@ -15795,5 +15795,26 @@
     "phone": "06 20 985 7970",
     "type": "brunch_restaurant",
     "discovered_at": "2026-07-30"
+  },
+  "ChIJATCQxLLdQUcRe1bKN5IXKRI": {
+    "name": "Lipóti Bakery",
+    "address": "Budapest, Bartók Béla út 50, 1111 Hungary",
+    "phone": "06 30 203 4197",
+    "type": "bakery",
+    "discovered_at": "2026-07-31"
+  },
+  "ChIJi_jF24ncQUcRzyDxbfjufY0": {
+    "name": "Keleti Trio+",
+    "address": "Budapest, Kerepesi út 2, 1087 Hungary",
+    "phone": "06 30 370 1354",
+    "type": "meal_takeaway",
+    "discovered_at": "2026-07-31"
+  },
+  "ChIJ3U2OkBbhQUcRRCuBqEXECIo": {
+    "name": "Hentes - húsbolt",
+    "address": "Érd, Lőcsei u. 6, 2030 Hungary",
+    "phone": "",
+    "type": "butcher_shop",
+    "discovered_at": "2026-07-31"
   }
 }
