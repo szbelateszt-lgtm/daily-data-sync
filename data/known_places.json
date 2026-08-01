@@ -15816,5 +15816,12 @@
     "phone": "",
     "type": "butcher_shop",
     "discovered_at": "2026-07-31"
+  },
+  "ChIJw3VAwhTcQUcRiNHodZgAZRc": {
+    "name": "BlackStart",
+    "address": "Budapest, Arany János u. 26-28, 1162 Hungary",
+    "phone": "06 70 257 8285",
+    "type": "coffee_shop",
+    "discovered_at": "2026-08-01"
   }
 }
