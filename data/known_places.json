@@ -7914,7 +7914,13 @@
     "type": "grocery_store",
     "discovered_at": null
   },
-  "ChIJe4u8KQ_dQUcRalyAschq6uw": null,
+  "ChIJe4u8KQ_dQUcRalyAschq6uw": {
+    "name": "Sen Bistro",
+    "address": "Budapest, Wesselényi utca 36, 1075 Hungary",
+    "phone": "06 30 110 7558",
+    "type": "vietnamese_restaurant",
+    "discovered_at": null
+  },
   "ChIJe5-EIg_cQUcRYNQconGW_Nw": {
     "name": "Fannicika Pho & Pad Thai",
     "address": "Budapest, Hollán Ernő u. 3, 1136 Hungary",
@@ -15823,5 +15829,26 @@
     "phone": "06 70 257 8285",
     "type": "coffee_shop",
     "discovered_at": "2026-08-01"
+  },
+  "ChIJrTElFbjdQUcRxvsOjG4z7I0": {
+    "name": "Watan Afghan Étterem | افغان رستورنت (halal)",
+    "address": "Budapest, Lónyay u. 9, 1093 Hungary",
+    "phone": "06 70 856 8977",
+    "type": "restaurant",
+    "discovered_at": "2026-08-02"
+  },
+  "ChIJ2XKFNwjdQUcR64sLdZvtVfk": {
+    "name": "Kikötő Étkezde",
+    "address": "Budapest, Weiss Manfréd út, 1211 Hungary",
+    "phone": "06 30 739 8210",
+    "type": "restaurant",
+    "discovered_at": "2026-08-02"
+  },
+  "ChIJCZsT-37fQUcR3PujJ-I_Lq0": {
+    "name": "Kinetic Flow Café and Roastery",
+    "address": "Budaörs, Károly király u. 19, 2040 Hungary",
+    "phone": "",
+    "type": "cafe",
+    "discovered_at": "2026-08-02"
   }
 }
