@@ -1374,7 +1374,13 @@
     "type": "sushi_restaurant",
     "discovered_at": null
   },
-  "ChIJ71E6ryXJQUcRkzLfzIJzpz8": null,
+  "ChIJ71E6ryXJQUcRkzLfzIJzpz8": {
+    "name": "Döner King",
+    "address": "Gödöllő, Szabadság tér 1, 2100 Hungary",
+    "phone": "(06 28) 561 701",
+    "type": "turkish_restaurant",
+    "discovered_at": null
+  },
   "ChIJ71jRLh3dQUcRdS0I1fQpstQ": {
     "name": "天天见面 365Ramen",
     "address": "Budapest, 邮政编码:, Török Pál u. 3, 1093 Hungary",
@@ -7641,7 +7647,13 @@
     "type": "fast_food_restaurant",
     "discovered_at": null
   },
-  "ChIJcxCKcwDJQUcRNRZ9RFPJugs": null,
+  "ChIJcxCKcwDJQUcRNRZ9RFPJugs": {
+    "name": "Sukta Kovász",
+    "address": "Gödöllő, Pattantyús Ábrahám krt. 2, 2100 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJcxdA43TfQUcRJxUUHW5px8M": {
     "name": "Gastrogarden Budaörs",
     "address": "Budaörs, Szabadság út 310, 2040 Hungary",
@@ -15850,5 +15862,40 @@
     "phone": "",
     "type": "cafe",
     "discovered_at": "2026-08-02"
+  },
+  "ChIJs1GefjXaQUcRlsIRwSoxkrI": {
+    "name": "Pasa Kebab Újpest",
+    "address": "Budapest, Tél u. 2, 1043 Hungary",
+    "phone": "06 30 357 0097",
+    "type": "restaurant",
+    "discovered_at": "2026-08-03"
+  },
+  "ChIJc1U2ML7bQUcRGdXHXo2a0hg": {
+    "name": "Shah Kebab Restaurant",
+    "address": "Budapest, Illyés Gyula u. 18-22, 1152 Hungary",
+    "phone": "06 70 226 1691",
+    "type": "restaurant",
+    "discovered_at": "2026-08-03"
+  },
+  "ChIJdYFiDgDDQUcRWayKwaCZzRg": {
+    "name": "Kedvenc Döner Kebab",
+    "address": "Budapest, Üllői út 441, 1181 Hungary",
+    "phone": "",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-08-03"
+  },
+  "ChIJq1gCJADdQUcRsH34RtHVcgs": {
+    "name": "TONKIN",
+    "address": "Budapest, Frankel Leó út 12, 1027 Hungary",
+    "phone": "06 30 519 7680",
+    "type": "vietnamese_restaurant",
+    "discovered_at": "2026-08-03"
+  },
+  "ChIJ2XmHUQDJQUcRx2Hayu-QnsQ": {
+    "name": "Bottega Italiana Gödöllő",
+    "address": "Gödöllő, Szabadság tér 14, 2100 Hungary",
+    "phone": "",
+    "type": "store",
+    "discovered_at": "2026-08-03"
   }
 }
