@@ -4439,7 +4439,13 @@
     "type": "general_store",
     "discovered_at": null
   },
-  "ChIJO47HEADdQUcRpe-Aj5K1LRg": null,
+  "ChIJO47HEADdQUcRpe-Aj5K1LRg": {
+    "name": "Kakurega Japanese Restaurant",
+    "address": "Budapest, Arany János u. 13, 1051 Hungary",
+    "phone": "06 30 719 6818",
+    "type": "japanese_restaurant",
+    "discovered_at": null
+  },
   "ChIJO4PS6fjWQUcRpI_kbgV4vWI": {
     "name": "FinomLett faloda Szentendre Városkapu Üzletház",
     "address": "Szentendre, Dobogókői út 1, 2000 Hungary",
