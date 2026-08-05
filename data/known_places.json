@@ -1138,7 +1138,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJ5Zmf2s7dQUcR-OPO8noK3Is": null,
+  "ChIJ5Zmf2s7dQUcR-OPO8noK3Is": {
+    "name": "Alice Terrace",
+    "address": "Budapest, Andrássy út 116, 1062 Hungary",
+    "phone": "",
+    "type": "western_restaurant",
+    "discovered_at": null
+  },
   "ChIJ5_5dQELcQUcRNkj6cc1wDfg": {
     "name": "Kupak Bar & Bistro",
     "address": "Budapest, Dob u. 2, 1072 Hungary",
@@ -15903,5 +15909,19 @@
     "phone": "",
     "type": "store",
     "discovered_at": "2026-08-03"
+  },
+  "ChIJ4ZtjOfLbQUcRIPQUokVNDaU": {
+    "name": "City SPAR",
+    "address": "Budapest, Váci út 37, 1134 Hungary",
+    "phone": "06 20 823 7946",
+    "type": "supermarket",
+    "discovered_at": "2026-08-05"
+  },
+  "ChIJSbg9EgDdQUcRLfA6_Ngn_Lk": {
+    "name": "Urban Kebab",
+    "address": "Budapest, Fehér út 1, 1106 Hungary",
+    "phone": "",
+    "type": "kebab_shop",
+    "discovered_at": "2026-08-05"
   }
 }
