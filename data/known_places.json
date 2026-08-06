@@ -4939,7 +4939,13 @@
     "type": "hamburger_restaurant",
     "discovered_at": null
   },
-  "ChIJQ7muntHbQUcREO8XL-eiqMY": null,
+  "ChIJQ7muntHbQUcREO8XL-eiqMY": {
+    "name": "Gyrosom",
+    "address": "Budapest, Óceánárok u. 29-C épület 3. sz, 1048 Hungary",
+    "phone": "06 20 391 3844",
+    "type": "gyro_restaurant",
+    "discovered_at": null
+  },
   "ChIJQ7uVNkLcQUcRTbeq1N45CoA": {
     "name": "Kontakt - speciality coffeeshop",
     "address": "Budapest, Károly krt. 22, 1052 Hungary",
