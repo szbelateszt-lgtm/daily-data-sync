@@ -5638,7 +5638,13 @@
     "type": "hamburger_restaurant",
     "discovered_at": null
   },
-  "ChIJTbBuYADbQUcRaJZerVvwuYU": null,
+  "ChIJTbBuYADbQUcRaJZerVvwuYU": {
+    "name": "Búzakovász kézműves pékség",
+    "address": "Budapest, Kárpát u. 11, 1133 Hungary",
+    "phone": "06 20 365 8470",
+    "type": "bakery",
+    "discovered_at": null
+  },
   "ChIJTbKTWiXJQUcRy2Zq1fawwJQ": {
     "name": "Lipóti Bakery",
     "address": "Gödöllő, Kossuth Lajos u. 24, 2100 Hungary",
@@ -15929,5 +15935,40 @@
     "phone": "",
     "type": "kebab_shop",
     "discovered_at": "2026-08-05"
+  },
+  "ChIJB2WgNnfdQUcRwOB1EEcUcCs": {
+    "name": "Anna Bistro",
+    "address": "Budapest, Sas u 11, 1051 Hungary",
+    "phone": "06 20 227 8441",
+    "type": "restaurant",
+    "discovered_at": "2026-08-07"
+  },
+  "ChIJpZE1q0TcQUcRcF0DmbwVsl8": {
+    "name": "Múzeum Kávéház és Étterem",
+    "address": "Budapest, Múzeum krt. 12, 1088 Hungary",
+    "phone": "",
+    "type": "hungarian_restaurant",
+    "discovered_at": "2026-08-07"
+  },
+  "ChIJzT46JQDdQUcR2OZMGBoqHJQ": {
+    "name": "Baby Burger",
+    "address": "Budapest, Szív u. 39b, 1063 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-08-07"
+  },
+  "ChIJ-1vrEGvDQUcRdLcpmsm5-Kk": {
+    "name": "Fully Night Market 富利夜市",
+    "address": "Budapest, Vaspálya u 25, 1105 Hungary",
+    "phone": "06 30 551 8585",
+    "type": "restaurant",
+    "discovered_at": "2026-08-07"
+  },
+  "ChIJmz9FWxfeQUcRcMO-ZtKrbFg": {
+    "name": "Erika salátázója",
+    "address": "Budaörs, Budapesti út 77, 2040 Hungary",
+    "phone": "06 30 358 8414",
+    "type": "salad_shop",
+    "discovered_at": "2026-08-07"
   }
 }
