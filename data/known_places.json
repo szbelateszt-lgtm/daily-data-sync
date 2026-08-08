@@ -15970,5 +15970,40 @@
     "phone": "06 30 358 8414",
     "type": "salad_shop",
     "discovered_at": "2026-08-07"
+  },
+  "ChIJi1pocnDdQUcRWJYTz59oGZk": {
+    "name": "Élodie Bakery & Cafe",
+    "address": "Budapest, Pauler u. 5, 1013 Hungary",
+    "phone": "06 20 590 5916",
+    "type": "bakery",
+    "discovered_at": "2026-08-08"
+  },
+  "ChIJFbPJMgXdQUcRBecYbnh_eWQ": {
+    "name": "Rira Vegan and Vegetarian Food",
+    "address": "Budapest, István u. 5, 1078 Hungary",
+    "phone": "06 70 557 9267",
+    "type": "vegetarian_restaurant",
+    "discovered_at": "2026-08-08"
+  },
+  "ChIJW2Ae9H_ZQUcRWnaoh95q0Lo": {
+    "name": "Pizza 'O Sole Mio - Buda",
+    "address": "Budapest, Máriaremetei út 116, 1029 Hungary",
+    "phone": "06 30 163 9838",
+    "type": "pizza_restaurant",
+    "discovered_at": "2026-08-08"
+  },
+  "ChIJp2DLOSbcQUcRW8abnX8GwL4": {
+    "name": "Ristorante Da Lello",
+    "address": "Budapest, Alkotás u. 31, 1123 Hungary",
+    "phone": "(06 1) 356 5851",
+    "type": "restaurant",
+    "discovered_at": "2026-08-08"
+  },
+  "ChIJc7GMCgDJQUcR4eTEwFvScH8": {
+    "name": "Cafe Ida",
+    "address": "Gödöllő, Grassalkovich-kastély, Szabadság tér 1, 2100 Hungary",
+    "phone": "",
+    "type": "cafe",
+    "discovered_at": "2026-08-08"
   }
 }
