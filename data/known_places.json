@@ -16005,5 +16005,12 @@
     "phone": "",
     "type": "cafe",
     "discovered_at": "2026-08-08"
+  },
+  "ChIJqZDvS1_dQUcRr4yZWq1QOhA": {
+    "name": "Budapest Bakehouse by Pizza Művek",
+    "address": "Budapest, Sütő u. 2, 1052 Hungary",
+    "phone": "",
+    "type": "coffee_shop",
+    "discovered_at": "2026-08-09"
   }
 }
