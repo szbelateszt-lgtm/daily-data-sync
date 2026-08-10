@@ -109825,5 +109825,29 @@
     "datum": "2026.07.02",
     "kerulet": "Budapest XV. (Rákospalota)",
     "discovered_at": "2026-08-09"
+  },
+  "Budapest XII. (Hegyvidék)::2740|388847/B/5/2026|Magyar Szalon Kft.|1132 Budapest Váci út 28. III. em. 1/A.|01-09-344731|26785824-5611-113-01|BANKERS’ CORNER BÜFÉ|1122 Budapest Krisztina körút 6-8.|15|20|H: 08:00 - 16:00, K: 08:00 - 16:00, Sze: 08:00 - 16:00, Cs: 08:00 - 16:00, P: 08:00 - 16:00, Szo: Zárva, V: Zárva,|Nem|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás||||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Kenyér- és pékáru, sütőipari termék | Édességáru||2026.01.08||||||||Büfé – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "388847/B/5/2026 | Magyar Szalon Kft. | 1132 Budapest Váci út 28. III. em. 1/A. | BANKERS’ CORNER BÜFÉ",
+    "datum": "2026.01.08",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-08-10"
+  },
+  "Budapest XII. (Hegyvidék)::2742|388847/B/8./2026|Magyar Szalon Kft.|1132 Budapest Váci út 28. III. em. 1/A.|01-09-344731|26785824-5611-113-01|Bux Index Kitchen & Bar|1122 Budapest Krisztina körút 6-8|75|100|H: 09:00 - 24:00, K: 09:00 - 24:00, Sze: 09:00 - 24:00, Cs: 09:00 - 24:00, P: 09:00 - 24:00, Szo: 09:00 - 24:00, V: 09:00 - 24:00,|Igen|Nem||üzletben folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Meleg-, hideg étel | Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital | Cukrászati készítmény, édesipari termék | Édességáru||2026.03.23||||||||Étterem – 56.11 Éttermi vendéglátás": {
+    "nev_cim": "388847/B/8./2026 | Magyar Szalon Kft. | 1132 Budapest Váci út 28. III. em. 1/A. | Bux Index Kitchen & Bar",
+    "datum": "2026.03.23",
+    "kerulet": "Budapest XII. (Hegyvidék)",
+    "discovered_at": "2026-08-10"
+  },
+  "Budapest XIV. (Zugló)::7401|6282/1|Blandford-Team Kft.|1052 Budapest Petőfi Sándor utca 11. 4/20.|01-09-177999|24701107-4617-113-01|Vásáron vagy piacon folytatott kereskedelmi tevékenység|1146 Budapest Olof Palme sétány 5.||4900|H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Igen|Nem||vásáron vagy piacon folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital||2026.04.08|2026.04.16|||||||Alkalmi vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Blandford-Team Kft. | 1052 Budapest Petőfi Sándor utca 11. 4/20. | Vásáron vagy piacon folytatott kereskedelmi tevékenység | 1146 Budapest Olof Palme sétány 5.",
+    "datum": "2026.04.08",
+    "kerulet": "Budapest XIV. (Zugló)",
+    "discovered_at": "2026-08-10"
+  },
+  "Budapest XIV. (Zugló)::7402|6282/2|Blandford-Team Kft.|1052 Budapest Petőfi Sándor utca 11. 4/20.|01-09-177999|24701107-4617-113-01|Vásáron vagy piacon folytatott kereskedelmi tevékenység|1146 Budapest Városliget||1500|H: Zárva, K: Zárva, Sze: Zárva, Cs: Zárva, P: Zárva, Szo: Zárva, V: Zárva,|Igen|Nem||vásáron vagy piacon folytatott kereskedelmi tevékenység|kiskereskedelem, vendéglátás|Sör | Csendes és habzóbor | Egyéb csendes és habzó erjesztett ital | Köztes alkoholtermék | Alkoholtermék|||Kávéital, alkoholmentes- és szeszes ital | Csomagolt kávé, dobozos, illetve palackozott alkoholmentes- és szeszes ital||2026.04.27||||||||Alkalmi vendéglátóhely – 56.12 Mozgó vendéglátás": {
+    "nev_cim": "Blandford-Team Kft. | 1052 Budapest Petőfi Sándor utca 11. 4/20. | Vásáron vagy piacon folytatott kereskedelmi tevékenység | 1146 Budapest Városliget",
+    "datum": "2026.04.27",
+    "kerulet": "Budapest XIV. (Zugló)",
+    "discovered_at": "2026-08-10"
   }
 }

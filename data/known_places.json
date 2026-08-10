@@ -10250,7 +10250,13 @@
   },
   "ChIJq3zQMWPUQUcRbZsXlljDTdc": null,
   "ChIJq4-GqmrcQUcRnpw3yD3Qc9U": null,
-  "ChIJq4jIfR3cQUcRgABMyt05n0M": null,
+  "ChIJq4jIfR3cQUcRgABMyt05n0M": {
+    "name": "Josephine Bakery",
+    "address": "Budapest, Fényes Elek u. 3, 1024 Hungary",
+    "phone": "06 20 291 9170",
+    "type": "soup_restaurant",
+    "discovered_at": null
+  },
   "ChIJq51LsqHeQUcRyxHuklmv3GM": null,
   "ChIJq7jDpFXRQUcRrPLfOaWd9zo": {
     "name": "Koliba Chopok",
