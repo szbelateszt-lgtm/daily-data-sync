@@ -16025,5 +16025,33 @@
     "phone": "(06 1) 317 0960",
     "type": "supermarket",
     "discovered_at": "2026-08-11"
+  },
+  "ChIJYfCiyXXdQUcRATzMzsd-wYM": {
+    "name": "CHRISTIE'S BUDAPEST: All day brunch & Taste The Moment",
+    "address": "Budapest, Király u. 53, 1077 Hungary",
+    "phone": "06 20 539 9888",
+    "type": "breakfast_restaurant",
+    "discovered_at": "2026-08-12"
+  },
+  "ChIJr3o9sA7dQUcRFXME8VUkYgg": {
+    "name": "Kürtőskalács",
+    "address": "Budapest, Kossuth Lajos u., 1072 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-08-12"
+  },
+  "ChIJ8ZOiKZ_nQUcR34nQ2J_nMyQ": {
+    "name": "Falatka kifőzde",
+    "address": "Budapest, Hunyadi János út 23, 1117 Hungary",
+    "phone": "06 30 237 5907",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-08-12"
+  },
+  "ChIJIewEWADDQUcRZW2-MfiHgIY": {
+    "name": "Whale Restaurant",
+    "address": "Budapest, Vaspálya u 25, 1105 Hungary",
+    "phone": "06 30 820 8897",
+    "type": "restaurant",
+    "discovered_at": "2026-08-12"
   }
 }
