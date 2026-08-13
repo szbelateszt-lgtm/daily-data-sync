@@ -3207,7 +3207,13 @@
     "type": "chinese_restaurant",
     "discovered_at": null
   },
-  "ChIJGdam7o_bQUcRvEsKTeCvnBk": null,
+  "ChIJGdam7o_bQUcRvEsKTeCvnBk": {
+    "name": "Bijo Store",
+    "address": "Budapest, Róbert Károly körút 96-100, 1135 Hungary",
+    "phone": "(06 1) 814 6464",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJGdyhjJHdQUcR9uujtb_plZw": {
     "name": "Turul Market 2",
     "address": "Budapest, Thököly út 7, 1076 Hungary",
@@ -11302,7 +11308,13 @@
     "type": "bakery",
     "discovered_at": null
   },
-  "ChIJvcZr7nDcQUcRiI8KfxjYy3Q": null,
+  "ChIJvcZr7nDcQUcRiI8KfxjYy3Q": {
+    "name": "Matinee Coffeeshop",
+    "address": "Budapest, Benczúr u. 2, 1068 Hungary",
+    "phone": "06 20 388 1032",
+    "type": "cafe",
+    "discovered_at": null
+  },
   "ChIJvdVTV3zcQUcR_4HYOvEeooM": {
     "name": "Arbat Orosz Bolt",
     "address": "Budapest, Dembinszky u. 33, 1071 Hungary",
