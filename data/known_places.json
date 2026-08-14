@@ -1066,7 +1066,13 @@
     "type": "coffee_shop",
     "discovered_at": null
   },
-  "ChIJ55ApeHPhQUcRDpHRckoWOp0": null,
+  "ChIJ55ApeHPhQUcRDpHRckoWOp0": {
+    "name": "Soós József",
+    "address": "Érd, Bajcsy-Zsilinszky út 56, 2030 Hungary",
+    "phone": "06 70 401 6284",
+    "type": "car_repair",
+    "discovered_at": null
+  },
   "ChIJ55CD2-PjQUcR_M8f8IVCdVI": {
     "name": "SPAR partner",
     "address": "Érd, STOP SHOP, Budai út 13, 2030 Hungary",
