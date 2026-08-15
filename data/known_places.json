@@ -4187,7 +4187,13 @@
     "type": "restaurant",
     "discovered_at": null
   },
-  "ChIJMabqFLzeQUcR6Vg-VufyuKQ": null,
+  "ChIJMabqFLzeQUcR6Vg-VufyuKQ": {
+    "name": "SPAR market",
+    "address": "Budapest, Szilágyi Erzsébet fasor 63, 1026 Hungary",
+    "phone": "06 20 823 7768",
+    "type": "grocery_store",
+    "discovered_at": null
+  },
   "ChIJMd8xDvzdQUcR0Zes1Eqw0hI": {
     "name": "Piramis Kebab",
     "address": "Budapest, Nagymező u. 33, 1065 Hungary",
@@ -16071,5 +16077,33 @@
     "phone": "06 30 820 8897",
     "type": "restaurant",
     "discovered_at": "2026-08-12"
+  },
+  "ChIJCUl3EGrcQUcRM1pNY03ONLY": {
+    "name": "ARIOSO Café & Brunch Budapest",
+    "address": "Budapest, Király u. 9, 1075 Hungary",
+    "phone": "06 70 611 8713",
+    "type": "brunch_restaurant",
+    "discovered_at": "2026-08-15"
+  },
+  "ChIJ7_0Mfs7dQUcRf2U_zQyGKUs": {
+    "name": "DICA! Dispensa & Cantina",
+    "address": "Budapest, Budapest Klauzál tér 15. fsz, U2. ajtó, 1072 Hungary",
+    "phone": "06 70 165 7286",
+    "type": "italian_restaurant",
+    "discovered_at": "2026-08-15"
+  },
+  "ChIJYTy3EwDfQUcR1Tq9pPDjI10": {
+    "name": "Budaörs",
+    "address": "Budaörs, vendéglő, 2040 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-08-15"
+  },
+  "ChIJbTh6QgDRQUcRQsazx_zsLxo": {
+    "name": "KisKamra",
+    "address": "Dunakeszi, Fő út 133, 2120 Hungary",
+    "phone": "06 30 886 5598",
+    "type": "grocery_store",
+    "discovered_at": "2026-08-15"
   }
 }
