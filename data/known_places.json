@@ -16105,5 +16105,40 @@
     "phone": "06 30 886 5598",
     "type": "grocery_store",
     "discovered_at": "2026-08-15"
+  },
+  "ChIJM6fbZFnZQUcRCtBqBJiOFs4": {
+    "name": "Élelmiszer",
+    "address": "Budapest, Tímár u. 13a, 1034 Hungary",
+    "phone": "",
+    "type": "grocery_store",
+    "discovered_at": "2026-08-16"
+  },
+  "ChIJv_MTk73dQUcRBi26Mfom1ao": {
+    "name": "SPAR express",
+    "address": "Budapest, Üllői út 137, 1091 Hungary",
+    "phone": "06 20 823 8624",
+    "type": "supermarket",
+    "discovered_at": "2026-08-16"
+  },
+  "ChIJ_98ueULdQUcRgmck41M4uWA": {
+    "name": "Two Samurai",
+    "address": "Budapest, Péterfy Sándor u. 23, 1076 Hungary",
+    "phone": "",
+    "type": "meal_takeaway",
+    "discovered_at": "2026-08-16"
+  },
+  "ChIJPb3ce2LcQUcRgr6UfPEWy2A": {
+    "name": "McDonald's",
+    "address": "Budapest, Bethlen Gábor u. 1, 1077 Hungary",
+    "phone": "",
+    "type": "fast_food_restaurant",
+    "discovered_at": "2026-08-16"
+  },
+  "ChIJc90vg-jfQUcR9ld4jjoN9KI": {
+    "name": "Ecofamily",
+    "address": "Budaörs, Malomkő u. 20, 2040 Hungary",
+    "phone": "06 20 422 9785",
+    "type": "discount_store",
+    "discovered_at": "2026-08-16"
   }
 }
