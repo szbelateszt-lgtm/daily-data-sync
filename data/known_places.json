@@ -16140,5 +16140,19 @@
     "phone": "06 20 422 9785",
     "type": "discount_store",
     "discovered_at": "2026-08-16"
+  },
+  "ChIJYdAJkhjcQUcRdyKq7w5SILM": {
+    "name": "Halászbástya Étterem",
+    "address": "Budapest, Budapest Budapest Budai Vár, Halászbástya - Északi Híradástorony, 1014 Hungary",
+    "phone": "(06 1) 201 6935",
+    "type": "restaurant",
+    "discovered_at": "2026-08-17"
+  },
+  "ChIJ75I6UyLdQUcRXRfM7shqYJc": {
+    "name": "Zakopane ételbár",
+    "address": "Budapest, Margit körút 48, 1027 Hungary",
+    "phone": "06 30 874 7338",
+    "type": "restaurant",
+    "discovered_at": "2026-08-17"
   }
 }
