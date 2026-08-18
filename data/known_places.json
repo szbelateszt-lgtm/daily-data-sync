@@ -16154,5 +16154,33 @@
     "phone": "06 30 874 7338",
     "type": "restaurant",
     "discovered_at": "2026-08-17"
+  },
+  "ChIJlQg-xsfdQUcRx_M8N4nCKzs": {
+    "name": "Fitzkey Kürtőskalács",
+    "address": "Budapest, Deák Ferenc tér, 1051 Hungary",
+    "phone": "",
+    "type": "bakery",
+    "discovered_at": "2026-08-18"
+  },
+  "ChIJaXgHoXvcQUcRw4UzS2m7iuI": {
+    "name": "Mini Ételbár",
+    "address": "Budapest, Damjanich u. 26, 1071 Hungary",
+    "phone": "(06 1) 321 1715",
+    "type": "restaurant",
+    "discovered_at": "2026-08-18"
+  },
+  "ChIJQz6jc5LFQUcR_rYuo7wxre8": {
+    "name": "Ruby Sushi Rákosi",
+    "address": "Budapest, Rákosi út 48, 1161 Hungary",
+    "phone": "06 30 123 2201",
+    "type": "restaurant",
+    "discovered_at": "2026-08-18"
+  },
+  "ChIJj4V3RA_XQUcRxN0X7Pz7TWk": {
+    "name": "Melodia di Napoli",
+    "address": "Szentendre, Pannónia u. 1, 2000 Hungary",
+    "phone": "06 20 396 0144",
+    "type": "restaurant",
+    "discovered_at": "2026-08-18"
   }
 }
