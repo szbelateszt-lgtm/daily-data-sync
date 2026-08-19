@@ -16182,5 +16182,12 @@
     "phone": "06 20 396 0144",
     "type": "restaurant",
     "discovered_at": "2026-08-18"
+  },
+  "ChIJ3XFU7QrdQUcROsY6VTsSiDA": {
+    "name": "Gyros Károly fastfood",
+    "address": "Budapest, Károly krt. 11, 1075 Hungary",
+    "phone": "",
+    "type": "turkish_restaurant",
+    "discovered_at": "2026-08-19"
   }
 }
