@@ -5104,7 +5104,13 @@
     "type": "pizza_restaurant",
     "discovered_at": null
   },
-  "ChIJR24TprfhQUcRJDVrzSGk49g": null,
+  "ChIJR24TprfhQUcRJDVrzSGk49g": {
+    "name": "Auchan Korzó",
+    "address": "Budaörs, Sport u. 2-4, 2040 Hungary",
+    "phone": "",
+    "type": "shopping_mall",
+    "discovered_at": null
+  },
   "ChIJR2tBdhncQUcRd-_Kb4MiSvY": {
     "name": "Coyote Coffee & Deli",
     "address": "Budapest, Markovits Iván u. 4, 1011 Hungary",
@@ -9033,7 +9039,13 @@
     "type": "hungarian_restaurant",
     "discovered_at": null
   },
-  "ChIJjylERhTcQUcRxxpfk7FD6QY": null,
+  "ChIJjylERhTcQUcRxxpfk7FD6QY": {
+    "name": "Prima Supermarket",
+    "address": "Budapest, Nádor u. 18, 1054 Hungary",
+    "phone": "(06 1) 501 4493",
+    "type": "supermarket",
+    "discovered_at": null
+  },
   "ChIJjzh7-w7cQUcRjVvCL1qi18k": {
     "name": "Lecso Hungarian Restaurant",
     "address": "Budapest, Szent István krt. 10, 1137 Hungary",
@@ -16189,5 +16201,19 @@
     "phone": "",
     "type": "turkish_restaurant",
     "discovered_at": "2026-08-19"
+  },
+  "ChIJNdl2MezdQUcR68tAlXIRtq4": {
+    "name": "Cafe Mamadam Breakfast & coffee",
+    "address": "Budapest, Garibaldi u. 7, 1054 Hungary",
+    "phone": "06 70 622 3621",
+    "type": "cafe",
+    "discovered_at": "2026-08-20"
+  },
+  "ChIJtYhgiFzdQUcRibHNW5GjjzU": {
+    "name": "Taste of China 味道中国",
+    "address": "Budapest, Rákóczi út 71-73, 1081 Hungary",
+    "phone": "06 30 094 3000",
+    "type": "chinese_restaurant",
+    "discovered_at": "2026-08-20"
   }
 }
