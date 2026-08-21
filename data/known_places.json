@@ -16215,5 +16215,26 @@
     "phone": "06 30 094 3000",
     "type": "chinese_restaurant",
     "discovered_at": "2026-08-20"
+  },
+  "ChIJHQEHDU_dQUcRI_iAaKnZCAM": {
+    "name": "Egyetem Étterem",
+    "address": "Budapest, Testnevelési Egyetem, Alkotás u. 48-K\" épület, 1123 Hungary",
+    "phone": "",
+    "type": "restaurant",
+    "discovered_at": "2026-08-21"
+  },
+  "ChIJ6XAwMgDdQUcR4xy343n8OP0": {
+    "name": "MiniKey Market",
+    "address": "Budapest, Nyugati pályaudvar, 1065 Hungary",
+    "phone": "",
+    "type": "general_store",
+    "discovered_at": "2026-08-21"
+  },
+  "ChIJ2Yd17J7RQUcR1_K5zpYK4aA": {
+    "name": "Letris Görög Gyros",
+    "address": "Dunakeszi, Cassalgrande tér 5, 2120 Hungary",
+    "phone": "06 20 620 9042",
+    "type": "gyro_restaurant",
+    "discovered_at": "2026-08-21"
   }
 }
