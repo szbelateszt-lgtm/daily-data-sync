@@ -16236,5 +16236,40 @@
     "phone": "06 20 620 9042",
     "type": "gyro_restaurant",
     "discovered_at": "2026-08-21"
+  },
+  "ChIJs_3Ntj3dQUcRhDRoPCZmMjg": {
+    "name": "Andi's speciality café",
+    "address": "Budapest, Teréz krt. 33, 1067 Hungary",
+    "phone": "06 70 721 1220",
+    "type": "cafe",
+    "discovered_at": "2026-08-22"
+  },
+  "ChIJ78Hyv8ndQUcR0-zzN_EL7Nk": {
+    "name": "ÉS DELI",
+    "address": "Budapest, Erzsébet tér 7, 1051 Hungary",
+    "phone": "06 20 474 5000",
+    "type": "cafe",
+    "discovered_at": "2026-08-22"
+  },
+  "ChIJL8WLwF7cQUcRrmtD_OC1dFk": {
+    "name": "Retro Büfé és Hamburger",
+    "address": "Budapest, Kis Salétrom u. 2, 1085 Hungary",
+    "phone": "",
+    "type": "hamburger_restaurant",
+    "discovered_at": "2026-08-22"
+  },
+  "ChIJR6PZHwjkQUcRYsHkIq_whaU": {
+    "name": "Érdi Market",
+    "address": "Érd, 2030 Hungary",
+    "phone": "(06 23) 365 610",
+    "type": "flea_market",
+    "discovered_at": "2026-08-22"
+  },
+  "ChIJ81ed3zDhQUcR2cIJNpLXdrM": {
+    "name": "Szerencsesarok Delikát/Pizza és Bolt",
+    "address": "Diósd, Gyár u. 43, 2049 Hungary",
+    "phone": "06 30 091 2094",
+    "type": "grocery_store",
+    "discovered_at": "2026-08-22"
   }
 }
